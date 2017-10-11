@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lookAndFeel">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LibCommon/lookandfeel/alloy_1.4.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/lookandfeel/beautyeye_lnf.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
