@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Ensemble8">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LibCommon/jfc/Ensemble8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/LibCommon/jfc/Ensemble8-source.jar!/" />
+    </SOURCES>
+  </library>
+</component>
