@@ -2283,3 +2283,9 @@ org.h2.jdbc.JdbcSQLException: Column "IS_GENERATEDCOLUMN" not found [42122-196]
 	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:71)
 	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:95)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+2017-10-13 13:03:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-195]
+2017-10-13 13:03:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-195]
+2017-10-13 13:03:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-195]

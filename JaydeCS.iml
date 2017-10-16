@@ -14,5 +14,7 @@
     <orderEntry type="library" name="dom4j-1.6.1" level="project" />
     <orderEntry type="library" name="mybatis-3.4.5" level="project" />
     <orderEntry type="library" name="h2-1.4.196" level="project" />
+    <orderEntry type="library" name="ical4j" level="project" />
+    <orderEntry type="library" name="apache-commons-codec" level="project" />
   </component>
 </module>

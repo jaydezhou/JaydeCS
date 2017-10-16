@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="ical4j">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-connector-0.9.4.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-extensions-1.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-vcard-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-zoneinfo-outlook-2.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-2.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-2.0.5-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-connector-0.9.4.3-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-extensions-1.0.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-vcard-1.0.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-zoneinfo-outlook-2.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-connector-0.9.4.3-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-connector-0.9.4.3-test-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-extensions-1.0.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-vcard-1.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-zoneinfo-outlook-2.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/LibCommon/ica4j/ical4j-2.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
