@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VcfImport {
-    static String filename = "C:\\Users\\zhouyj\\iCloudDrive\\文档集\\3.技术文档集\\3.1）个人项目\\iCloud vCard(无头像).vcf";
+    public static String filename = "C:\\Users\\zhouyj\\iCloudDrive\\文档集\\3.技术文档集\\3.1）个人项目\\iCloud vCard(无头像).vcf";
     private File[] vcardFiles = null;
     private VCardEngine vcardEngine = null;
 
@@ -45,14 +45,13 @@ public class VcfImport {
         List vcards = new ArrayList();
 //        vcardFiles = getFiles();
         vcardFiles = new File[1];
-        vcardFiles[0]= new File(filename);
-        for(int i = 0; i < vcardFiles.length; i++) {
+        vcardFiles[0] = new File(filename);
+        for (int i = 0; i < vcardFiles.length; i++) {
             try {
                 List<VCard> vcardsi = vcardEngine.parseMultiple(vcardFiles[i]);
                 vcards.addAll(vcardsi);
-            }
-            catch(IOException ioe) {
-                System.err.println("Could not read vcard file: "+vcardFiles[i].getAbsolutePath());
+            } catch (IOException ioe) {
+                System.err.println("Could not read vcard file: " + vcardFiles[i].getAbsolutePath());
                 ioe.printStackTrace();
             } catch (VCardParseException e) {
                 e.printStackTrace();
@@ -67,8 +66,7 @@ public class VcfImport {
      *
      * @return {@link File}[]
      */
-    private File[] getFiles()
-    {
+    private File[] getFiles() {
         JFileChooser chooser = new JFileChooser();
         chooser.setDialogTitle("Select VCards");
         chooser.setCurrentDirectory(new File(System.getProperties().getProperty("user.home")));
@@ -87,18 +85,48 @@ public class VcfImport {
         });
 
         int result = chooser.showOpenDialog(null);
-        if(result == JFileChooser.CANCEL_OPTION) {
+        if (result == JFileChooser.CANCEL_OPTION) {
             return null;
         }
 
         try {
             File[] files = chooser.getSelectedFiles(); // get the file
             return files;
-        }
-        catch(Exception ex) {
+        } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Warning! Could not load the file(s)!", "Warning!", JOptionPane.WARNING_MESSAGE);
             return null;
         }
+    }
+
+    public VcardLibrary parseFile(File file) {
+        return parseFiles(new File[]{file});
+    }
+
+    public VcardLibrary parseFiles(File[] files) {
+        List<VCard> vcards = new ArrayList();
+        for (File file : files) {
+            vcards.addAll(parseVcards(file));
+        }
+        VcardLibrary library = new VcardLibrary();
+        for (VCard vcard : vcards) {
+            library.addVcard(vcard);
+        }
+        return library;
+    }
+
+    public List<VCard> parseVcards(File file) {
+        List<VCard> vcards = new ArrayList();
+        try {
+            List<VCard> vcardsi = vcardEngine.parseMultiple(file);
+            vcards.addAll(vcardsi);
+        } catch (IOException ioe) {
+            System.err.println("Could not read vcard file: " + file.getAbsolutePath());
+            ioe.printStackTrace();
+        } catch (VCardParseException e) {
+            e.printStackTrace();
+        }
+
+        return vcards;
     }
 
     /**
@@ -109,14 +137,14 @@ public class VcfImport {
      * @param args
      */
     public static void main(String[] args) {
-VcardLibrary library = new VcardLibrary();
+        VcardLibrary library = new VcardLibrary();
 
         VcfImport testParser = new VcfImport();
         testParser.setCompatibilityMode(CompatibilityMode.RFC2426);
         List vcards = testParser.importVCards();
         VCardWriter writer = new VCardWriter();
-        for(int i = 0; i < vcards.size(); i++) {
-            VCardImpl vcard = (VCardImpl)(vcards.get(i));
+        for (int i = 0; i < vcards.size(); i++) {
+            VCardImpl vcard = (VCardImpl) (vcards.get(i));
             library.addVcard(vcard);
             writer.setVCard(vcard);
             String vstring = null;
@@ -125,9 +153,9 @@ VcardLibrary library = new VcardLibrary();
             } catch (VCardBuildException e) {
 //                e.printStackTrace();
             }
-            if(writer.hasErrors()) {
+            if (writer.hasErrors()) {
                 List errors = vcard.getErrors();
-                for(int j = 0; j < errors.size(); j++) {
+                for (int j = 0; j < errors.size(); j++) {
 //                    System.out.println(errors.get(j));
                 }
             }

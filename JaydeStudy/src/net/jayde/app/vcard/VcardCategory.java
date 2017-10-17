@@ -1,12 +1,12 @@
 package net.jayde.app.vcard;
 
-import net.sourceforge.cardme.vcard.VCardImpl;
+import net.sourceforge.cardme.vcard.VCard;
 
 import java.util.LinkedList;
 
 public class VcardCategory {
     String CategoryName = "NULL";
-    LinkedList<VCardImpl> listVcards = new LinkedList<>();
+    LinkedList<VCard> listVcards = new LinkedList<>();
 
     public String getCategoryName() {
         return CategoryName;
@@ -16,11 +16,11 @@ public class VcardCategory {
         CategoryName = categoryName;
     }
 
-    public LinkedList<VCardImpl> getListVcards() {
+    public LinkedList<VCard> getListVcards() {
         return listVcards;
     }
 
-    public void setListVcards(LinkedList<VCardImpl> listVcards) {
+    public void setListVcards(LinkedList<VCard> listVcards) {
         this.listVcards = listVcards;
     }
 }

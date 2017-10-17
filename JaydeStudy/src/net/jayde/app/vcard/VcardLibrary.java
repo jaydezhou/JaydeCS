@@ -1,6 +1,6 @@
 package net.jayde.app.vcard;
 
-import net.sourceforge.cardme.vcard.VCardImpl;
+import net.sourceforge.cardme.vcard.VCard;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -30,7 +30,7 @@ public class VcardLibrary {
         }
     }
 
-    public void addVcard(VCardImpl vcard) {
+    public void addVcard(VCard vcard) {
         if (vcard.getCategories() == null) {
             getVcardsByKey("").getListVcards().add(vcard);
         } else {
@@ -52,7 +52,7 @@ public class VcardLibrary {
         for (String key : treeMapCategories.keySet()) {
             VcardCategory category = treeMapCategories.get(key);
             allMessage = allMessage + "CategoryName=" + key + ",count=" +category.getListVcards().size()+ "\n{";
-            for (VCardImpl vcard:category.getListVcards()){
+            for (VCard vcard:category.getListVcards()){
                 allMessage=allMessage+vcard.getFN().getFormattedName()+",";
             }
             allMessage = allMessage+"}\n";
