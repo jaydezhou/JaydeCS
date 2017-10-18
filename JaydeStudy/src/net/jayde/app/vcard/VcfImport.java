@@ -16,7 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VcfImport {
-    public static String filename = "C:\\Users\\zhouyj\\iCloudDrive\\文档集\\3.技术文档集\\3.1）个人项目\\iCloud vCard(无头像).vcf";
+//    public static String filename = "C:\\Users\\zhouyj\\iCloudDrive\\文档集\\3.技术文档集\\3.1）个人项目\\iCloud vCard(无头像).vcf";
+    public static String filename = "C:\\Users\\zhouyj\\iCloudDrive\\文档集\\3.技术文档集\\3.1）个人项目\\通讯录MAC.vcf";
     private File[] vcardFiles = null;
     private VCardEngine vcardEngine = null;
 
