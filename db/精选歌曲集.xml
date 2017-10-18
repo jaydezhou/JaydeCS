@@ -1,0 +1,50 @@
+<ROOT>
+
+<TYPE tname="中文男歌手">
+  <PERSON pname="刘德华"></PERSON>
+  <PERSON pname="张学友">
+    <SONG sname="吻别"/>
+  </PERSON>
+</TYPE>
+<TYPE tname="中文女歌手">
+  <PERSON pname="刘若英"></PERSON>
+</TYPE>
+<TYPE tname="中文组合">
+</TYPE>
+<TYPE tname="中国戏曲">
+</TYPE>
+<TYPE tname="中文其他">
+</TYPE>
+<TYPE tname="英文男歌手">
+</TYPE>
+<TYPE tname="英文女歌手">
+</TYPE>
+<TYPE tname="英文组合">
+</TYPE>
+<TYPE tname="英文其他">
+</TYPE>
+<TYPE tname="日文男歌手">
+</TYPE>
+<TYPE tname="日文女歌手">
+</TYPE>
+<TYPE tname="日文组合">
+</TYPE>
+<TYPE tname="日文其他">
+</TYPE>
+<TYPE tname="韩文男歌手">
+</TYPE>
+<TYPE tname="韩文女歌手">
+</TYPE>
+<TYPE tname="韩文组合">
+</TYPE>
+<TYPE tname="韩文其他">
+</TYPE>
+<TYPE tname="外文男歌手">
+</TYPE>
+<TYPE tname="外文女歌手">
+</TYPE>
+<TYPE tname="外文组合">
+</TYPE>
+<TYPE tname="外文其他">
+</TYPE>
+</ROOT>
