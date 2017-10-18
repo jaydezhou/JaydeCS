@@ -16,5 +16,9 @@
     <orderEntry type="library" name="h2-1.4.196" level="project" />
     <orderEntry type="library" name="ical4j" level="project" />
     <orderEntry type="library" name="apache-commons-codec" level="project" />
+    <orderEntry type="library" name="apache-commons-collections4" level="project" />
+    <orderEntry type="library" name="apache-commons-lang3" level="project" />
+    <orderEntry type="library" name="threeten" level="project" />
+    <orderEntry type="library" name="javax.mail" level="project" />
   </component>
 </module>
