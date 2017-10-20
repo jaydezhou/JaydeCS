@@ -10,7 +10,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class IcsImport {
-    public static String filename = "C:\\Program Files (x86)\\ideaIU\\IdeaProjects\\日历MAC.ics";
+    public static String filename = "d:\\IdeaProjects\\日历MAC.ics";
 
     public static void main(String[] args) throws IOException, ParserException {
         FileInputStream fin = new FileInputStream(filename);

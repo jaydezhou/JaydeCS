@@ -23,5 +23,6 @@
     <orderEntry type="library" name="apache-commons-collections4" level="project" />
     <orderEntry type="library" name="apache-commons-lang3" level="project" />
     <orderEntry type="library" name="javax.mail" level="project" />
+    <orderEntry type="library" name="commons-logging" level="project" />
   </component>
 </module>
