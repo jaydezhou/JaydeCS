@@ -1,0 +1,1529 @@
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "                                                                                                                                                                                                                                                                                                
+
+SET FOREIGN_KEY_CHECKS[*]=0 "; expected "@, AUTOCOMMIT, MVCC, EXCLUSIVE, IGNORECASE, PASSWORD, SALT, MODE, COMPRESS_LOB, DATABASE, COLLATION, BINARY_COLLATION, CLUSTER, DATABASE_EVENT_LISTENER, ALLOW_LITERALS, DEFAULT_TABLE_TYPE, CREATE, HSQLDB.DEFAULT_TABLE_TYPE, PAGE_STORE, CACHE_TYPE, FILE_LOCK, DB_CLOSE_ON_EXIT, AUTO_SERVER, AUTO_SERVER_PORT, AUTO_RECONNECT, ASSERT, ACCESS_MODE_DATA, OPEN_NEW, JMX, PAGE_SIZE, RECOVER, NAMES, SCHEMA, DATESTYLE, SEARCH_PATH, SCHEMA_SEARCH_PATH, LOGSIZE"; SQL statement:
+/*
+Navicat MySQL Data Transfer
+
+Source Server         : 111
+Source Server Version : 50617
+Source Host           : localhost:3306
+Source Database       : production_ssm
+
+Target Server Type    : MYSQL
+Target Server Version : 50617
+File Encoding         : 65001
+
+Date: 2017-04-14 20:58:04
+*/
+
+SET FOREIGN_KEY_CHECKS=0 [42001-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""CUSTOM"" (
+  ""CUSTOM_ID"" VARCHAR(40) NOT NULL,
+  ""CUSTOM_NAME"" VARCHAR(20) DEFAULT NULL,
+  ""FULL_NAME"" VARCHAR(100) DEFAULT NULL,
+  ""ADDRESS"" VARCHAR(100) DEFAULT NULL,
+  ""FAX"" VARCHAR(20) DEFAULT NULL,
+  ""EMAIL"" VARCHAR(20) DEFAULT NULL,
+  ""OWNER_NAME"" VARCHAR(20) DEFAULT NULL,
+  ""OWNER_TEL"" VARCHAR(20) DEFAULT NULL,
+  ""STATUS"" INT(11) DEFAULT NULL,
+  ""NOTE"" VARCHAR(2000) DEFAULT NULL,
+  PRIMARY KEY (""CUSTOM_ID"")
+) ENGINE=INNODB DEFAULT[*] CHARSET=UTF8 "; SQL statement:
+CREATE TABLE `custom` (
+  `custom_id` varchar(40) NOT NULL,
+  `custom_name` varchar(20) DEFAULT NULL,
+  `full_name` varchar(100) DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL,
+  `fax` varchar(20) DEFAULT NULL,
+  `email` varchar(20) DEFAULT NULL,
+  `owner_name` varchar(20) DEFAULT NULL,
+  `owner_tel` varchar(20) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `note` varchar(2000) DEFAULT NULL,
+  PRIMARY KEY (`custom_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CUSTOM" not found; SQL statement:
+-- ----------------------------
+-- Records of custom
+-- ----------------------------
+INSERT INTO `custom` VALUES ('001', '闃块噷', '闃块噷宸村反缃戠粶鎶�湳鏈夐檺鍏徃', '涓浗鏉窞', '15615616', 'alibaba@126.com', '椹簯', '1851561561', '1', '<h4>\r\n	&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"color:#E53333;\">闃块噷宸村反</span>缃戠粶鎶�湳鏈夐檺鍏徃锛堢畝绉帮細闃块噷宸村反闆嗗洟锛夋槸浠ユ浘鎷呬换鑻辫鏁欏笀鐨勯┈浜戜负棣栫殑18浜猴紝浜�999骞村湪鏉窞鍒涚珛锛屼粬浠浉淇′簰鑱旂綉鑳藉鍒涢�鍏钩鐨勭珵浜夌幆澧冿紝璁╁皬浼佷笟閫氳繃鍒涙柊涓庣鎶�墿灞曚笟鍔★紝骞跺湪鍙備笌鍥藉唴鎴栧叏鐞冨競鍦虹珵浜夋椂澶勪簬鏇存湁鍒╃殑浣嶇疆銆�br />\r\n闃块噷宸村反闆嗗洟缁忚惀澶氶」涓氬姟锛屽彟澶栦篃浠庡叧鑱斿叕鍙哥殑涓氬姟鍜屾湇鍔′腑鍙栧緱缁忚惀鍟嗕笟鐢熸�绯荤粺涓婄殑鏀彺銆備笟鍔″拰鍏宠仈鍏徃鐨勪笟鍔″寘鎷細<span style=\"color:#E53333;\">娣樺疂缃戙�澶╃尗銆佽仛鍒掔畻銆佸叏鐞冮�鍗栭�銆侀樋閲屽反宸村浗闄呬氦鏄撳競鍦恒�1688銆侀樋閲屽濡堛�闃块噷浜戙�铓傝殎閲戞湇銆佽彍楦熺綉缁�/span>绛夈�\r\n</h4>\r\n<h4>\r\n	2014骞�鏈�9鏃ワ紝闃块噷宸村反闆嗗洟鍦ㄧ航绾﹁瘉鍒镐氦鏄撴墍姝ｅ紡鎸傜墝涓婂競锛岃偂绁ㄤ唬鐮佲�BABA鈥濓紝鍒涘浜哄拰钁ｄ簨灞�富甯负椹簯銆俓r\n</h4>\r\n<h4>\r\n	2015骞村叏骞达紝闃块噷宸村反鎬昏惀鏀�43.84浜垮厓浜烘皯甯侊紝鍑�埄娑�88.44浜垮厓浜烘皯甯併�\r\n</h4>\r\n<h4>\r\n	2016骞�鏈�鏃ワ紝闃块噷宸村反姝ｅ紡瀹ｅ竷宸茬粡鎴愪负鍏ㄧ悆鏈�ぇ鐨勯浂鍞氦鏄撳钩鍙般�<br />\r\n2016骞�鏈�鏃ワ紝绗笁鏂瑰簲鐢ㄥ晢搴椻�璞岃眴鑽氣�瀹ｅ竷锛屽叾搴旂敤鍒嗗彂涓氬姟骞跺叆闃块噷宸村反绉诲姩浜嬩笟缇わ紝鍙屾柟宸叉寮忕璁㈠苟璐崗璁�<br />\r\n2016骞�鏈堬紝闃块噷宸村反闆嗗洟鍦╘"2016涓浗浼佷笟500寮篭"涓帓鍚嶇148浣嶃�\r\n</h4>') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CUSTOM" not found; SQL statement:
+INSERT INTO `custom` VALUES ('002', '缃戞槗', '鏉窞缃戞槗鍏荤尓鍏徃', '鏉窞婊ㄦ睙鍖�, '4214324', '2432432', '涓佺', '32143214', '1', '缃戞槗 (NASDAQ: NTES)鏄腑鍥介鍏堢殑浜掕仈缃戝叕鍙革紝鍒╃敤鏈�厛杩涚殑浜掕仈缃戞妧鏈紝鍔犲己浜轰笌浜轰箣闂翠俊鎭殑浜ゆ祦鍜屽叡浜紝瀹炵幇鈥滅綉鑱氫汉鐨勫姏閲忊�銆傚垱濮嬩汉鍏糃EO鏄竵纾娿�<br />\r\n鍦ㄥ紑鍙戜簰鑱旂綉搴旂敤銆佹湇鍔″強鍏跺畠鎶�湳鏂归潰锛岀綉鏄撳缁堜繚鎸佷笟鐣岀殑棰嗗厛鍦颁綅锛屽苟鍦ㄤ腑鍥戒簰鑱旂綉琛屼笟鍐呯巼鍏堟帹鍑轰簡鍖呮嫭涓枃鍏ㄦ枃妫�储銆佸叏涓枃澶у閲忓厤璐归偖浠剁郴缁熴�鏃犻檺瀹归噺鍏嶈垂缃戠粶鐩稿唽銆佸厤璐圭數瀛愯春鍗＄珯銆佺綉涓婅櫄鎷熺ぞ鍖恒�缃戜笂鎷嶅崠骞冲彴銆�4灏忔椂瀹㈡埛鏈嶅姟涓績鍦ㄥ唴鐨勪笟鍐呴鍏堜骇鍝佹垨鏈嶅姟锛岃繕閫氳繃鑷富鐮斿彂鎺ㄥ嚭浜嗕竴娆剧巼鍏堝彇寰楃櫧閲戝湴浣嶇殑鍥戒骇缃戠粶娓告垙銆俒1]&nbsp [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]BR />\R\N缃戞槗鍏徃鎺ㄥ嚭浜嗛棬鎴风綉绔欍�鍦ㄧ嚎娓告垙銆佺數瀛愰偖绠便�鍦ㄧ嚎鏁欒偛銆佺數瀛愬晢鍔°�鍦ㄧ嚎闊充箰銆佺綉鏄揵OBO绛夊绉嶆湇鍔°�<BR />');
+INSERT INTO `custom` VALUES ('003', '浜笢', '鍖椾含浜笢涓栫邯璐告槗鏈夐檺鍏徃', '涓浗鍖椾含甯傛湞闃冲尯鍖楄景瑗胯矾8鍙峰寳杈颁笘绾腑蹇傾搴�, '5001363', 'jd@126.com', '绔犳辰澶�, '1565156456', '1', '<SPAN STYLE=\""color:#333333;font-family:Helvetica, Arial, Tahoma, &quot;font-size:15px;line-height:22px;background-color:#F2F2F2;\"">浜笢JD.COM-涓撲笟鐨勭患鍚堢綉涓婅喘鐗╁晢鍩庯紝閿�敭瓒呮暟涓囧搧鐗屻�4020涓囩鍟嗗搧锛屽泭鎷鐢点�鎵嬫満銆佺數鑴戙�姣嶅┐銆佹湇瑁呯瓑13澶У搧绫汇�绉夋壙瀹㈡埛涓哄厛鐨勭悊蹇碉紝浜笢鎵�敭鍟嗗搧涓�SPAN STYLE=\""color:#E53333;\"">姝Ｅ搧琛岃揣銆佸叏鍥借仈淇濄�鏈烘墦鍙戠エ</SPAN>銆�</SPAN><SPAN></SPAN>');
+INSERT INTO `custom` VALUES ('004', '鏂版氮', '鏂版氮缃戠粶鎶�湳鑲′唤鏈夐檺鍏徃', '鍖椾含甯傚寳鍥涚幆瑗胯矾58鍙风悊鎯冲浗闄呭ぇ鍘�0灞�, '15612561', '15611561@163.com', '鏇瑰浗浼�, '15614145656', '1', '鏂版氮锛圢ASDAQ锛歋INA锛夛紝鏄竴瀹剁綉缁滃叕鍙哥殑鍚嶇О锛屾垚绔嬩簬1998骞�2鏈堬紝鏈嶅姟澶Т腑鍗庡湴鍖轰笌娴峰鍗庝汉锛屾柊娴嫢鏈夊瀹跺湴鍖烘�缃戠珯锛岄�杩囨棗涓嬩簲澶Т笟鍔′富绾夸负鐢ㄦ埛鎻愪緵缃戠粶鏈嶅姟锛岀綉涓嬬殑鍖椾含鏂版氮銆侀娓柊娴�鍙板寳鏂版氮銆佸寳缇庢柊娴瓑瑕嗙洊鍏ㄧ悆鍗庝汉绀惧尯鐨勫叏鐞冩渶澶Т腑鏂囬棬鎴风綉绔欙紝2012骞�1鏈堟柊娴敞鍐岀敤鎴峰凡绐佺牬4浜裤�<BR />\R\N鏂版氮鍏徃鏄竴瀹舵湇鍔′簬涓浗鍙婂叏鐞冨崕浜虹ぞ缇ょ殑缃戠粶濯掍綋鍏徃銆傛柊娴�杩囬棬鎴风綉绔欐柊娴綉銆佺Щ鍔ㄩ棬鎴锋墜鏈烘柊娴綉鍜岀ぞ浜ょ綉缁滄湇鍔″強寰崥瀹㈡湇鍔″井鍗氱粍鎴愮殑鏁板瓧濯掍綋缃戠粶锛屽府鍔╁箍澶Х敤鎴烽�杩囦簰鑱旂綉鍜岀Щ鍔ㄨ澶囪幏寰椾笓涓氬獟浣撳拰鐢ㄦ埛鑷敓鎴愮殑澶氬獟浣撳唴瀹癸紙UGC锛夊苟涓庡弸浜鸿繘琛屽叴瓒Ｅ垎浜�<BR />');
+INSERT INTO `custom` VALUES ('005', '缇庡洟', '鍖椾含涓夊揩鍦ㄧ嚎绉戞妧鏈夐檺鍏徃', '鍖椾含甯傛湞闃冲尯鏈涗含涓滆矾6鍙�鏈涗含鍥介檯鐮斿彂鍥笁鏈�, '15156156156', '156115115@126.com', '鐜嬪叴', '1561511151', '2', '<div class=\""para\"" style=\""font-size:14px;color:#333333;font-family:arial, 瀹嬩綋, sans-serif;background-color:#FFFFFF;\"">\r\n	鏂版氮锛圢ASDAQ锛歋INA锛夛紝鏄竴瀹剁綉缁滃叕鍙哥殑鍚嶇О锛屾垚绔嬩簬1998骞�2鏈堬紝鏈嶅姟澶т腑鍗庡湴鍖轰笌娴峰鍗庝汉锛屾柊娴嫢鏈夊瀹跺湴鍖烘�缃戠珯锛岄�杩囨棗涓嬩簲澶т笟鍔′富绾夸负鐢ㄦ埛鎻愪緵缃戠粶鏈嶅姟锛岀綉涓嬬殑鍖椾含鏂版氮銆侀娓柊娴�鍙板寳鏂版氮銆佸寳缇庢柊娴瓑瑕嗙洊鍏ㄧ悆鍗庝汉绀惧尯鐨勫叏鐞冩渶澶т腑鏂囬棬鎴风綉绔欙紝2012骞�1鏈堟柊娴敞鍐岀敤鎴峰凡绐佺牬4浜裤�<br />\r\n鏂版氮鍏徃鏄竴瀹舵湇鍔′簬涓浗鍙婂叏鐞冨崕浜虹ぞ缇ょ殑缃戠粶濯掍綋鍏徃銆傛柊娴�杩囬棬鎴风綉绔欐柊娴綉銆佺Щ鍔ㄩ棬鎴锋墜鏈烘柊娴綉鍜岀ぞ浜ょ綉缁滄湇鍔″強寰崥瀹㈡湇鍔″井鍗氱粍鎴愮殑鏁板瓧濯掍綋缃戠粶锛屽府鍔╁箍澶х敤鎴烽�杩囦簰鑱旂綉鍜岀Щ鍔ㄨ澶囪幏寰椾笓涓氬獟浣撳拰鐢ㄦ埛鑷敓鎴愮殑澶氬獟浣撳唴瀹癸紙UGC锛夊苟涓庡弸浜鸿繘琛屽叴銆婄編鍥㈢綉銆嬫槸2010骞�鏈�鏃ユ垚绔嬬殑鍥㈣喘缃戠珯銆傜編鍥㈢綉鏈夌潃鈥滅編鍥竴娆★紝缇庝竴娆♀�鐨勫浼犲彛鍙枫�涓烘秷璐硅�鍙戠幇鏈��寰椾俊璧栫殑鍟嗗锛岃娑堣垂鑰呬韩鍙楄秴浣庢姌鎵ｇ殑浼樿川鏈嶅姟锛涗负鍟嗗鎵惧埌鏈�悎閫傜殑娑堣垂鑰咃紝缁欏晢瀹舵彁渚涙渶澶ф敹鐩婄殑浜掕仈缃戞帹骞裤�<br />\r\n2014骞寸編鍥㈠叏骞翠氦鏄撻绐佺牬460浜垮厓锛岃緝鍘诲勾澧為暱180%浠ヤ笂锛屽競鍦轰唤棰濆崰姣旇秴杩�0%锛屾瘮2013骞寸殑53%澧為暱浜�涓櫨鍒嗙偣銆�br />\r\n2015骞�鏈�8鏃ワ紝缇庡洟缃慍EO鐜嬪叴琛ㄧず锛岀編鍥㈠凡缁忓畬鎴�浜跨編鍏冭瀺璧勶紝缇庡洟浼板�杈惧埌70浜跨編鍏冿紝鏈�繎涓ゅ勾涓嶈�铏戜笂甯傘�<br />\r\n2015骞�0鏈�鏃ワ紝澶т紬鐐硅瘎涓庣編鍥㈢綉瀹ｅ竷鍚堝苟锛岀編鍥EO鐜嬪叴鍜屽ぇ浼楃偣璇凜EO寮犳稕灏嗕細鍚屾椂鎷呬换鑱斿腑CEO鍜岃仈甯懀浜嬮暱銆�1鏈堬紝闃块噷纭閫�嚭缇庡洟锛岄樋閲岃吘璁疧2O姝ｅ紡寮�垬銆�br />\r\n2015骞�1鏈�0鏃ワ紝缇庡洟CEO鐜嬪叴鍙戝唴閮ㄩ偖浠惰〃绀猴紝灏嗕笉鍐嶆媴浠昏仈甯懀浜嬮暱銆俒1]&nbsp;<br />\r\n2016骞�鏈堬紝鍖椾含甯傞鑽洃灞�埄鐢ㄩ珮绉戞妧鎵嬫瀵逛簰鑱旂綉杩濇硶琛屼负杩涜鎼滅储鐩戞祴锛屼负鐩戠閮ㄩ棬鎻愪緵浜嗕竴鎵硅繚娉曠嚎绱紝鏌ュ浜嗕竴澶ф壒杩濇硶妗堜欢銆�鏈�0鏃ワ紝鍖椾含甯傞鑽洃灞�缇庡洟杩涜绔嬫璋冩煡銆�br />\r\n<br />\r\n</div>') "; SQL statement:
+<br />\r\n缃戞槗鍏徃鎺ㄥ嚭浜嗛棬鎴风綉绔欍�鍦ㄧ嚎娓告垙銆佺數瀛愰偖绠便�鍦ㄧ嚎鏁欒偛銆佺數瀛愬晢鍔°�鍦ㄧ嚎闊充箰銆佺綉鏄揵obo绛夊绉嶆湇鍔°�<br />');
+INSERT INTO `custom` VALUES ('003', '浜笢', '鍖椾含浜笢涓栫邯璐告槗鏈夐檺鍏徃', '涓浗鍖椾含甯傛湞闃冲尯鍖楄景瑗胯矾8鍙峰寳杈颁笘绾腑蹇傾搴�, '5001363', 'jd@126.com', '绔犳辰澶�, '1565156456', '1', '<span style=\"color:#333333;font-family:Helvetica, Arial, Tahoma, &quot;font-size:15px;line-height:22px;background-color:#F2F2F2;\">浜笢JD.COM-涓撲笟鐨勭患鍚堢綉涓婅喘鐗╁晢鍩庯紝閿�敭瓒呮暟涓囧搧鐗屻�4020涓囩鍟嗗搧锛屽泭鎷鐢点�鎵嬫満銆佺數鑴戙�姣嶅┐銆佹湇瑁呯瓑13澶у搧绫汇�绉夋壙瀹㈡埛涓哄厛鐨勭悊蹇碉紝浜笢鎵�敭鍟嗗搧涓�span style=\"color:#E53333;\">姝ｅ搧琛岃揣銆佸叏鍥借仈淇濄�鏈烘墦鍙戠エ</span>銆�</span><span></span>');
+INSERT INTO `custom` VALUES ('004', '鏂版氮', '鏂版氮缃戠粶鎶�湳鑲′唤鏈夐檺鍏徃', '鍖椾含甯傚寳鍥涚幆瑗胯矾58鍙风悊鎯冲浗闄呭ぇ鍘�0灞�, '15612561', '15611561@163.com', '鏇瑰浗浼�, '15614145656', '1', '鏂版氮锛圢ASDAQ锛歋INA锛夛紝鏄竴瀹剁綉缁滃叕鍙哥殑鍚嶇О锛屾垚绔嬩簬1998骞�2鏈堬紝鏈嶅姟澶т腑鍗庡湴鍖轰笌娴峰鍗庝汉锛屾柊娴嫢鏈夊瀹跺湴鍖烘�缃戠珯锛岄�杩囨棗涓嬩簲澶т笟鍔′富绾夸负鐢ㄦ埛鎻愪緵缃戠粶鏈嶅姟锛岀綉涓嬬殑鍖椾含鏂版氮銆侀娓柊娴�鍙板寳鏂版氮銆佸寳缇庢柊娴瓑瑕嗙洊鍏ㄧ悆鍗庝汉绀惧尯鐨勫叏鐞冩渶澶т腑鏂囬棬鎴风綉绔欙紝2012骞�1鏈堟柊娴敞鍐岀敤鎴峰凡绐佺牬4浜裤�<br />\r\n鏂版氮鍏徃鏄竴瀹舵湇鍔′簬涓浗鍙婂叏鐞冨崕浜虹ぞ缇ょ殑缃戠粶濯掍綋鍏徃銆傛柊娴�杩囬棬鎴风綉绔欐柊娴綉銆佺Щ鍔ㄩ棬鎴锋墜鏈烘柊娴綉鍜岀ぞ浜ょ綉缁滄湇鍔″強寰崥瀹㈡湇鍔″井鍗氱粍鎴愮殑鏁板瓧濯掍綋缃戠粶锛屽府鍔╁箍澶х敤鎴烽�杩囦簰鑱旂綉鍜岀Щ鍔ㄨ澶囪幏寰椾笓涓氬獟浣撳拰鐢ㄦ埛鑷敓鎴愮殑澶氬獟浣撳唴瀹癸紙UGC锛夊苟涓庡弸浜鸿繘琛屽叴瓒ｅ垎浜�<br />');
+INSERT INTO `custom` VALUES ('005', '缇庡洟', '鍖椾含涓夊揩鍦ㄧ嚎绉戞妧鏈夐檺鍏徃', '鍖椾含甯傛湞闃冲尯鏈涗含涓滆矾6鍙�鏈涗含鍥介檯鐮斿彂鍥笁鏈�, '15156156156', '156115115@126.com', '鐜嬪叴', '1561511151', '2', '<div class=\"para\" style=\"font-size:14px;color:#333333;font-family:arial, 瀹嬩綋, sans-serif;background-color:#FFFFFF;\">\r\n	鏂版氮锛圢ASDAQ锛歋INA锛夛紝鏄竴瀹剁綉缁滃叕鍙哥殑鍚嶇О锛屾垚绔嬩簬1998骞�2鏈堬紝鏈嶅姟澶т腑鍗庡湴鍖轰笌娴峰鍗庝汉锛屾柊娴嫢鏈夊瀹跺湴鍖烘�缃戠珯锛岄�杩囨棗涓嬩簲澶т笟鍔′富绾夸负鐢ㄦ埛鎻愪緵缃戠粶鏈嶅姟锛岀綉涓嬬殑鍖椾含鏂版氮銆侀娓柊娴�鍙板寳鏂版氮銆佸寳缇庢柊娴瓑瑕嗙洊鍏ㄧ悆鍗庝汉绀惧尯鐨勫叏鐞冩渶澶т腑鏂囬棬鎴风綉绔欙紝2012骞�1鏈堟柊娴敞鍐岀敤鎴峰凡绐佺牬4浜裤�<br />\r\n鏂版氮鍏徃鏄竴瀹舵湇鍔′簬涓浗鍙婂叏鐞冨崕浜虹ぞ缇ょ殑缃戠粶濯掍綋鍏徃銆傛柊娴�杩囬棬鎴风綉绔欐柊娴綉銆佺Щ鍔ㄩ棬鎴锋墜鏈烘柊娴綉鍜岀ぞ浜ょ綉缁滄湇鍔″強寰崥瀹㈡湇鍔″井鍗氱粍鎴愮殑鏁板瓧濯掍綋缃戠粶锛屽府鍔╁箍澶х敤鎴烽�杩囦簰鑱旂綉鍜岀Щ鍔ㄨ澶囪幏寰椾笓涓氬獟浣撳拰鐢ㄦ埛鑷敓鎴愮殑澶氬獟浣撳唴瀹癸紙UGC锛夊苟涓庡弸浜鸿繘琛屽叴銆婄編鍥㈢綉銆嬫槸2010骞�鏈�鏃ユ垚绔嬬殑鍥㈣喘缃戠珯銆傜編鍥㈢綉鏈夌潃鈥滅編鍥竴娆★紝缇庝竴娆♀�鐨勫浼犲彛鍙枫�涓烘秷璐硅�鍙戠幇鏈��寰椾俊璧栫殑鍟嗗锛岃娑堣垂鑰呬韩鍙楄秴浣庢姌鎵ｇ殑浼樿川鏈嶅姟锛涗负鍟嗗鎵惧埌鏈�悎閫傜殑娑堣垂鑰咃紝缁欏晢瀹舵彁渚涙渶澶ф敹鐩婄殑浜掕仈缃戞帹骞裤�<br />\r\n2014骞寸編鍥㈠叏骞翠氦鏄撻绐佺牬460浜垮厓锛岃緝鍘诲勾澧為暱180%浠ヤ笂锛屽競鍦轰唤棰濆崰姣旇秴杩�0%锛屾瘮2013骞寸殑53%澧為暱浜�涓櫨鍒嗙偣銆�br />\r\n2015骞�鏈�8鏃ワ紝缇庡洟缃慍EO鐜嬪叴琛ㄧず锛岀編鍥㈠凡缁忓畬鎴�浜跨編鍏冭瀺璧勶紝缇庡洟浼板�杈惧埌70浜跨編鍏冿紝鏈�繎涓ゅ勾涓嶈�铏戜笂甯傘�<br />\r\n2015骞�0鏈�鏃ワ紝澶т紬鐐硅瘎涓庣編鍥㈢綉瀹ｅ竷鍚堝苟锛岀編鍥EO鐜嬪叴鍜屽ぇ浼楃偣璇凜EO寮犳稕灏嗕細鍚屾椂鎷呬换鑱斿腑CEO鍜岃仈甯懀浜嬮暱銆�1鏈堬紝闃块噷纭閫�嚭缇庡洟锛岄樋閲岃吘璁疧2O姝ｅ紡寮�垬銆�br />\r\n2015骞�1鏈�0鏃ワ紝缇庡洟CEO鐜嬪叴鍙戝唴閮ㄩ偖浠惰〃绀猴紝灏嗕笉鍐嶆媴浠昏仈甯懀浜嬮暱銆俒1]&nbsp;<br />\r\n2016骞�鏈堬紝鍖椾含甯傞鑽洃灞�埄鐢ㄩ珮绉戞妧鎵嬫瀵逛簰鑱旂綉杩濇硶琛屼负杩涜鎼滅储鐩戞祴锛屼负鐩戠閮ㄩ棬鎻愪緵浜嗕竴鎵硅繚娉曠嚎绱紝鏌ュ浜嗕竴澶ф壒杩濇硶妗堜欢銆�鏈�0鏃ワ紝鍖椾含甯傞鑽洃灞�缇庡洟杩涜绔嬫璋冩煡銆�br />\r\n<br />\r\n</div>') [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "CUSTOM" not found; SQL statement:
+INSERT INTO `custom` VALUES ('006', '钂欑墰', '鍐呰挋鍙よ挋鐗涗钩涓氶泦鍥�, '鍛煎拰娴╃壒', '321321321', '3213321@111', '3132', '3213', '1', '31');
+INSERT INTO `custom` VALUES ('007', '鐧惧害', '鍖椾含鐧惧害鏈夐檺鍏徃', '鍖椾含娴锋穩鍖轰腑鍏虫潙杞欢鍥簩鏈熺櫨搴︾鎶�洯', '156151', '561455@baidu.com', '鏉庡溅瀹�, '1561561511', '1', '鍏ㄧ悆鏈�ぇ鐨勪腑鏂囨悳绱㈠紩鎿�);
+INSERT INTO `custom` VALUES ('1253', 'aaa', null, null, null, null, null, null, null, null);
+
+-- ----------------------------
+-- Table structure for `c_order`
+-- ----------------------------
+DROP TABLE IF EXISTS `c_order`;
+CREATE TABLE `c_order` (
+  `order_id` varchar(40) NOT NULL,
+  `custom_id` varchar(40) DEFAULT NULL,
+  `product_id` varchar(40) DEFAULT NULL,
+  `order_date` datetime DEFAULT NULL,
+  `request_date` datetime DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  `unit_price` decimal(10,2) DEFAULT NULL,
+  `unit` varchar(10) DEFAULT NULL,
+  `image` varchar(200) DEFAULT NULL,
+  `file` varchar(200) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  PRIMARY KEY (`order_id`),
+  KEY `FK_Reference_28` (`product_id`),
+  KEY `FK_Reference_5` (`custom_id`),
+  CONSTRAINT `FK_Reference_28` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_Reference_5` FOREIGN KEY (`custom_id`) REFERENCES `custom` (`custom_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of c_order
+-- ----------------------------
+INSERT INTO `c_order` VALUES ('000001', '001', '00002', '2016-09-06 10:19:16', '2016-09-26 10:19:21', '<p class=\"MsoNormal\" align=\"center\" style=\"text-align:center;\">\r\n	<b>璁㈠崟瑙勮寖鏁寸悊瑕佹眰锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	1.&nbsp [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>璁㈠崟鏀剧疆浠ヤ竴涓枃浠跺す涓轰富锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	2.&NBSP "; SQL statement:
+<b>璁㈠崟鏀剧疆浠ヤ竴涓枃浠跺す涓轰富锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	2.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>鏈笅鍗曠殑瀹㈡埛鏀惧湪<SPAN>宸﹁竟</SPAN>锛屽凡涓嬪崟瀹㈡埛鏀惧湪鍙宠竟锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	3.&NBSP "; SQL statement:
+<b>鏈笅鍗曠殑瀹㈡埛鏀惧湪<span>宸﹁竟</span>锛屽凡涓嬪崟瀹㈡埛鏀惧湪鍙宠竟锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	3.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>鏈笅鍗曞鎴疯鍗曞寘鍚紙浜ゅ畾閲戞垨浜ゅ叏娆句袱绉嶏級</B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;\"">\R\N	<B>浜ゅ畾閲戠殑浠ヨ鍗曚负鍑嗭紝浜ゅ叏棰濈殑浠ヨ川淇濆崟涓哄噯锛屽彲浠Ｇ敤璁㈠崟锛�/B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:20.5500pt;\"">\R\N	<B>澶规斁鏍囧噯锛氬鎴烽�璐Ф椂闂磋秺鏃╁す鍦ㄤ笂闈紝浠庢棭鍒版櫄锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	4.&NBSP "; SQL statement:
+<b>鏈笅鍗曞鎴疯鍗曞寘鍚紙浜ゅ畾閲戞垨浜ゅ叏娆句袱绉嶏級</b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;\">\r\n	<b>浜ゅ畾閲戠殑浠ヨ鍗曚负鍑嗭紝浜ゅ叏棰濈殑浠ヨ川淇濆崟涓哄噯锛屽彲浠ｇ敤璁㈠崟锛�/b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:20.5500pt;\">\r\n	<b>澶规斁鏍囧噯锛氬鎴烽�璐ф椂闂磋秺鏃╁す鍦ㄤ笂闈紝浠庢棭鍒版櫄锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	4.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>宸蹭笅鍗曡鍗曞寘鎷紙浜ゅ畾閲戞垨鑰呭叏棰濅袱绉嶏級鍚屾牱浠ヨ鍗曞拰璐ㄤ繚鍗曚负鍑嗭紱鍒嗛�璐Ф椂闂存棭鏅氬す鏀撅紱</B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:13.7000pt;\"">\R\N	<B>鍙﹀垎娓呭凡鍒拌揣鍜屾湭鍒拌揣璁㈠崟锛涘垎涓ゆ矒锛岀敤澶瑰瓙鍒嗗紑澶规斁锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>锛堝凡鍒拌揣娓呭崟锛氫笟鍔℃瘡娆″埌璐Т細鏈変竴浠藉埌璐Ф竻鍗曠粰闂ㄥ簵锛岄棬搴楁牴鎹笟鍔＄殑鍒拌揣娓呭崟灏嗗凡鍒拌揣鐨勫崟瀛愬彟澶栧垎寮�紱锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	5.&NBSP "; SQL statement:
+<b>宸蹭笅鍗曡鍗曞寘鎷紙浜ゅ畾閲戞垨鑰呭叏棰濅袱绉嶏級鍚屾牱浠ヨ鍗曞拰璐ㄤ繚鍗曚负鍑嗭紱鍒嗛�璐ф椂闂存棭鏅氬す鏀撅紱</b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:13.7000pt;\">\r\n	<b>鍙﹀垎娓呭凡鍒拌揣鍜屾湭鍒拌揣璁㈠崟锛涘垎涓ゆ矒锛岀敤澶瑰瓙鍒嗗紑澶规斁锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>锛堝凡鍒拌揣娓呭崟锛氫笟鍔℃瘡娆″埌璐т細鏈変竴浠藉埌璐ф竻鍗曠粰闂ㄥ簵锛岄棬搴楁牴鎹笟鍔＄殑鍒拌揣娓呭崟灏嗗凡鍒拌揣鐨勫崟瀛愬彟澶栧垎寮�紱锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	5.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>璁㈠崟濡傛湁瀹㈡埛鍋氭洿鏀癸紝蹇呴』鎶婅鍗曟洿鏀瑰崟淇濈暀涓斿拰璁㈠崟涓�捣澶规斁锛屼互鍏嶉仐澶憋紝鏂逛究涓庡悗鍙版牳瀵硅鍗曪紱濡傝嫢鏈夊鎴疯鍗曟暣鍗曞彇娑堬紝鍙︽湁鍔犲崟鎴栬�鏀瑰崟锛岄渶閲嶆柊鍋氫竴浠借喘閿�悎鍚岋紝娉ㄦ槑鍘熷崟鍋氬簾锛屼互鏈�柊鐨勯偅浠戒负鍑嗭級</B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	6.&NBSP "; SQL statement:
+<b>璁㈠崟濡傛湁瀹㈡埛鍋氭洿鏀癸紝蹇呴』鎶婅鍗曟洿鏀瑰崟淇濈暀涓斿拰璁㈠崟涓�捣澶规斁锛屼互鍏嶉仐澶憋紝鏂逛究涓庡悗鍙版牳瀵硅鍗曪紱濡傝嫢鏈夊鎴疯鍗曟暣鍗曞彇娑堬紝鍙︽湁鍔犲崟鎴栬�鏀瑰崟锛岄渶閲嶆柊鍋氫竴浠借喘閿�悎鍚岋紝娉ㄦ槑鍘熷崟鍋氬簾锛屼互鏈�柊鐨勯偅浠戒负鍑嗭級</b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	6.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>璁㈠崟纭宸查�璐Э紝涓旀棤鍞悗闂锛屾瘡鍛ㄦ暣鐞嗘挙鎺夊凡閫佽揣璁㈠崟鎴栬川淇濆崟锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>锛堝凡閫佽揣璁㈠崟锛氭瘡澶╁敭鍚庨儴缁忕悊浼氱粰鍚勯棬搴楀彂鐭俊锛岃鏄庡摢涓�簺璁㈠崟鏄凡缁忛�璐Х殑锛涢棬搴楀彲鏍规嵁鍞悗缁忕悊鎻愪緵鐨勯�璐Т俊鎭竻鐞嗚鍗曪級</B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>&NBSP "; SQL statement:
+<b>璁㈠崟纭宸查�璐э紝涓旀棤鍞悗闂锛屾瘡鍛ㄦ暣鐞嗘挙鎺夊凡閫佽揣璁㈠崟鎴栬川淇濆崟锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>锛堝凡閫佽揣璁㈠崟锛氭瘡澶╁敭鍚庨儴缁忕悊浼氱粰鍚勯棬搴楀彂鐭俊锛岃鏄庡摢涓�簺璁㈠崟鏄凡缁忛�璐х殑锛涢棬搴楀彲鏍规嵁鍞悗缁忕悊鎻愪緵鐨勯�璐т俊鎭竻鐞嗚鍗曪級</b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]/B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>&NBSP "; SQL statement:
+</b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]/B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>&NBSP "; SQL statement:
+</b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]/B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>&NBSP "; SQL statement:
+</b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]/B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:20.3000pt;\"">\R\N	<B>鍚勯棬搴楀簵鍛樺繀椤荤啛鐭ュ悇搴楃殑璁㈠崟锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	1.&NBSP "; SQL statement:
+</b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:20.3000pt;\">\r\n	<b>鍚勯棬搴楀簵鍛樺繀椤荤啛鐭ュ悇搴楃殑璁㈠崟锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	1.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B><SPAN>褰撳浜鸿嚧鐢甸棬搴楁煡璇㈣鍗曟椂锛岄棬搴楀悇搴楀憳蹇呴』鍦�/SPAN>3-5<SPAN>绉掍箣绫绘壘鍒板搴旂殑璁㈠崟锛�/SPAN></B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	2.&NBSP "; SQL statement:
+<b><span>褰撳浜鸿嚧鐢甸棬搴楁煡璇㈣鍗曟椂锛岄棬搴楀悇搴楀憳蹇呴』鍦�/span>3-5<span>绉掍箣绫绘壘鍒板搴旂殑璁㈠崟锛�/span></b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	2.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>瑕佺煡閬撳浜虹殑浠樻淇℃伅锛屽鏈夋棤浜ゅ畾閲戯紝鍏ㄩ浠樻绛夛紱</B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	3.&NBSP "; SQL statement:
+<b>瑕佺煡閬撳浜虹殑浠樻淇℃伅锛屽鏈夋棤浜ゅ畾閲戯紝鍏ㄩ浠樻绛夛紱</b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	3.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>瀹㈡埛濮撳悕銆佽仈绯绘柟寮忋�鍦板潃锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	4.&NBSP "; SQL statement:
+<b>瀹㈡埛濮撳悕銆佽仈绯绘柟寮忋�鍦板潃锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	4.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>鍚堝悓缂栧彿</B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	5.&NBSP "; SQL statement:
+<b>鍚堝悓缂栧彿</b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	5.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>璁㈠崟鏄惁宸茬粡涓嬪崟锛岃揣鏄惁宸插埌锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	6.&NBSP "; SQL statement:
+<b>璁㈠崟鏄惁宸茬粡涓嬪崟锛岃揣鏄惁宸插埌锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	6.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>璁㈠崟鐨勬暣鍗曢噾棰濅负澶氬皯锛岄浠樺灏戯紝鍓╀綑澶氬皯锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	7.&NBSP "; SQL statement:
+<b>璁㈠崟鐨勬暣鍗曢噾棰濅负澶氬皯锛岄浠樺灏戯紝鍓╀綑澶氬皯锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	7.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>璁㈣揣鐨勮缁嗗唴瀹癸紝棰滆壊锛屾暟閲忕瓑锛�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:18.0000pt;text-indent:-18.0000pt;\"">\R\N	8.&NBSP "; SQL statement:
+<b>璁㈣揣鐨勮缁嗗唴瀹癸紝棰滆壊锛屾暟閲忕瓑锛�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:18.0000pt;text-indent:-18.0000pt;\">\r\n	8.&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]B>鏈粯娆剧殑瀹汉锛岄渶瑕佹彁鍓嶄笁澶╅�鐭ュ浜哄墠鏉ヤ粯浣欐鍚庯紝鏂瑰彲閫佽揣锛�/B><B></B> \R\N</P>', '222', '24.00', '缇庡厓', '/PIC/1482503381808161.JPG,', '/FILE/璁㈠崟瑕佹眰鏍囧噯(1).DOC', '4');
+INSERT INTO `c_order` VALUES ('00000111', '002', '00002', '2016-12-22 00:00:00', '2016-12-22 00:00:00', '<H1>\R\N	GFEAG<SPAN STYLE=\""color:#E53333;\"">ERAERA</SPAN> \R\N</H1>', '54', '54.00', '54', null, '/FILE/璁㈠崟瑕佹眰鏍囧噯.DOC', '2');
+INSERT INTO `c_order` VALUES ('000002', '002', '00005', '2016-09-06 10:19:43', '2016-09-26 10:19:46', '<P CLASS=\""MsoNormal\"" ALIGN=\""center\"" STYLE=\""text-align:center;\"">\R\N	<B>浜У搧璁㈠崟瀹炴柦鐨勬搷浣滆姹�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" ALIGN=\""center\"" STYLE=\""text-align:center;\"">\R\N	<B>&NBSP "; SQL statement:
+<b>鏈粯娆剧殑瀹汉锛岄渶瑕佹彁鍓嶄笁澶╅�鐭ュ浜哄墠鏉ヤ粯浣欐鍚庯紝鏂瑰彲閫佽揣锛�/b><b></b> \r\n</p>', '222', '24.00', '缇庡厓', '/pic/1482503381808161.jpg,', '/file/璁㈠崟瑕佹眰鏍囧噯(1).doc', '4');
+INSERT INTO `c_order` VALUES ('00000111', '002', '00002', '2016-12-22 00:00:00', '2016-12-22 00:00:00', '<h1>\r\n	gfeag<span style=\"color:#E53333;\">eraera</span> \r\n</h1>', '54', '54.00', '54', null, '/file/璁㈠崟瑕佹眰鏍囧噯.doc', '2');
+INSERT INTO `c_order` VALUES ('000002', '002', '00005', '2016-09-06 10:19:43', '2016-09-26 10:19:46', '<p class=\"MsoNormal\" align=\"center\" style=\"text-align:center;\">\r\n	<b>浜у搧璁㈠崟瀹炴柦鐨勬搷浣滆姹�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\" align=\"center\" style=\"text-align:center;\">\r\n	<b>&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]/B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>涓��璁㈠崟瀹氫箟</B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>1</SPAN>銆佷笟鍔★紙瀹㈡埛锛夎鍗�SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>2</SPAN>銆佸叕鍙搁珮灞傛寚浠や骇鍝佺敓浜Т换鍔�SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>3</SPAN>銆佽惀閿�姹傜殑鏂颁骇鍝佸紑鍙戜换鍔�SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	浠ヤ笂涓夌璁㈠崟娓犻亾瑕佽浆鍖栦负鈥滃伐鍘傝鍗曗�锛堝嵆鍘熻鍗曠殑閮ㄥ垎淇℃伅鍦ㄦ鍒犳帀鎴栫畝鍖栦簡锛�SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>4</SPAN>銆佸叾瀹冪敓浜Т换鍔′负閮ㄩ棬鑷富鐢熶骇浠诲姟鍗曪紙椤荤粡鎬荤粡鐞嗘壒鍑嗗悗鎵嶈兘瀹夋帓璁″垝锛�SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>浜屻�宸ュ巶璁㈠崟鐨勬潯浠�/B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>1</SPAN>銆佷换浣曟儏鍐典笅鐨勮鍗曢兘瑕佹湁涔﹂潰鏂囦欢锛屽嚒鏄互鍙Ｅご涓嬭揪璁㈠崟鐨勪竴寰嬩笉浜堟帴鍙椼�<SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>2</SPAN>銆佽鍗曚功闈㈡枃浠剁殑鍐呭濡備笅<SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	锛�SPAN>1</SPAN>锛変骇鍝佸悕绉帮紱锛�SPAN>2</SPAN>锛夋暟閲忥紝锛�SPAN>3</SPAN>锛変氦璐Ф椂闂达紝锛�SPAN>4XXX</SPAN>锛夊鎴锋垨闇�眰鍘诲悜锛涳紙<SPAN>5</SPAN>锛夋潗璐紱锛�SPAN>6</SPAN>锛夊搧璐ㄨ姹傦紱锛�SPAN>7</SPAN>锛夋妧鏈拰宸ヨ壓鏉′欢鍙婅姹傦紱锛�SPAN>8</SPAN>锛夋敞鎰忎簨椤规垨閲嶈璇存槑<SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>3</SPAN>銆佽鍗曞唴瀹归』涓嬭揪璁㈠崟鐨勮矗浠讳汉濉啓鍦ㄥ崟涓婏紝濡傛灉娌℃湁濉啓鎴栧～鍐欓敊璇敱涓嬪崟浜烘垨浠Ｇ悊濉啓浜鸿礋璐�SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<B>涓夈�璁㈠崟鐧昏</B><B></B> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>1</SPAN>銆佽鍗曠粺涓�氦璺熷崟鍛樼櫥璁版湁鏁堬紙鍖呮嫭鐢佃瘽璁㈠崟鐨勬帴鍚拰璁板綍鍗曞湪鍐咃級<SPAN></SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	<SPAN>2</SPAN>銆佽窡鍗曞憳浜ゅ凡鐧昏鐨勮鍗曠粰<SPAN>PMC</SPAN>璐Ｄ换浜猴紙鍗崇敓浜Х鎺Х殑璁″垝浜猴級\R\N</P>', '32', '32.00', '鍏�, '/pic/1475828588950644.jpg', '/file/浜у搧璐攢鍚堝悓2(1).docx', '3') "; SQL statement:
+</b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>涓��璁㈠崟瀹氫箟</b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>1</span>銆佷笟鍔★紙瀹㈡埛锛夎鍗�span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>2</span>銆佸叕鍙搁珮灞傛寚浠や骇鍝佺敓浜т换鍔�span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>3</span>銆佽惀閿�姹傜殑鏂颁骇鍝佸紑鍙戜换鍔�span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	浠ヤ笂涓夌璁㈠崟娓犻亾瑕佽浆鍖栦负鈥滃伐鍘傝鍗曗�锛堝嵆鍘熻鍗曠殑閮ㄥ垎淇℃伅鍦ㄦ鍒犳帀鎴栫畝鍖栦簡锛�span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>4</span>銆佸叾瀹冪敓浜т换鍔′负閮ㄩ棬鑷富鐢熶骇浠诲姟鍗曪紙椤荤粡鎬荤粡鐞嗘壒鍑嗗悗鎵嶈兘瀹夋帓璁″垝锛�span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>浜屻�宸ュ巶璁㈠崟鐨勬潯浠�/b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>1</span>銆佷换浣曟儏鍐典笅鐨勮鍗曢兘瑕佹湁涔﹂潰鏂囦欢锛屽嚒鏄互鍙ｅご涓嬭揪璁㈠崟鐨勪竴寰嬩笉浜堟帴鍙椼�<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>2</span>銆佽鍗曚功闈㈡枃浠剁殑鍐呭濡備笅<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	锛�span>1</span>锛変骇鍝佸悕绉帮紱锛�span>2</span>锛夋暟閲忥紝锛�span>3</span>锛変氦璐ф椂闂达紝锛�span>4XXX</span>锛夊鎴锋垨闇�眰鍘诲悜锛涳紙<span>5</span>锛夋潗璐紱锛�span>6</span>锛夊搧璐ㄨ姹傦紱锛�span>7</span>锛夋妧鏈拰宸ヨ壓鏉′欢鍙婅姹傦紱锛�span>8</span>锛夋敞鎰忎簨椤规垨閲嶈璇存槑<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>3</span>銆佽鍗曞唴瀹归』涓嬭揪璁㈠崟鐨勮矗浠讳汉濉啓鍦ㄥ崟涓婏紝濡傛灉娌℃湁濉啓鎴栧～鍐欓敊璇敱涓嬪崟浜烘垨浠ｇ悊濉啓浜鸿礋璐�span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<b>涓夈�璁㈠崟鐧昏</b><b></b> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>1</span>銆佽鍗曠粺涓�氦璺熷崟鍛樼櫥璁版湁鏁堬紙鍖呮嫭鐢佃瘽璁㈠崟鐨勬帴鍚拰璁板綍鍗曞湪鍐咃級<span></span> \r\n</p>\r\n<p class=\"MsoNormal\">\r\n	<span>2</span>銆佽窡鍗曞憳浜ゅ凡鐧昏鐨勮鍗曠粰<span>PMC</span>璐ｄ换浜猴紙鍗崇敓浜х鎺х殑璁″垝浜猴級\r\n</p>', '32', '32.00', '鍏�, '/pic/1475828588950644.jpg', '/file/浜у搧璐攢鍚堝悓2(1).docx', '3') [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "C_ORDER" not found; SQL statement:
+INSERT INTO `c_order` VALUES ('000003', '003', '00003', '2016-09-13 10:00:00', '2016-09-30 17:00:00', '<strong><span style=\"font-size:16px;\">璁㈠崟瑕佸湪30鏃ヤ箣鍓嶅畬鎴愶紝瀹屾垚鍚庨�璐ц嚦璇ュ叕鍙稿湴鍧��</span></strong>', '121', '3313.00', '鍏�, '/pic/1482200618621182.jpg,', '/file/浜у搧闇�眰鏂囨。PRD.pdf', '2');
+INSERT INTO `c_order` VALUES ('000006', '003', '00004', '2016-12-01 00:00:00', '2016-12-01 00:00:00', '鍙戝彂鍙戝槑鍢�', '132', '12.00', '鍏�, null, '/file/璐攢鍚堝悓 - 鍓湰 (2).doc', '1') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "C_ORDER" not found; SQL statement:
+INSERT INTO `c_order` VALUES ('000009', '002', '00001', '2016-09-28 00:00:00', '2016-09-28 00:00:00', '<h2>\r\n	<span style=\"color:#E53333;\">璇ヨ鍗曡鍦�1鏈�鍙蜂箣鍓嶅畬鎴�/span> \r\n</h2>', '111', '888.00', '鍏�, '/pic/1477451298442216.jpg', '/file/浜у搧璐攢鍚堝悓2.docx,/file/璐攢鍚堝悓 - 鍓湰 (2).doc', '1');
+INSERT INTO `c_order` VALUES ('000010', '001', '00005', '2016-09-28 00:00:00', '2016-09-28 00:00:00', 'ffaf', '11', '11.00', '鍏�, '/pic/1477451098214311.jpg', '/file/璐攢鍚堝悓.doc,/file/浜у搧娓呭崟.xlsx', '1') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "C_ORDER" not found; SQL statement:
+INSERT INTO `c_order` VALUES ('000013', '002', '00004', '2016-12-20 00:00:00', '2016-12-20 00:00:00', null, null, null, '鍏�, '/pic/1482199096212082.jpg,', null, '1');
+INSERT INTO `c_order` VALUES ('000014', '001', '00004', '2016-12-04 00:00:00', '2016-12-04 00:00:00', '璁㈠崟瑕佹寜璐ㄦ寜閲忓畬鎴愶紒', '20', '9.00', '鍏�, '/pic/1482503531511671.jpg,', '/file/璐攢鍚堝悓(1)(1).doc', '1') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "C_ORDER" not found; SQL statement:
+INSERT INTO `c_order` VALUES ('000015', '002', '00005', '2016-12-03 00:00:00', '2016-12-03 00:00:00', '璁㈠崟瑕佹寜璐ㄦ寜閲忓畬鎴�, '15', '20.00', '鍏�, '/pic/1482503420364321.jpg,/pic/1482503420441752.jpg,', '/file/璐攢鍚堝悓(1).doc', '1') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "C_ORDER" not found; SQL statement:
+INSERT INTO `c_order` VALUES ('000075', '001', '00003', '2016-12-24 00:00:00', '2016-12-24 00:00:00', '<span style=\"font-size:16px;font-family:SimHei;color:#E53333;\">璇ヨ鍗曡鍦�strong><em><u>12鏈�1鍙�/u></em></strong>涔嬪墠瀹屾垚锛�/span>', '150', '3500.00', '鍏�, '/pic/1482550690746043.jpg,/pic/1482550690868341.jpg,/pic/1482550690928873.jpg,', '/file/浜у搧璐攢鍚堝悓(1).docx,/file/浜у搧璐攢鍚堝悓(2).docx', '1');
+
+-- ----------------------------
+-- Table structure for `department`
+-- ----------------------------
+DROP TABLE IF EXISTS `department`;
+CREATE TABLE `department` (
+  `department_id` varchar(40) NOT NULL,
+  `department_name` varchar(100) DEFAULT NULL,
+  `note` varchar(2000) DEFAULT NULL,
+  PRIMARY KEY (`department_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of department
+-- ----------------------------
+INSERT INTO `department` VALUES ('001', '椤圭洰閮�, '璐熻矗鎺ユ唇椤圭洰锛屽苟璐熻矗椤圭洰杩涘害鎺у埗銆佷汉鍛橀厤缃皟搴︿笌椋庨櫓绠℃帶') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DEPARTMENT" not found; SQL statement:
+INSERT INTO `department` VALUES ('002', '鐢熶骇閮�, '璐熻矗鍒跺畾鐢熶骇璁″垝锛屽苟缁勭粐鐢熶骇銆�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DEPARTMENT" not found; SQL statement:
+INSERT INTO `department` VALUES ('003', '鐗╂枡閮�, '璐熻矗鐗╂枡鏀舵敮涓庤皟閰嶃�');
+INSERT INTO `department` VALUES ('004', '璐㈠姟閮�, '璐熻矗鍏徃璐㈠姟杩愪綔銆�);
+INSERT INTO `department` VALUES ('005', '浜哄姏閮�, '璐熻矗鍏徃浜轰簨銆�);
+INSERT INTO `department` VALUES ('006', '鐗╂祦閮�, '<span style=\"font-size:14px;\">璐熻矗鍏徃鐗╂祦璋冮厤銆�/span>') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DEPARTMENT" not found; SQL statement:
+INSERT INTO `department` VALUES ('007', '绀间华閮�, '璐熻矗鍓嶅彴鎺ュ緟鍙婁細鍔＄ぜ浠�');
+
+-- ----------------------------
+-- Table structure for `device`
+-- ----------------------------
+DROP TABLE IF EXISTS `device`;
+CREATE TABLE `device` (
+  `device_id` varchar(40) NOT NULL,
+  `device_name` varchar(100) DEFAULT NULL,
+  `device_type_id` varchar(40) DEFAULT NULL,
+  `device_status_id` varchar(40) DEFAULT NULL,
+  `device_status` varchar(100) DEFAULT NULL,
+  `device_purchase_date` datetime DEFAULT NULL,
+  `device_purchase_price` decimal(10,2) DEFAULT NULL,
+  `device_manufacture_date` datetime DEFAULT NULL,
+  `device_service_life` datetime DEFAULT NULL,
+  `device_keeper_id` varchar(40) DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`device_id`),
+  KEY `FK_Reference_18` (`device_type_id`),
+  CONSTRAINT `FK_Reference_18` FOREIGN KEY (`device_type_id`) REFERENCES `device_type` (`device_type_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of device
+-- ----------------------------
+INSERT INTO `device` VALUES ('001', '鐒婃帴璁惧', '01', '1', '鑹ソ', '2016-08-09 08:08:01', '99.99', '2016-09-09 09:09:01', '2021-09-09 09:09:01', '002', '<span style=\"font-size:14px;\">鐘舵�鑹ソ.</span>');
+INSERT INTO `device` VALUES ('002', '鍐插帇璁惧', '01', '2', '鑹ソ', '2016-08-08 08:08:01', '99.99', '2016-09-09 09:09:02', '2021-09-09 09:09:02', '001', '<p>\r\n	This is good.\r\n</p>');
+INSERT INTO `device` VALUES ('003', '绌鸿皟', '02', '2', '鏁呴殰', '2016-08-08 08:08:03', '99.97', '2016-09-09 09:09:03', '2021-09-09 09:09:03', '001', 'This is good.');
+INSERT INTO `device` VALUES ('004', '鍐烽鏈�, '02', '2', '鏁呴殰', '2016-08-08 08:08:03', '99.97', '2016-09-09 09:09:04', '2021-09-09 09:09:04', '001', 'This is good.') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DEVICE" not found; SQL statement:
+INSERT INTO `device` VALUES ('005', '鍙夎溅', '03', '3', '缁翠慨', '2016-08-08 08:08:05', '99.95', '2016-09-09 09:09:05', '2021-09-09 09:09:05', '001', 'This is good.') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DEVICE" not found; SQL statement:
+INSERT INTO `device` VALUES ('006', '鏈烘鑷�, '03', '3', '缁翠慨', '2016-08-08 08:08:05', '99.95', '2016-09-09 09:09:06', '2021-09-09 09:09:06', '002', 'This is good.');
+
+-- ----------------------------
+-- Table structure for `device_check`
+-- ----------------------------
+DROP TABLE IF EXISTS `device_check`;
+CREATE TABLE `device_check` (
+  `device_check_id` varchar(40) NOT NULL,
+  `device_id` varchar(40) DEFAULT NULL,
+  `device_check_emp_id` varchar(40) DEFAULT NULL,
+  `device_check_date` datetime DEFAULT NULL,
+  `device_check_result` varchar(5000) DEFAULT NULL,
+  `device_check_fault_id` varchar(40) DEFAULT NULL,
+  PRIMARY KEY (`device_check_id`),
+  KEY `FK_Reference_20` (`device_id`),
+  CONSTRAINT `FK_Reference_20` FOREIGN KEY (`device_id`) REFERENCES `device` (`device_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of device_check
+-- ----------------------------
+INSERT INTO `device_check` VALUES ('001', '001', '002', '2016-07-20 08:08:08', 'Ok銆�, '鏃�);
+INSERT INTO `device_check` VALUES ('002', '002', '001', '2018-08-08 08:08:08', 'Ok', '002');
+INSERT INTO `device_check` VALUES ('003', '003', '001', '2018-08-08 08:08:08', 'Ok', '003');
+INSERT INTO `device_check` VALUES ('004', '004', '001', '2018-08-08 08:08:08', 'Ok', '004');
+INSERT INTO `device_check` VALUES ('005', '005', '001', '2018-08-08 08:08:08', 'Ok', '006');
+INSERT INTO `device_check` VALUES ('006', '006', '', '2018-08-08 08:08:08', 'Ok', '005');
+INSERT INTO `device_check` VALUES ('321', '001', '001', '2016-12-21 11:05:20', '鐘舵�鑹ソ', '321');
+INSERT INTO `device_check` VALUES ('424', '001', '002', '2016-12-22 00:00:00', '4325435gdg', '4324');
+
+-- ----------------------------
+-- Table structure for `device_fault`
+-- ----------------------------
+DROP TABLE IF EXISTS `device_fault`;
+CREATE TABLE `device_fault` (
+  `device_fault_id` varchar(40) NOT NULL,
+  `device_id` varchar(40) DEFAULT NULL,
+  `device_fault_cause` varchar(100) DEFAULT NULL,
+  `device_fault_detail` varchar(5000) DEFAULT NULL,
+  `device_fault_date` datetime DEFAULT NULL,
+  `device_fault_maintenance` varchar(500) DEFAULT NULL,
+  PRIMARY KEY (`device_fault_id`),
+  KEY `FK_Reference_21` (`device_id`),
+  CONSTRAINT `FK_Reference_21` FOREIGN KEY (`device_id`) REFERENCES `device` (`device_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of device_fault
+-- ----------------------------
+INSERT INTO `device_fault` VALUES ('001', '001', '鍙伴', '鍝煎摷鍝堝樋.', '2016-10-01 08:08:08', '浜哄伐');
+INSERT INTO `device_fault` VALUES ('002', '002', '鍙伴', '鍝煎摷鍝堝樋', '2016-10-06 08:08:08', '浜哄伐');
+INSERT INTO `device_fault` VALUES ('003', '003', '鍙伴', '鍝煎摷鍝堝樋', '2016-10-01 08:08:08', '浜哄伐');
+INSERT INTO `device_fault` VALUES ('004', '004', '鍙伴', '鍝煎摷鍝堝樋', '2016-10-01 08:08:08', '浜哄伐');
+INSERT INTO `device_fault` VALUES ('005', '005', '鍙伴', '鍝煎摷鍝堝樋', '2016-10-01 08:08:08', '浜哄伐');
+INSERT INTO `device_fault` VALUES ('006', '006', '鍙伴', '鍝煎摷鍝堝樋', '2016-10-01 08:08:08', '浜哄伐');
+
+-- ----------------------------
+-- Table structure for `device_maintain`
+-- ----------------------------
+DROP TABLE IF EXISTS `device_maintain`;
+CREATE TABLE `device_maintain` (
+  `device_maintain_id` varchar(40) NOT NULL,
+  `device_fault_id` varchar(40) DEFAULT NULL,
+  `device_maintain_emp_id` varchar(10) DEFAULT NULL,
+  `device_maintain_date` datetime DEFAULT NULL,
+  `device_maintain_result` varchar(100) DEFAULT NULL,
+  `device_maintain_cost` decimal(10,2) DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`device_maintain_id`),
+  KEY `FK_Reference_22` (`device_fault_id`),
+  CONSTRAINT `FK_Reference_22` FOREIGN KEY (`device_fault_id`) REFERENCES `device_fault` (`device_fault_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of device_maintain
+-- ----------------------------
+INSERT INTO `device_maintain` VALUES ('001', '001', '001', '2016-10-07 08:08:08', '缁翠慨鎴愬姛', '88.88', '璐圭敤宸茬粨娓呫�');
+INSERT INTO `device_maintain` VALUES ('002', '002', '001', '2016-10-07 08:08:08', '缁翠慨鎴愬姛', '88.88', 'K.O.');
+INSERT INTO `device_maintain` VALUES ('003', '003', '002', '2016-10-07 08:08:08', '缁翠慨鎴愬姛', '88.88', 'K.O.');
+INSERT INTO `device_maintain` VALUES ('004', '004', '001', '2016-10-07 08:08:08', '缁翠慨鎴愬姛', '88.88', 'K.O.');
+INSERT INTO `device_maintain` VALUES ('005', '005', '002', '2016-10-07 08:08:08', '缁翠慨鎴愬姛', '88.88', 'K.O.');
+
+-- ----------------------------
+-- Table structure for `device_type`
+-- ----------------------------
+DROP TABLE IF EXISTS `device_type`;
+CREATE TABLE `device_type` (
+  `device_type_id` varchar(40) NOT NULL,
+  `device_type_name` varchar(100) DEFAULT NULL,
+  `device_type_model` varchar(200) DEFAULT NULL,
+  `device_type_spec` varchar(200) DEFAULT NULL,
+  `device_type_supplier` varchar(100) DEFAULT NULL,
+  `device_type_producer` varchar(100) DEFAULT NULL,
+  `device_type_quantity` int(11) DEFAULT NULL,
+  `device_type_warranty` datetime DEFAULT NULL,
+  PRIMARY KEY (`device_type_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of device_type
+-- ----------------------------
+INSERT INTO `device_type` VALUES ('01', '鍔犲伐璁惧', '涓�, 'A', '绂忓缓鐧炬柉鐗硅锤鏄撴湁闄愬叕鍙�, '绂忓缓姘歌緣鏈烘鏈夐檺鍏徃', '11', '2018-08-08 08:08:08');
+INSERT INTO `device_type` VALUES ('02', '鍐锋殩璁惧', '涓�, 'B', '鐝犳捣鏍煎姏鏈夐檺鍏徃', '鐝犳捣鏍煎姏鏈夐檺鍏徃', '12', '2018-08-08 08:08:08') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DEVICE_TYPE" not found; SQL statement:
+INSERT INTO `device_type` VALUES ('03', '浼犻�璁惧', '灏�, 'C', '绂忓缓姘歌緣鏈烘鏈夐檺鍏徃', '绂忓缓姘歌緣鏈烘鏈夐檺鍏徃', '13', '2018-08-08 08:08:08');
+INSERT INTO `device_type` VALUES ('04', '娓呮礂璁惧', '澶�, 'D', '绂忓缓鐧炬柉鐗硅锤鏄撴湁闄愬叕鍙�, '绂忓缓姘歌緣鏈烘鏈夐檺鍏徃', '14', '2018-08-08 08:08:08');
+INSERT INTO `device_type` VALUES ('05', '鎵撶（璁惧', '涓�, 'E', '鍘﹂棬澶╁痉璁惧鏈夐檺鍏徃', '鍘﹂棬娴风璁惧鏈夐檺鍏徃', '15', '2018-08-08 08:08:08') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DEVICE_TYPE" not found; SQL statement:
+INSERT INTO `device_type` VALUES ('06', '鍐插帇璁惧', '澶�, 'A', '鍘﹂棬澶╁痉璁惧鍏徃', '婀栧崡涓変竴閲嶅伐', '20', '2016-12-24 11:58:46');
+
+-- ----------------------------
+-- Table structure for `employee`
+-- ----------------------------
+DROP TABLE IF EXISTS `employee`;
+CREATE TABLE `employee` (
+  `emp_id` varchar(40) NOT NULL,
+  `emp_name` varchar(40) DEFAULT NULL,
+  `sex` char(1) DEFAULT NULL,
+  `id_code` varchar(20) DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `join_date` date DEFAULT NULL,
+  `status` varchar(20) DEFAULT NULL,
+  `education` varchar(20) DEFAULT NULL,
+  `degree` varchar(20) DEFAULT NULL,
+  `major` varchar(40) DEFAULT NULL,
+  `graduate_school` varchar(40) DEFAULT NULL,
+  `education_form` varchar(40) DEFAULT NULL,
+  `department_id` varchar(40) DEFAULT NULL,
+  PRIMARY KEY (`emp_id`),
+  KEY `FK_Reference_30` (`department_id`),
+  CONSTRAINT `FK_Reference_30` FOREIGN KEY (`department_id`) REFERENCES `department` (`department_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of employee
+-- ----------------------------
+INSERT INTO `employee` VALUES ('001', '鐜嬫', '1', '350321xxxxxxxxxxxx', null, null, '鍦ㄨ亴', '鏈', '瀛﹀＋', '璁＄畻鏈�, null, '鍏ㄦ棩鍒�, '002');
+INSERT INTO `employee` VALUES ('002', '寮犱笁', '2', '152346842123458618', '1970-01-01', '1970-01-01', '鍦ㄨ亴', '澶т笓', '鏃�, '杞欢宸ョ▼', null, '鍏ㄦ棩鍒�, '005');
+INSERT INTO `employee` VALUES ('003', '鍒橀珮鍗�, '1', '156423547861546872', null, null, '鍦ㄨ亴', '澶т笓', '鏃�, '浜哄姏璧勬簮', null, '鍏ㄦ棩鍒�, '001') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "EMPLOYEE" not found; SQL statement:
+INSERT INTO `employee` VALUES ('005', '鍒樹害鑿�, '2', '156432486625615156', null, null, '鍦ㄨ亴', '鏈', '瀛﹀＋', '褰綋绀间华', null, '鍦ㄨ亴', '007');
+
+-- ----------------------------
+-- Table structure for `final_count_check`
+-- ----------------------------
+DROP TABLE IF EXISTS `final_count_check`;
+CREATE TABLE `final_count_check` (
+  `f_count_check_id` varchar(40) NOT NULL,
+  `order_id` varchar(40) DEFAULT NULL,
+  `check_item` varchar(40) DEFAULT NULL,
+  `sample` int(11) DEFAULT NULL,
+  `check_number` int(11) DEFAULT NULL,
+  `unqualify` int(11) DEFAULT NULL,
+  `qualify` decimal(3,2) DEFAULT NULL,
+  `cdate` datetime DEFAULT NULL,
+  `measure_data` varchar(2000) DEFAULT NULL,
+  `emp_id` varchar(40) DEFAULT NULL,
+  `result` varchar(2000) DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`f_count_check_id`),
+  KEY `FK_Reference_25` (`order_id`),
+  CONSTRAINT `FK_Reference_25` FOREIGN KEY (`order_id`) REFERENCES `c_order` (`order_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of final_count_check
+-- ----------------------------
+INSERT INTO `final_count_check` VALUES ('20156', '000006', '骞虫暣搴�, '3', '3', '6', '0.89', '2015-05-13 00:00:00', '6', '001', '鑹�, '闂杈冨锛岄渶瑕侀噸瀹�');
+INSERT INTO `final_count_check` VALUES ('33398', '000003', '閫忓厜搴�, '3', '3', '6', '0.89', '2015-05-13 00:00:00', '6', '001', '鑹�, '闂杈冨锛岄渶瑕侀噸瀹�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "FINAL_COUNT_CHECK" not found; SQL statement:
+INSERT INTO `final_count_check` VALUES ('33521', '000006', '閲嶉噺', '3', '3', '6', '0.89', '2015-05-13 00:00:00', '6', '001', '鑹�, '闂杈冨锛岄渶瑕侀噸瀹�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "FINAL_COUNT_CHECK" not found; SQL statement:
+INSERT INTO `final_count_check` VALUES ('33789', '000003', '鑹插樊', '3', '3', '6', '0.89', '2015-05-13 00:00:00', '6', '001', '鑹�, '闂杈冨锛岄渶瑕侀噸瀹�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "FINAL_COUNT_CHECK" not found; SQL statement:
+INSERT INTO `final_count_check` VALUES ('89658', '000006', '澶у皬', '3', '3', '6', '0.89', '2015-05-13 00:00:00', '6', '001', '鑹�, '闂杈冨锛岄渶瑕侀噸瀹�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "FK_REFERENCE_27"; SQL statement:
+CREATE TABLE `final_measuret_check` (
+  `f_measure_check_id` varchar(40) NOT NULL,
+  `order_id` varchar(40) DEFAULT NULL,
+  `check_item` varchar(40) DEFAULT NULL,
+  `cdate` datetime DEFAULT NULL,
+  `measure_data` varchar(2000) DEFAULT NULL,
+  `emp_id` varchar(40) DEFAULT NULL,
+  `result` varchar(2000) DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`f_measure_check_id`),
+  KEY `FK_Reference_27` (`order_id`),
+  CONSTRAINT `FK_Reference_27` FOREIGN KEY (`order_id`) REFERENCES `c_order` (`order_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [50004-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3689)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3552)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5270)
+	at org.h2.command.Parser.parseCreate(Parser.java:3841)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:425)
+	at org.h2.engine.Session.prepareCommand(Session.java:374)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:167)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:155)
+	at sun.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.onseven.dbvis.g.B.B.ā(Z:104)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "FINAL_MEASURET_CHECK" not found; SQL statement:
+-- ----------------------------
+-- Records of final_measuret_check
+-- ----------------------------
+INSERT INTO `final_measuret_check` VALUES ('11022', '000006', '鏉愭枡', '2015-05-13 00:00:00', '36m', '001', '浼�, '鍚堟牸鐜囬珮锛屽仛宸ョ簿鑷碼');
+INSERT INTO `final_measuret_check` VALUES ('11069', '000009', '宸ュ叿', '2015-05-13 00:00:00', '36m', '001', '浼�, '鍚堟牸鐜囬珮锛屽仛宸ョ簿鑷�);
+INSERT INTO `final_measuret_check` VALUES ('11079', '000006', '宸ュ叿', '2015-05-13 00:00:00', '36m', '001', '浼�, '鍚堟牸鐜囬珮锛屽仛宸ョ簿鑷�);
+INSERT INTO `final_measuret_check` VALUES ('11749', '000015', '璧勬枡', '2015-05-13 00:00:00', '36m', '001', '浼�, '鍚堟牸鐜囬珮锛屽仛宸ョ簿鑷�);
+INSERT INTO `final_measuret_check` VALUES ('18969', '000013', '鏂囧叿', '2015-05-13 00:00:00', '36m', '001', '浼�, '鍚堟牸鐜囬珮锛屽仛宸ョ簿鑷�);
+INSERT INTO `final_measuret_check` VALUES ('19519', '000002', '宸ュ叿', '2015-05-13 00:00:00', '36m', '001', '浼�, '鍚堟牸鐜囬珮锛屽仛宸ョ簿鑷�);
+
+-- ----------------------------
+-- Table structure for `manufacture`
+-- ----------------------------
+DROP TABLE IF EXISTS `manufacture`;
+CREATE TABLE `manufacture` (
+  `manufacture_sn` varchar(40) NOT NULL,
+  `order_id` varchar(40) DEFAULT NULL,
+  `technology_id` varchar(40) DEFAULT NULL,
+  `launch_quantity` int(11) DEFAULT NULL,
+  `begin_date` datetime DEFAULT NULL,
+  `end_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`manufacture_sn`),
+  KEY `FK_Reference_26` (`order_id`),
+  KEY `FK_Reference_9` (`technology_id`),
+  CONSTRAINT `FK_Reference_26` FOREIGN KEY (`order_id`) REFERENCES `c_order` (`order_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_Reference_9` FOREIGN KEY (`technology_id`) REFERENCES `technology` (`technology_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of manufacture
+-- ----------------------------
+INSERT INTO `manufacture` VALUES ('0001', '000002', '001', '15', '2016-10-27 09:23:01', '2016-10-28 09:23:05');
+INSERT INTO `manufacture` VALUES ('0002', '000003', '002', '213', '2016-12-17 00:00:00', '2016-12-17 00:00:00');
+INSERT INTO `manufacture` VALUES ('0003', '000002', '002', '31', '2016-12-17 00:00:00', '2016-12-17 00:00:00');
+INSERT INTO `manufacture` VALUES ('0004', '000001', '001', '213', null, null);
+INSERT INTO `manufacture` VALUES ('0007', '000003', '002', '143', '2016-12-21 00:00:00', '2016-12-21 00:00:00');
+
+-- ----------------------------
+-- Table structure for `material`
+-- ----------------------------
+DROP TABLE IF EXISTS `material`;
+CREATE TABLE `material` (
+  `material_id` varchar(40) NOT NULL,
+  `material_type` varchar(100) DEFAULT NULL,
+  `status` varchar(100) DEFAULT NULL,
+  `remaining` int(11) DEFAULT NULL,
+  `note` varchar(2000) DEFAULT NULL,
+  PRIMARY KEY (`material_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of material
+-- ----------------------------
+INSERT INTO `material` VALUES ('BZ3004985112', '鍖呰绫�, '姝ｅ父', '50', '鐢ㄤ簬淇濇姢<em></em>鍜屾寚瀵间骇鍝佷娇鐢ㄧ殑鐗╁搧銆�);
+INSERT INTO `material` VALUES ('FJ9810053211', '闄勪欢绫�, '鍏呰冻', '35', '璧峰埌闄勫睘浣滅敤骞跺叿鏈夌嫭绔嬩娇鐢ㄥ姛鑳界殑鍏冧欢') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL" not found; SQL statement:
+INSERT INTO `material` VALUES ('FM3003745734', '杈呮枡绫�, '姝ｅ父', '2', '鐢ㄤ簬鐢熶骇鍙婂懆杞殑浣庡�杈呭姪鏉愭枡');
+INSERT INTO `material` VALUES ('GM3587100823', '杩囨护浠�, '姝ｅ父', '5', '璧峰埌杩囨护浣滅敤鐨勯浂閮ㄤ欢') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL" not found; SQL statement:
+INSERT INTO `material` VALUES ('RJ10033214-80', '杞兌浠�, '鐭己', '-12', '鐢ㄤ簬缁勮涓绘満鍙婇檮浠剁殑涓旂敤杞川鏉愭枡');
+INSERT INTO `material` VALUES ('SJ0011212178', '濉戣兌浠�, '鍏呰冻', '41', '鐢ㄤ簬缁勮涓绘満鍜岄檮浠跺強鍚庣画鍔犲伐鐢ㄧ殑娉ㄥ浠�);
+INSERT INTO `material` VALUES ('WJ3002123490', '浜旈噾浠�, '姝ｅ父', '3', '鐢ㄤ簬缁勮涓绘満鍜岄檮浠跺強鍚庡簭鍔犲伐鐢ㄧ殑鍗曚釜閲戝睘浠�);
+INSERT INTO `material` VALUES ('ZJ1006435620', '鏉備欢绫�, '鐭己', '-10', '鐢ㄤ簬缁勮涓绘満鍙婇檮浠剁殑鐢ㄦ贩鏉傛潗鏂欏姞宸ユ垚鐨勫厓浠�);
+
+-- ----------------------------
+-- Table structure for `material_consume`
+-- ----------------------------
+DROP TABLE IF EXISTS `material_consume`;
+CREATE TABLE `material_consume` (
+  `consume_id` varchar(40) NOT NULL,
+  `work_id` varchar(40) DEFAULT NULL,
+  `material_id` varchar(40) DEFAULT NULL,
+  `consume_amount` int(11) DEFAULT NULL,
+  `consume_date` datetime DEFAULT NULL,
+  `sender` varchar(40) DEFAULT NULL,
+  `receiver` varchar(40) DEFAULT NULL,
+  `note` varchar(2000) DEFAULT NULL,
+  PRIMARY KEY (`consume_id`),
+  KEY `FK_Reference_16` (`material_id`),
+  KEY `FK_Reference_33` (`work_id`),
+  CONSTRAINT `FK_Reference_16` FOREIGN KEY (`material_id`) REFERENCES `material` (`material_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_Reference_33` FOREIGN KEY (`work_id`) REFERENCES `work` (`work_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of material_consume
+-- ----------------------------
+INSERT INTO `material_consume` VALUES ('A1187899', '001', 'WJ3002123490', '312', '2016-12-03 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '杩涘彛鍘熸枡銆�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL_CONSUME" not found; SQL statement:
+INSERT INTO `material_consume` VALUES ('A1561810', '001', 'GM3587100823', '450', '2016-11-13 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '杩涘彛鐭跨煶') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL_CONSUME" not found; SQL statement:
+INSERT INTO `material_consume` VALUES ('A1562771', '001', 'FM3003745734', '25', '2016-09-13 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '杩涘彛鐭跨煶') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL_CONSUME" not found; SQL statement:
+INSERT INTO `material_consume` VALUES ('A1620202', '001', 'WJ3002123490', '31', '2016-09-12 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '鐓ょ偔鐒︾偔') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL_CONSUME" not found; SQL statement:
+INSERT INTO `material_consume` VALUES ('A1880923', '001', 'ZJ1006435620', '45', '2016-08-15 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '涓嶉攬閽㈠師鏂�);
+
+-- ----------------------------
+-- Table structure for `material_receive`
+-- ----------------------------
+DROP TABLE IF EXISTS `material_receive`;
+CREATE TABLE `material_receive` (
+  `receive_id` varchar(40) NOT NULL,
+  `material_id` varchar(40) DEFAULT NULL,
+  `amount` int(11) DEFAULT NULL,
+  `receive_date` datetime DEFAULT NULL,
+  `sender` varchar(100) DEFAULT NULL,
+  `receiver` varchar(40) DEFAULT NULL,
+  `note` varchar(2000) DEFAULT NULL,
+  PRIMARY KEY (`receive_id`),
+  KEY `FK_Reference_15` (`material_id`),
+  CONSTRAINT `FK_Reference_15` FOREIGN KEY (`material_id`) REFERENCES `material` (`material_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of material_receive
+-- ----------------------------
+INSERT INTO `material_receive` VALUES ('B1087893', 'RJ10033214-80', '21', '2016-12-20 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '绮夌熆3.67銆�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL_RECEIVE" not found; SQL statement:
+INSERT INTO `material_receive` VALUES ('B108897', 'RJ10033214-80', '12', '2016-12-03 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '杩涘彛鍘熸枡4.12') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL_RECEIVE" not found; SQL statement:
+INSERT INTO `material_receive` VALUES ('B12979001', 'FM3003745734', '51', '2016-12-03 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '绾噣搴熼摐5.12') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL_RECEIVE" not found; SQL statement:
+INSERT INTO `material_receive` VALUES ('B13048855', 'SJ0011212178', '71', '2016-12-03 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '杩涘彛鍘熸枡1.34') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MATERIAL_RECEIVE" not found; SQL statement:
+INSERT INTO `material_receive` VALUES ('B13409145', 'RJ10033214-80', '12', '2016-12-03 00:00:00', '榻愰瞾閽㈤搧鍏徃', '鏈濋槼閽㈤搧鍏徃', '杩涘彛鍘熸枡2.12') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "FK_REFERENCE_32"; SQL statement:
+CREATE TABLE `process` (
+  `process_id` varchar(40) NOT NULL,
+  `technology_plan_id` varchar(40) DEFAULT NULL,
+  `sequence` int(11) DEFAULT NULL,
+  `quota` int(11) DEFAULT NULL,
+  PRIMARY KEY (`process_id`),
+  KEY `FK_Reference_32` (`technology_plan_id`),
+  CONSTRAINT `FK_Reference_32` FOREIGN KEY (`technology_plan_id`) REFERENCES `technology_plan` (`technology_plan_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [50004-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3689)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3552)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5270)
+	at org.h2.command.Parser.parseCreate(Parser.java:3841)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:425)
+	at org.h2.engine.Session.prepareCommand(Session.java:374)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:167)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:155)
+	at sun.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.onseven.dbvis.g.B.B.ā(Z:104)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS" not found; SQL statement:
+-- ----------------------------
+-- Records of process
+-- ----------------------------
+INSERT INTO `process` VALUES ('01', '001', '5', '3232') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS" not found; SQL statement:
+INSERT INTO `process` VALUES ('02', '001', '2', '2') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS" not found; SQL statement:
+INSERT INTO `process` VALUES ('03', '002', '4', '8') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "FK_REFERENCE_24"; SQL statement:
+CREATE TABLE `process_count_check` (
+  `p_count_check_id` varchar(40) NOT NULL,
+  `process_id` varchar(40) DEFAULT NULL,
+  `check_item` varchar(40) DEFAULT NULL,
+  `sample` int(11) DEFAULT NULL,
+  `check_number` int(11) DEFAULT NULL,
+  `unqualify` int(11) DEFAULT NULL,
+  `qualify` decimal(3,2) DEFAULT NULL,
+  `cdate` datetime DEFAULT NULL,
+  `measure_data` varchar(2000) DEFAULT NULL,
+  `emp_id` varchar(40) DEFAULT NULL,
+  `result` varchar(2000) DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`p_count_check_id`),
+  KEY `FK_Reference_24` (`process_id`),
+  CONSTRAINT `FK_Reference_24` FOREIGN KEY (`process_id`) REFERENCES `process` (`process_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [50004-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3689)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3552)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5270)
+	at org.h2.command.Parser.parseCreate(Parser.java:3841)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:425)
+	at org.h2.engine.Session.prepareCommand(Session.java:374)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:167)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:155)
+	at sun.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.onseven.dbvis.g.B.B.ā(Z:104)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS_COUNT_CHECK" not found; SQL statement:
+-- ----------------------------
+-- Records of process_count_check
+-- ----------------------------
+INSERT INTO `process_count_check` VALUES ('33124', '03', '鐢电伅', '6', '4', '8', '0.88', '2015-05-13 00:00:00', '12', '001', '浼樼', '浜у搧璐ㄩ噺杩囧叧锛屽琛ㄧ編瑙�);
+INSERT INTO `process_count_check` VALUES ('36124', '03', '鐢佃瘽鏈�, '6', '4', '8', '0.88', '2015-05-13 00:00:00', '12', '003', '浼樼', '浜у搧璐ㄩ噺杩囧叧锛屽琛ㄧ編瑙�);
+INSERT INTO `process_count_check` VALUES ('36174', '03', '鍖呰', '6', '4', '8', '0.88', '2015-05-13 00:00:00', '12', '001', '浼樼', '浜у搧璐ㄩ噺杩囧叧锛屽琛ㄧ編瑙�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS_COUNT_CHECK" not found; SQL statement:
+INSERT INTO `process_count_check` VALUES ('36744', '03', '鐢佃瘽鏈�, '6', '4', '8', '0.88', '2015-05-13 00:00:00', '12', '001', '浼樼', '浜у搧璐ㄩ噺杩囧叧锛屽琛ㄧ編瑙�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS_COUNT_CHECK" not found; SQL statement:
+INSERT INTO `process_count_check` VALUES ('36784', '03', '鐢佃瘽鏈�, '6', '4', '8', '0.88', '2015-05-13 00:00:00', '12', '001', '浼樼', '浜у搧璐ㄩ噺杩囧叧锛屽琛ㄧ編瑙�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "FK_REFERENCE_23"; SQL statement:
+CREATE TABLE `process_measure_check` (
+  `p_measure_check_id` varchar(40) NOT NULL,
+  `process_id` varchar(40) DEFAULT NULL,
+  `check_item` varchar(40) DEFAULT NULL,
+  `cdate` datetime DEFAULT NULL,
+  `measure_data` varchar(2000) DEFAULT NULL,
+  `emp_id` varchar(40) DEFAULT NULL,
+  `result` varchar(2000) DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`p_measure_check_id`),
+  KEY `FK_Reference_23` (`process_id`),
+  CONSTRAINT `FK_Reference_23` FOREIGN KEY (`process_id`) REFERENCES `process` (`process_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [50004-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3689)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3552)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5270)
+	at org.h2.command.Parser.parseCreate(Parser.java:3841)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:425)
+	at org.h2.engine.Session.prepareCommand(Session.java:374)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:167)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:155)
+	at sun.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.onseven.dbvis.g.B.B.ā(Z:104)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS_MEASURE_CHECK" not found; SQL statement:
+-- ----------------------------
+-- Records of process_measure_check
+-- ----------------------------
+INSERT INTO `process_measure_check` VALUES ('025', '02', '鑰楁椂', '2016-12-24 00:00:00', '15h', '002', '鑹�, '鑰楁椂鑹ソ銆�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS_MEASURE_CHECK" not found; SQL statement:
+INSERT INTO `process_measure_check` VALUES ('73689', '03', '鑰楁椂', '2015-05-13 00:00:00', '37浠�, '002', '寤舵椂', '宸ュ簭澶嶆潅锛岃�鏃�');
+INSERT INTO `process_measure_check` VALUES ('79619', '03', '浜у搧鍚堟牸鐜�, '2015-05-13 00:00:00', '37浠�, '001', '寤舵椂', '宸ュ簭澶嶆潅锛岃�鏃�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PROCESS_MEASURE_CHECK" not found; SQL statement:
+INSERT INTO `process_measure_check` VALUES ('79689', '03', '宸ヤ汉宸ユ椂', '2015-05-13 00:00:00', '37浠�, '003', '寤舵椂', '宸ュ簭澶嶆潅锛岃�鏃�) [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""PRODUCT"" (
+  ""PRODUCT_ID"" VARCHAR(40) NOT NULL,
+  ""PRODUCT_NAME"" VARCHAR(100) DEFAULT NULL,
+  ""PRODUCT_TYPE"" VARCHAR(100) DEFAULT NULL,
+  ""IMAGE"" VARCHAR(200) DEFAULT NULL,
+  ""NOTE"" VARCHAR(5000) DEFAULT NULL,
+  ""STATUS"" INT(11) DEFAULT NULL,
+  PRIMARY KEY (""PRODUCT_ID"")
+) ENGINE=INNODB DEFAULT[*] CHARSET=UTF8 "; SQL statement:
+CREATE TABLE `product` (
+  `product_id` varchar(40) NOT NULL,
+  `product_name` varchar(100) DEFAULT NULL,
+  `product_type` varchar(100) DEFAULT NULL,
+  `image` varchar(200) DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  PRIMARY KEY (`product_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" not found; SQL statement:
+-- ----------------------------
+-- Records of product
+-- ----------------------------
+INSERT INTO `product` VALUES ('00001', '鎶曞奖鏈�, '鐢靛瓙璁惧', '/pic/1482320293986747.png,', '<p class=\"MsoNormal\" style=\"text-indent:24.0000pt;\">\r\n	鎶曞奖鏈�nbsp [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<P CLASS=\""MsoNormal\"" ALIGN=\""center\"" STYLE=\""text-indent:24.0000pt;text-align:center;\"">\R\N	&NBSP "; SQL statement:
+\r\n</p>\r\n<p class=\"MsoNormal\" align=\"center\" style=\"text-indent:24.0000pt;text-align:center;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	<SPAN>鍩烘湰瑙勬牸</SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鎶曞奖鏈虹被鍨�涓绘祦宸ョ▼鍨媆R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鎶曞奖鎶�湳	DLP\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鎶�湳瑙勬牸	0.7 (瀵硅绾� DLP 4:3\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鎶曞奖鏂瑰紡 <SPAN>姝Ｆ姇</SPAN>+鑳屾姇+妗岄潰+鍚婃姇\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鏍囧噯鍒嗚鲸鐜�1024<SPAN>脳</SPAN><SPAN>768</SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	瀵规瘮搴�2000:1\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	<SPAN>鍏夊鎸囨爣</SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	浜害	6000娴佹槑\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鍧囧寑搴�90%\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	闀滃ご鐒﹁窛 <SPAN>鍙樼劍闀滃ご</SPAN> (1.8-2.4:1)銆� = 1.7-2.0, F = 25.6-33.8 姣背\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鎶曞奖璺濈	16.77M鑹瞈R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	褰卞儚灏哄	50-600鑻卞\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	姊舰鏍℃ <SPAN>姊舰鏍℃</SPAN> 卤<SPAN>30</SPAN><SPAN>掳</SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鍥惧儚姣斾緥	4:3\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	姘村钩鎵弿棰戠巼	15-91KHZ\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鍨傜洿鎵弿棰戠巼	50-85HZ\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	<SPAN>淇″彿鎺ュ彛</SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	杈撳嚭鎺ュ彛	RS-232C 杈撳嚭 D-SUB 9-PIN锛堝叕锛�閬ユ帶1 杈撳嚭 M3 澶瑰\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	杈撳叆鎺ュ彛	VIDEO杈撳叆 BNC锛孲-VIDEO 杈撳叆 MINI DIN 4-PIN锛孯GB1/YPBPR杈撳叆 BNC<SPAN>脳</SPAN><SPAN>5锛孯GB2 杈撳叆 D-SUB HD 15-PIN锛孌VI-D 杈撳叆 24PIN DVI 1.0 COMPLIANT, HDCP 鍏煎锛岀敤浜庡崟涓�摼鎺ワ紝RS-232C 杈撳叆 D-SUB 9-PIN锛堟瘝锛夛紝閬ユ帶1 杈撳叆 M3 澶瑰锛岄仴鎺� 杈撳叆 D-SUB 9-PIN(姣� (骞惰) "; SQL statement:
+\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	<span>鍩烘湰瑙勬牸</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鎶曞奖鏈虹被鍨�涓绘祦宸ョ▼鍨媆r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鎶曞奖鎶�湳	DLP\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鎶�湳瑙勬牸	0.7 (瀵硅绾� DLP 4:3\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鎶曞奖鏂瑰紡 <span>姝ｆ姇</span>+鑳屾姇+妗岄潰+鍚婃姇\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鏍囧噯鍒嗚鲸鐜�1024<span>脳</span><span>768</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	瀵规瘮搴�2000:1\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	<span>鍏夊鎸囨爣</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	浜害	6000娴佹槑\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鍧囧寑搴�90%\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	闀滃ご鐒﹁窛 <span>鍙樼劍闀滃ご</span> (1.8-2.4:1)銆� = 1.7-2.0, f = 25.6-33.8 姣背\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鎶曞奖璺濈	16.77M鑹瞈r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	褰卞儚灏哄	50-600鑻卞\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	姊舰鏍℃ <span>姊舰鏍℃</span> 卤<span>30</span><span>掳</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鍥惧儚姣斾緥	4:3\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	姘村钩鎵弿棰戠巼	15-91kHz\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鍨傜洿鎵弿棰戠巼	50-85Hz\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	<span>淇″彿鎺ュ彛</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	杈撳嚭鎺ュ彛	RS-232C 杈撳嚭 D-sub 9-pin锛堝叕锛�閬ユ帶1 杈撳嚭 M3 澶瑰\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	杈撳叆鎺ュ彛	VIDEO杈撳叆 BNC锛孲-VIDEO 杈撳叆 Mini DIN 4-pin锛孯GB1/YPBPR杈撳叆 BNC<span>脳</span><span>5锛孯GB2 杈撳叆 D-sub HD 15-pin锛孌VI-D 杈撳叆 24pin DVI 1.0 compliant, HDCP 鍏煎锛岀敤浜庡崟涓�摼鎺ワ紝RS-232C 杈撳叆 D-sub 9-pin锛堟瘝锛夛紝閬ユ帶1 杈撳叆 M3 澶瑰锛岄仴鎺� 杈撳叆 D-sub 9-pin(姣� (骞惰) [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]/SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	<SPAN>鐢垫皵鎸囨爣</SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鐏场鍔熺巼	275W UHM<SPAN>脳</SPAN><SPAN>2</SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鐏场瀵垮懡	3000灏忔椂\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	宸ヤ綔鐢垫簮	220-240 V AC, 50/60 HZ\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	鍔熻�	750W(790 VA) (寰呮満妯″紡涓嬩负15W,椋庢墖鍋滅敤)\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	<SPAN>澶栬鍙傛暟</SPAN> \R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	閲嶉噺	13.9KG\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24pt;\"">\R\N	澶栧舰灏哄	530<SPAN>脳</SPAN><SPAN>429</SPAN><SPAN>脳</SPAN><SPAN>167MM銆�/SPAN>\R\N</P>\R\N<P CLASS=\""MsoNormal\"">\R\N	&NBSP "; SQL statement:
+</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	<span>鐢垫皵鎸囨爣</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鐏场鍔熺巼	275W UHM<span>脳</span><span>2</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鐏场瀵垮懡	3000灏忔椂\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	宸ヤ綔鐢垫簮	220-240 V AC, 50/60 Hz\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	鍔熻�	750W(790 VA) (寰呮満妯″紡涓嬩负15W,椋庢墖鍋滅敤)\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	<span>澶栬鍙傛暟</span> \r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	閲嶉噺	13.9kg\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24pt;\">\r\n	澶栧舰灏哄	530<span>脳</span><span>429</span><span>脳</span><span>167mm銆�/span>\r\n</p>\r\n<p class=\"MsoNormal\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>', '2');
+INSERT INTO `product` VALUES ('00002', '澹佹寕闊崇', '鐢靛瓙璁惧', '/PIC/1482319916209646.PNG,', '<H3 STYLE=\""text-indent:24.0000pt;\"">\R\N	<SPAN>澹佹寕闊崇</SPAN> EAW SMS4锛歕R\N</H3>\R\N<P CLASS=\""MsoNormal\"" ALIGN=\""center\"" STYLE=\""text-indent:24.0000pt;text-align:center;\"">\R\N	&NBSP "; SQL statement:
+\r\n</p>', '2');
+INSERT INTO `product` VALUES ('00002', '澹佹寕闊崇', '鐢靛瓙璁惧', '/pic/1482319916209646.png,', '<h3 style=\"text-indent:24.0000pt;\">\r\n	<span>澹佹寕闊崇</span> EAW SMS4锛歕r\n</h3>\r\n<p class=\"MsoNormal\" align=\"center\" style=\"text-indent:24.0000pt;text-align:center;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:36pt;text-indent:24pt;\"">\R\N	鈥�NBSP "; SQL statement:
+\r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:36pt;text-indent:24pt;\">\r\n	鈥�nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "130[*]MM 楂樻晥鐜囦綆棰戝崟鍏僜R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:36pt;text-indent:24pt;\"">\R\N	鈥�NBSP "; SQL statement:
+130mm 楂樻晥鐜囦綆棰戝崟鍏僜r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:36pt;text-indent:24pt;\">\r\n	鈥�nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "0.5[*]鈥崇悆椤堕珮闊� 鎭掑畾鎸囧悜鍙疯璐熻浇\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:36pt;text-indent:24pt;\"">\R\N	鈥�NBSP "; SQL statement:
+0.5鈥崇悆椤堕珮闊� 鎭掑畾鎸囧悜鍙疯璐熻浇\r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:36pt;text-indent:24pt;\">\r\n	鈥�nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "鍐呯疆澶氭娊澶村畾鍘嬪彉鍘嬪櫒[*]\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:36pt;text-indent:24pt;\"">\R\N	鈥�NBSP "; SQL statement:
+鍐呯疆澶氭娊澶村畾鍘嬪彉鍘嬪櫒\r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:36pt;text-indent:24pt;\">\r\n	鈥�nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "鍐呯疆浣庨樆鎶楀垎棰戝櫒[*]\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:36pt;text-indent:24pt;\"">\R\N	鈥�NBSP "; SQL statement:
+鍐呯疆浣庨樆鎶楀垎棰戝櫒\r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:36pt;text-indent:24pt;\">\r\n	鈥�nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "閲嶉噺杞汇[*]�鑰愬悇绉嶆皵鍊欑殑楂樺瘑搴﹁仛鑻箼鐑浣擄紝閫傚悎澶氱鐢ㄩ�锛屽叿鏈夐殣钄芥�\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:36pt;text-indent:24pt;\"">\R\N	鈥�NBSP "; SQL statement:
+閲嶉噺杞汇�鑰愬悇绉嶆皵鍊欑殑楂樺瘑搴﹁仛鑻箼鐑浣擄紝閫傚悎澶氱鐢ㄩ�锛屽叿鏈夐殣钄芥�\r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:36pt;text-indent:24pt;\">\r\n	鈥�nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "绠变綋鍏锋湁瀹夎[*]鐐癸紝閰嶆湁瀹夎鏀灦锛屾槗浜庡畨瑁匼R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:36pt;text-indent:24pt;\"">\R\N	鈥�NBSP "; SQL statement:
+绠变綋鍏锋湁瀹夎鐐癸紝閰嶆湁瀹夎鏀灦锛屾槗浜庡畨瑁匼r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:36pt;text-indent:24pt;\">\r\n	鈥�nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "榛戠櫧涓ょ[*]棰滆壊鍙緵閫夋嫨\R\N</P>', '2');
+INSERT INTO `product` VALUES ('00003', '鐢佃剳', '鐢靛瓙璁惧', '/PIC/1482321862758014.PNG,/PIC/1482320425582171.PNG,', '<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24.0000pt;\"">\R\N	<BR />\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:24.0000pt;\"">\R\N	<SPAN> \R\N	<TABLE CLASS=\""tm-tableAttr\"" STYLE=\""margin:0px 0px 10px;padding:0px;border:1px solid #E5E5E5;width:789px;color:#404040;font-family:tahoma, arial, 寰蒋闆呴粦, sans-serif;font-size:12px;background-color:#FFFFFF;\"">\R\N		<TBODY>\R\N			<TR CLASS=\""tm-tableAttrSub\"">\R\N				<TH COLSPAN=\""2\"" STYLE=\""text-align:left;background-color:#F7F7F7;\"">\R\N					鍏朵粬灞炴�\R\N				</TH>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					鍙板紡鏈虹被鍨媆R\N				</TH>\R\N				<TD>\R\N					&NBSP "; SQL statement:
+榛戠櫧涓ょ棰滆壊鍙緵閫夋嫨\r\n</p>', '2');
+INSERT INTO `product` VALUES ('00003', '鐢佃剳', '鐢靛瓙璁惧', '/pic/1482321862758014.png,/pic/1482320425582171.png,', '<p class=\"MsoNormal\" style=\"text-indent:24.0000pt;\">\r\n	<br />\r\n</p>\r\n<p class=\"MsoNormal\" style=\"text-indent:24.0000pt;\">\r\n	<span> \r\n	<table class=\"tm-tableAttr\" style=\"margin:0px 0px 10px;padding:0px;border:1px solid #E5E5E5;width:789px;color:#404040;font-family:tahoma, arial, 寰蒋闆呴粦, sans-serif;font-size:12px;background-color:#FFFFFF;\">\r\n		<tbody>\r\n			<tr class=\"tm-tableAttrSub\">\r\n				<th colspan=\"2\" style=\"text-align:left;background-color:#F7F7F7;\">\r\n					鍏朵粬灞炴�\r\n				</th>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					鍙板紡鏈虹被鍨媆r\n				</th>\r\n				<td>\r\n					&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "鍟嗙敤鐢佃剳[*]\R\N				</TD>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					鍞悗鏈嶅姟\R\N				</TH>\R\N				<TD>\R\N					&NBSP "; SQL statement:
+鍟嗙敤鐢佃剳\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					鍞悗鏈嶅姟\r\n				</th>\r\n				<td>\r\n					&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "鍏ㄥ浗鑱斾繚[*]\R\N				</TD>\R\N			</TR>\R\N			<TR CLASS=\""tm-tableAttrSub\"">\R\N				<TH COLSPAN=\""2\"" STYLE=\""text-align:left;background-color:#F7F7F7;\"">\R\N					瀛樺偍\R\N				</TH>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					鍐呭瓨瀹归噺\R\N				</TH>\R\N				<TD>\R\N					&NBSP "; SQL statement:
+鍏ㄥ浗鑱斾繚\r\n				</td>\r\n			</tr>\r\n			<tr class=\"tm-tableAttrSub\">\r\n				<th colspan=\"2\" style=\"text-align:left;background-color:#F7F7F7;\">\r\n					瀛樺偍\r\n				</th>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					鍐呭瓨瀹归噺\r\n				</th>\r\n				<td>\r\n					&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "4[*]GB\R\N				</TD>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					纭洏瀹归噺\R\N				</TH>\R\N				<TD>\R\N					&NBSP "; SQL statement:
+4GB\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					纭洏瀹归噺\r\n				</th>\r\n				<td>\r\n					&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "鍏朵粬[*]/OTHER\R\N				</TD>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					鏄惧瓨瀹归噺\R\N				</TH>\R\N				<TD>\R\N					&NBSP "; SQL statement:
+鍏朵粬/other\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					鏄惧瓨瀹归噺\r\n				</th>\r\n				<td>\r\n					&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "鍏变韩绯荤粺鍐呭瓨[*]\R\N				</TD>\R\N			</TR>\R\N			<TR CLASS=\""tm-tableAttrSub\"">\R\N				<TH COLSPAN=\""2\"" STYLE=\""text-align:left;background-color:#F7F7F7;\"">\R\N					鍩烘湰鍙傛暟\R\N				</TH>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					鍝佺墝\R\N				</TH>\R\N				<TD>\R\N					&NBSP "; SQL statement:
+鍏变韩绯荤粺鍐呭瓨\r\n				</td>\r\n			</tr>\r\n			<tr class=\"tm-tableAttrSub\">\r\n				<th colspan=\"2\" style=\"text-align:left;background-color:#F7F7F7;\">\r\n					鍩烘湰鍙傛暟\r\n				</th>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					鍝佺墝\r\n				</th>\r\n				<td>\r\n					&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "DELL[*]/鎴村皵\R\N				</TD>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					绯诲垪\R\N				</TH>\R\N				<TD>\R\N					&NBSP "; expected "DELETE, DROP, DECLARE, DEALLOCATE, {"; SQL statement:
+Dell/鎴村皵\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					绯诲垪\r\n				</th>\r\n				<td>\r\n					&nbsp [42001-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "3653[*]-12N8+21.5\R\N				</TD>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					鏄惧崱绫诲瀷\R\N				</TH>\R\N				<TD>\R\N					&NBSP "; SQL statement:
+3653-12N8+21.5\r\n				</td>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					鏄惧崱绫诲瀷\r\n				</th>\r\n				<td>\r\n					&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "闆嗘垚鏄惧崱[*]\R\N				</TD>\R\N			</TR>\R\N			<TR CLASS=\""tm-tableAttrSub\"">\R\N				<TH COLSPAN=\""2\"" STYLE=\""text-align:left;background-color:#F7F7F7;\"">\R\N					鏄剧ず\R\N				</TH>\R\N			</TR>\R\N			<TR>\R\N				<TH STYLE=\""color:#999999;font-weight:400;text-align:right;\"">\R\N					鏄剧ず鍣ㄧ被鍨媆R\N				</TH>\R\N				<TD>\R\N					&NBSP "; SQL statement:
+闆嗘垚鏄惧崱\r\n				</td>\r\n			</tr>\r\n			<tr class=\"tm-tableAttrSub\">\r\n				<th colspan=\"2\" style=\"text-align:left;background-color:#F7F7F7;\">\r\n					鏄剧ず\r\n				</th>\r\n			</tr>\r\n			<tr>\r\n				<th style=\"color:#999999;font-weight:400;text-align:right;\">\r\n					鏄剧ず鍣ㄧ被鍨媆r\n				</th>\r\n				<td>\r\n					&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "LCD娑叉櫠[*]-瀹藉睆\R\N				</TD>\R\N			</TR>\R\N		</TBODY>\R\N	</TABLE>\R\N</SPAN> \R\N</P>\R\N<P>\R\N	<BR />\R\N</P>', '2');
+INSERT INTO `product` VALUES ('00004', '妗屽瓙', '瀹跺叿', '/PIC/1482321245928113.PNG,/PIC/1482321246031842.PNG,', '<P CLASS=\""p\"" STYLE=\""margin-left:0.0000pt;text-indent:18.7500pt;vertical-align:baseline;\"">\R\N	<BR />\R\N</P>\R\N<P CLASS=\""p\"" STYLE=\""text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\"">\R\N	濡備粖鐨�A HREF=\""http://www.meilele.com/\""><SPAN>瀹跺叿</SPAN></A>甯傚満绻佹潅锛屽厜鏄鍝佺墝鐨勭瓫閫夊氨澶寸棝锛屾洿鍒彁娆惧紡鐨勭瓫閫変簡锛屽嵆渚挎槸鍙拡瀵�A HREF=\""http://www.meilele.com/keywords/zzzdcz/\""><SPAN>妗屽瓙鎶樺彔椁愭</SPAN></A>锛屼篃鏄姝ゃ�閫夊鍏疯繕鏄閫夊彛纰戝ソ鐨勫搧鐗岋紝涓�紶<A HREF=\""http://www.meilele.com/keywords/zhuozi/\""><SPAN>妗屽瓙</SPAN></A><A HREF=\""http://www.meilele.com/keywords/zhediezhuoyi/\""><SPAN>鎶樺彔椁愭</SPAN></A>鎴戜滑杩樻槸瑕佺敤涓嚑骞存椂闂达紝濡傛灉涓嶅皬蹇冧拱鍒伴粦蹇冨晢瀹剁殑浼姡浜У搧锛岀敤涓嶄簡澶氫箙灏变細鎶ュ簾锛岃�涓旀湁娌℃湁鍞悗鏈嶅姟銆傛帴涓嬫潵锛屽皬缂栦负缁欎綅浠嬬粛鍑犲鍙Ｇ濂界殑妗屽瓙鎶樺彔<A HREF=\""http://www.meilele.com/category-canzhuo/\""><SPAN>椁愭</SPAN></A>鍝佺墝鍙婂浘鐗囨璧忋�\R\N</P>\R\N<P CLASS=\""p\"" STYLE=\""text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\"">\R\N	<SPAN>妗屽瓙鎶樺彔椁愭</SPAN>鈥旇崳楹熶笘浣�BR />\R\N&NBSP "; SQL statement:
+LCD娑叉櫠-瀹藉睆\r\n				</td>\r\n			</tr>\r\n		</tbody>\r\n	</table>\r\n</span> \r\n</p>\r\n<p>\r\n	<br />\r\n</p>', '2');
+INSERT INTO `product` VALUES ('00004', '妗屽瓙', '瀹跺叿', '/pic/1482321245928113.png,/pic/1482321246031842.png,', '<p class=\"p\" style=\"margin-left:0.0000pt;text-indent:18.7500pt;vertical-align:baseline;\">\r\n	<br />\r\n</p>\r\n<p class=\"p\" style=\"text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\">\r\n	濡備粖鐨�a href=\"http://www.meilele.com/\"><span>瀹跺叿</span></a>甯傚満绻佹潅锛屽厜鏄鍝佺墝鐨勭瓫閫夊氨澶寸棝锛屾洿鍒彁娆惧紡鐨勭瓫閫変簡锛屽嵆渚挎槸鍙拡瀵�a href=\"http://www.meilele.com/keywords/zzzdcz/\"><span>妗屽瓙鎶樺彔椁愭</span></a>锛屼篃鏄姝ゃ�閫夊鍏疯繕鏄閫夊彛纰戝ソ鐨勫搧鐗岋紝涓�紶<a href=\"http://www.meilele.com/keywords/zhuozi/\"><span>妗屽瓙</span></a><a href=\"http://www.meilele.com/keywords/zhediezhuoyi/\"><span>鎶樺彔椁愭</span></a>鎴戜滑杩樻槸瑕佺敤涓嚑骞存椂闂达紝濡傛灉涓嶅皬蹇冧拱鍒伴粦蹇冨晢瀹剁殑浼姡浜у搧锛岀敤涓嶄簡澶氫箙灏变細鎶ュ簾锛岃�涓旀湁娌℃湁鍞悗鏈嶅姟銆傛帴涓嬫潵锛屽皬缂栦负缁欎綅浠嬬粛鍑犲鍙ｇ濂界殑妗屽瓙鎶樺彔<a href=\"http://www.meilele.com/category-canzhuo/\"><span>椁愭</span></a>鍝佺墝鍙婂浘鐗囨璧忋�\r\n</p>\r\n<p class=\"p\" style=\"text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\">\r\n	<span>妗屽瓙鎶樺彔椁愭</span>鈥旇崳楹熶笘浣�br />\r\n&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "鑽Ｉ簾涓栦匠鍝佺墝鏄[*]腑鍥藉師鍒涘鍏峰紑鍙戠殑棰嗗鑰咃紝濡備粖宸茬粡鍙戝睍鎴愪负闆嗕簬鐮斿彂锛岄攢鍞紝鐢熶骇锛岀墿娴佷簬涓�綋鐨勫ぇ鍨嬭鑼冪殑杩為攣浼佷笟銆傝嚦浠婃垚鍔熸墦閫犱簡鍘熷垱鍝佺墝鐨勫嚑澶У鍏风郴鍒椼�涓昏惀浜У搧鏈夛細妗屽瓙鎶樺彔椁愭锛�A HREF=\""http://www.meilele.com/keywords/banshijiaju/\""><SPAN>鏉垮紡瀹跺叿</SPAN></A>锛�A HREF=\""http://www.meilele.com/keywords/shimujiaju/\""><SPAN>瀹炴湪瀹跺叿</SPAN></A>绛夈�妗屽瓙鎶樺彔椁愭绐佸嚭<A HREF=\""http://www.meilele.com/keywords/xiandaijiaju/\""><SPAN>鐜颁唬</SPAN></A><A HREF=\""http://www.meilele.com/keywords/muzhijiaju/\""><SPAN>鏈ㄥ埗瀹跺叿</SPAN></A>鐨勮嚜鐒躲�娣虫湸鍜岃壓鏈敓娲荤殑瀹岀編鍐嶉�銆俓R\N</P>\R\N<P CLASS=\""p\"" STYLE=\""text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\"">\R\N	&NBSP "; SQL statement:
+鑽ｉ簾涓栦匠鍝佺墝鏄腑鍥藉師鍒涘鍏峰紑鍙戠殑棰嗗鑰咃紝濡備粖宸茬粡鍙戝睍鎴愪负闆嗕簬鐮斿彂锛岄攢鍞紝鐢熶骇锛岀墿娴佷簬涓�綋鐨勫ぇ鍨嬭鑼冪殑杩為攣浼佷笟銆傝嚦浠婃垚鍔熸墦閫犱簡鍘熷垱鍝佺墝鐨勫嚑澶у鍏风郴鍒椼�涓昏惀浜у搧鏈夛細妗屽瓙鎶樺彔椁愭锛�a href=\"http://www.meilele.com/keywords/banshijiaju/\"><span>鏉垮紡瀹跺叿</span></a>锛�a href=\"http://www.meilele.com/keywords/shimujiaju/\"><span>瀹炴湪瀹跺叿</span></a>绛夈�妗屽瓙鎶樺彔椁愭绐佸嚭<a href=\"http://www.meilele.com/keywords/xiandaijiaju/\"><span>鐜颁唬</span></a><a href=\"http://www.meilele.com/keywords/muzhijiaju/\"><span>鏈ㄥ埗瀹跺叿</span></a>鐨勮嚜鐒躲�娣虫湸鍜岃壓鏈敓娲荤殑瀹岀編鍐嶉�銆俓r\n</p>\r\n<p class=\"p\" style=\"text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<P CLASS=\""p\"" STYLE=\""text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\"">\R\N	<SPAN>妗屽瓙鎶樺彔椁愭</SPAN>鈥斿枩寰锋潵瀹跺叿<BR />\R\N&NBSP "; SQL statement:
+\r\n</p>\r\n<p class=\"p\" style=\"text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\">\r\n	<span>妗屽瓙鎶樺彔椁愭</span>鈥斿枩寰锋潵瀹跺叿<br />\r\n&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "璐[*]拱妗屽瓙鎶樺彔椁愭锛屽彲浠ラ�鎷╁�寰椾俊濂堢殑鍠滃緱鏉ュ鍏峰搧鐗屻�鍠滃痉鏉ュ鍏锋槸<A HREF=\""http://www.meilele.com/keywords/banshichuang/\""><SPAN>鏉垮紡搴�/SPAN></A>锛�A HREF=\""http://www.meilele.com/keywords/shimushafa/\""><SPAN>瀹炴湪娌欏彂</SPAN></A>鍜屽悇绉嶆瀛愭姌鍙犻妗岀殑澶У瀷瀹跺叿浼佷笟銆傚枩寰锋潵瀹跺叿涓殑妗屽瓙鎶樺彔椁愭浜У搧锛屼互缁胯壊<A HREF=\""http://www.meilele.com/keywords/huanbaojiaju/\""><SPAN>鐜繚</SPAN></A>鐗圭偣涓轰富鐨勶紝鍏锋湁鑰愰珮娓┿�涓嶈お鑹层�鏃犲紓鍛炽�鑰愯厫铓��鑰愮（鎹熶簲澶Т紭鍔裤�鍦ㄥソ鐨勫搧鐗岃喘涔版瀛愭姌鍙犻妗岋紝涓嶆瀹炵敤锛岃繕鍏锋湁鍋ュ悍鐜繚鐨勫搧璐ㄣ�\R\N</P>\R\N<P CLASS=\""p\"" STYLE=\""text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\"">\R\N	&NBSP "; SQL statement:
+璐拱妗屽瓙鎶樺彔椁愭锛屽彲浠ラ�鎷╁�寰椾俊濂堢殑鍠滃緱鏉ュ鍏峰搧鐗屻�鍠滃痉鏉ュ鍏锋槸<a href=\"http://www.meilele.com/keywords/banshichuang/\"><span>鏉垮紡搴�/span></a>锛�a href=\"http://www.meilele.com/keywords/shimushafa/\"><span>瀹炴湪娌欏彂</span></a>鍜屽悇绉嶆瀛愭姌鍙犻妗岀殑澶у瀷瀹跺叿浼佷笟銆傚枩寰锋潵瀹跺叿涓殑妗屽瓙鎶樺彔椁愭浜у搧锛屼互缁胯壊<a href=\"http://www.meilele.com/keywords/huanbaojiaju/\"><span>鐜繚</span></a>鐗圭偣涓轰富鐨勶紝鍏锋湁鑰愰珮娓┿�涓嶈お鑹层�鏃犲紓鍛炽�鑰愯厫铓��鑰愮（鎹熶簲澶т紭鍔裤�鍦ㄥソ鐨勫搧鐗岃喘涔版瀛愭姌鍙犻妗岋紝涓嶆瀹炵敤锛岃繕鍏锋湁鍋ュ悍鐜繚鐨勫搧璐ㄣ�\r\n</p>\r\n<p class=\"p\" style=\"text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<P CLASS=\""p\"" STYLE=\""text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\"">\R\N	<SPAN>妗屽瓙鎶樺彔椁愭</SPAN>鈥旀剰椋庡鍏�BR />\R\N&NBSP "; SQL statement:
+\r\n</p>\r\n<p class=\"p\" style=\"text-indent:18.75pt;vertical-align:baseline;background:#EEEEEE;\">\r\n	<span>妗屽瓙鎶樺彔椁愭</span>鈥旀剰椋庡鍏�br />\r\n&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]&NBSP "; SQL statement:
+&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "鎰忛[*]瀹跺叿鏄瀛愭姌鍙犻妗�A HREF=\""http://www.meilele.com/keywords/banshijiaju/\""><SPAN>鏉垮紡</SPAN></A>瀹跺叿鐨勬爣蹇楀搧鐗岋紝浠ュ浗鍐呭強娆Ф床椤剁骇<A HREF=\""http://www.meilele.com/keywords/hbbc/\""><SPAN>鐜繚鏉挎潗</SPAN></A>涓哄熀纭�紝鍒堕�鍑�A HREF=\""http://zx.meilele.com/albums/c-21/\""><SPAN>灏忔埛鍨�/SPAN></A>瀹跺涵蹇呭鐨勬瀛愭姌鍙犻妗屻�妗屽瓙鎶樺彔椁愭鏈夌潃绮剧粏鐨勫仛宸ワ紝<A HREF=\""http://www.meilele.com/keywords/jianyuejiaju/\""><SPAN>绠�害</SPAN></A><A HREF=\""http://zx.meilele.com/albums/c-7/\""><SPAN>鐜颁唬椋庢牸</SPAN></A><SPAN>锛屽畬鏁寸殑鍔熻兘鍜岀粏鑷寸殑鏈嶅姟銆傚嵆浣跨敤涓婁竴娈垫椂闂达紝鍙戣涓嶅枩娆㈡垨鏄川閲忔湁闂锛岃繖浜涢兘灞炰簬鍞悗淇濋殰鐨勮寖鍥村唴銆�/SPAN>&NBSP "; SQL statement:
+鎰忛瀹跺叿鏄瀛愭姌鍙犻妗�a href=\"http://www.meilele.com/keywords/banshijiaju/\"><span>鏉垮紡</span></a>瀹跺叿鐨勬爣蹇楀搧鐗岋紝浠ュ浗鍐呭強娆ф床椤剁骇<a href=\"http://www.meilele.com/keywords/hbbc/\"><span>鐜繚鏉挎潗</span></a>涓哄熀纭�紝鍒堕�鍑�a href=\"http://zx.meilele.com/albums/c-21/\"><span>灏忔埛鍨�/span></a>瀹跺涵蹇呭鐨勬瀛愭姌鍙犻妗屻�妗屽瓙鎶樺彔椁愭鏈夌潃绮剧粏鐨勫仛宸ワ紝<a href=\"http://www.meilele.com/keywords/jianyuejiaju/\"><span>绠�害</span></a><a href=\"http://zx.meilele.com/albums/c-7/\"><span>鐜颁唬椋庢牸</span></a><span>锛屽畬鏁寸殑鍔熻兘鍜岀粏鑷寸殑鏈嶅姟銆傚嵆浣跨敤涓婁竴娈垫椂闂达紝鍙戣涓嶅枩娆㈡垨鏄川閲忔湁闂锛岃繖浜涢兘灞炰簬鍞悗淇濋殰鐨勮寖鍥村唴銆�/span>&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<P>\R\N	<BR />\R\N</P>', '2');
+INSERT INTO `product` VALUES ('00005', '妞呭瓙', '瀹跺叿', '/PIC/1479522851948209.JPG,/PIC/1479522852056749.JPG,', '<P CLASS=\""p\"" STYLE=\""margin-left:0.0000pt;text-indent:18.7500pt;vertical-align:baseline;\"">\R\N	&NBSP "; SQL statement:
+\r\n</p>\r\n<p>\r\n	<br />\r\n</p>', '2');
+INSERT INTO `product` VALUES ('00005', '妞呭瓙', '瀹跺叿', '/pic/1479522851948209.jpg,/pic/1479522852056749.jpg,', '<p class=\"p\" style=\"margin-left:0.0000pt;text-indent:18.7500pt;vertical-align:baseline;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "闀挎椂闂翠互鏉ワ紝[*]<A HREF=\""http://www.meilele.com/keywords/yizi/\""><SPAN>妞呭瓙</SPAN></A>涓�洿琚涓烘槸<A HREF=\""http://www.meilele.com/\""><SPAN>瀹跺眳</SPAN></A>鐢熸椿涓渶涓洪噸瑕佺殑<A HREF=\""http://www.meilele.com/\""><SPAN>瀹跺叿</SPAN></A>涔嬩竴锛屼汉浠缇庢剰璇嗘彁鍗囧拰瀵归珮鍝佽川鐢熸椿鏂瑰紡鐨勮拷鎹Э紝浣垮緱楂樻。<A HREF=\""http://www.meilele.com/keywords/yi/\""><SPAN>妞�/SPAN></A><SPAN>瀛愬彈鍒拌拷鎹Э紝鎴愪负浜嗙ぞ浼氬湴浣嶅拰韬唤鐨勪竴绉嶈薄寰侊紝瀵逛簬鏁翠釜绌洪棿楂樿吹鍏搁泤姘涘洿钀ラ�鍏锋湁涓嶅彲蹇借鐨勪綔鐢紝楂樻。妞呭瓙涓嶅彧鎻愪緵浜嗕汉浠殑灏卞骇锛屽悓鏃惰繕鍦ㄥ悇绉嶆寮忓満鍚堣澶Ч噺浣跨敤锛岄偅涔堥珮妗Ｆ瀛愭寮忕绫绘湁鍝簺鍛紵涓嬮潰灏辨槸瀵逛簬</SPAN>2016鏈�柊楂樻。妞呭瓙娆惧紡绉嶇被鐨勫叿浣撲粙缁嶏紝杩欏氨涓�捣鏉ヤ簡瑙Ｄ竴涓嬪惂銆俓R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:0.0000pt;text-indent:0.0000pt;\"">\R\N	&NBSP "; SQL statement:
+闀挎椂闂翠互鏉ワ紝<a href=\"http://www.meilele.com/keywords/yizi/\"><span>妞呭瓙</span></a>涓�洿琚涓烘槸<a href=\"http://www.meilele.com/\"><span>瀹跺眳</span></a>鐢熸椿涓渶涓洪噸瑕佺殑<a href=\"http://www.meilele.com/\"><span>瀹跺叿</span></a>涔嬩竴锛屼汉浠缇庢剰璇嗘彁鍗囧拰瀵归珮鍝佽川鐢熸椿鏂瑰紡鐨勮拷鎹э紝浣垮緱楂樻。<a href=\"http://www.meilele.com/keywords/yi/\"><span>妞�/span></a><span>瀛愬彈鍒拌拷鎹э紝鎴愪负浜嗙ぞ浼氬湴浣嶅拰韬唤鐨勪竴绉嶈薄寰侊紝瀵逛簬鏁翠釜绌洪棿楂樿吹鍏搁泤姘涘洿钀ラ�鍏锋湁涓嶅彲蹇借鐨勪綔鐢紝楂樻。妞呭瓙涓嶅彧鎻愪緵浜嗕汉浠殑灏卞骇锛屽悓鏃惰繕鍦ㄥ悇绉嶆寮忓満鍚堣澶ч噺浣跨敤锛岄偅涔堥珮妗ｆ瀛愭寮忕绫绘湁鍝簺鍛紵涓嬮潰灏辨槸瀵逛簬</span>2016鏈�柊楂樻。妞呭瓙娆惧紡绉嶇被鐨勫叿浣撲粙缁嶏紝杩欏氨涓�捣鏉ヤ簡瑙ｄ竴涓嬪惂銆俓r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:0.0000pt;text-indent:0.0000pt;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<TABLE STYLE=\""width:300pt;\"">\R\N	<TBODY>\R\N		<TR>\R\N			<TD WIDTH=\""26\"" VALIGN=\""center\"" STYLE=\""border:31.8750pt none #FFFFFF;\"">\R\N				<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:0pt;vertical-align:middle;\"">\R\N					<SPAN STYLE=\""font-family:寰蒋闆呴粦;color:#555555;font-size:10.5pt;\"">&NBSP "; SQL statement:
+\r\n</p>\r\n<table style=\"width:300pt;\">\r\n	<tbody>\r\n		<tr>\r\n			<td width=\"26\" valign=\"center\" style=\"border:31.8750pt none #FFFFFF;\">\r\n				<p class=\"MsoNormal\" style=\"text-indent:0pt;vertical-align:middle;\">\r\n					<span style=\"font-family:寰蒋闆呴粦;color:#555555;font-size:10.5pt;\">&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]/SPAN>\R\N				</P>\R\N			</TD>\R\N			<TD WIDTH=\""374\"" VALIGN=\""center\"" STYLE=\""border:31.8750pt none #FFFFFF;\"">\R\N				<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:0pt;vertical-align:middle;\"">\R\N					<B><SPAN CLASS=\""15\"" STYLE=\""font-family:寰蒋闆呴粦;color:#BA0343;font-size:13.5pt;\"">楂樻。妞呭瓙-</SPAN></B><B><SPAN CLASS=\""15\"" STYLE=\""font-family:寰蒋闆呴粦;color:#FF0000;font-size:10pt;\"">鐜颁唬椋庢牸</SPAN></B><SPAN STYLE=\""font-family:寰蒋闆呴粦;font-size:10.5pt;\""></SPAN>\R\N				</P>\R\N			</TD>\R\N		</TR>\R\N	</TBODY>\R\N</TABLE>\R\N<P CLASS=\""p\"" STYLE=\""margin-left:0.0000pt;text-indent:18.7500pt;vertical-align:baseline;\"">\R\N	&NBSP "; SQL statement:
+</span>\r\n				</p>\r\n			</td>\r\n			<td width=\"374\" valign=\"center\" style=\"border:31.8750pt none #FFFFFF;\">\r\n				<p class=\"MsoNormal\" style=\"text-indent:0pt;vertical-align:middle;\">\r\n					<b><span class=\"15\" style=\"font-family:寰蒋闆呴粦;color:#BA0343;font-size:13.5pt;\">楂樻。妞呭瓙-</span></b><b><span class=\"15\" style=\"font-family:寰蒋闆呴粦;color:#FF0000;font-size:10pt;\">鐜颁唬椋庢牸</span></b><span style=\"font-family:寰蒋闆呴粦;font-size:10.5pt;\"></span>\r\n				</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n<p class=\"p\" style=\"margin-left:0.0000pt;text-indent:18.7500pt;vertical-align:baseline;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "楂樻[*]。妞呭瓙鍦ㄦ寮�A HREF=\""http://zx.meilele.com/\""><SPAN>璁捐</SPAN></A>涓婃洿鍔犳柊棰栨椂灏氾紝鍏惰垝閫傚害寰楀埌鏋佸ぇ鎻愬崌锛岃繖娆鹃珮妗Ｆ瀛愭寮忚璁℃柊棰栨椂灏氾紝閲囩敤浼樿川<A HREF=\""http://www.meilele.com/keywords/buxiugangjiaju/\""><SPAN>涓嶉攬閽�/SPAN></A>妗嗘灦锛屾惌閰嶅ご灞傞粍鐗涚毊鍒朵綔锛屼娇鍏惰垝閫傛�鍜�A HREF=\""http://zx.meilele.com/\""><SPAN>瑁呴グ</SPAN></A><SPAN>鎬У緱鍒版瀬澶Ф彁鍗囷紝</SPAN>鈥滃鏌斿唴鍒氣�鐨勯�鍨嬭璁★紝琛ㄩ潰鍘氬害寮规�灞傦紝涓庝汉浣撴帴瑙﹂�姘斻�鑰愮（銆佽�鑴忥紝涓斾笉鏄撲骇鐢熼潤鐢点�鐙壒鐨勨�鐢扳�瀛楀瀷<A HREF=\""http://www.meilele.com/keywords/zhenpijiaju/\""><SPAN>鐪熺毊</SPAN></A>闈犺儗銆佸澶Х殑鎵舵墜璁捐銆佸共鍑�埄钀界殑鑳岄潰銆佷汉鎬У寲鍙媶鍗搁潬鍖呫�绮炬箾鐨勬壀鐨伐鑹猴紝澶勫缁欐偍甯︽潵娓╅Θ鑸掗�鐨勫眳瀹剁敓娲伙紝褰版樉鍑轰富浜烘椂灏氱殑鐢熸椿鍝佸懗銆俓R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:0.0000pt;text-indent:0.0000pt;\"">\R\N	&NBSP "; SQL statement:
+楂樻。妞呭瓙鍦ㄦ寮�a href=\"http://zx.meilele.com/\"><span>璁捐</span></a>涓婃洿鍔犳柊棰栨椂灏氾紝鍏惰垝閫傚害寰楀埌鏋佸ぇ鎻愬崌锛岃繖娆鹃珮妗ｆ瀛愭寮忚璁℃柊棰栨椂灏氾紝閲囩敤浼樿川<a href=\"http://www.meilele.com/keywords/buxiugangjiaju/\"><span>涓嶉攬閽�/span></a>妗嗘灦锛屾惌閰嶅ご灞傞粍鐗涚毊鍒朵綔锛屼娇鍏惰垝閫傛�鍜�a href=\"http://zx.meilele.com/\"><span>瑁呴グ</span></a><span>鎬у緱鍒版瀬澶ф彁鍗囷紝</span>鈥滃鏌斿唴鍒氣�鐨勯�鍨嬭璁★紝琛ㄩ潰鍘氬害寮规�灞傦紝涓庝汉浣撴帴瑙﹂�姘斻�鑰愮（銆佽�鑴忥紝涓斾笉鏄撲骇鐢熼潤鐢点�鐙壒鐨勨�鐢扳�瀛楀瀷<a href=\"http://www.meilele.com/keywords/zhenpijiaju/\"><span>鐪熺毊</span></a>闈犺儗銆佸澶х殑鎵舵墜璁捐銆佸共鍑�埄钀界殑鑳岄潰銆佷汉鎬у寲鍙媶鍗搁潬鍖呫�绮炬箾鐨勬壀鐨伐鑹猴紝澶勫缁欐偍甯︽潵娓╅Θ鑸掗�鐨勫眳瀹剁敓娲伙紝褰版樉鍑轰富浜烘椂灏氱殑鐢熸椿鍝佸懗銆俓r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:0.0000pt;text-indent:0.0000pt;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<P CLASS=\""MsoNormal\"" STYLE=\""margin-left:0.0000pt;text-indent:0.0000pt;\"">\R\N	&NBSP "; SQL statement:
+\r\n</p>\r\n<p class=\"MsoNormal\" style=\"margin-left:0.0000pt;text-indent:0.0000pt;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "[*]\R\N</P>\R\N<TABLE STYLE=\""width:300pt;\"">\R\N	<TBODY>\R\N		<TR>\R\N			<TD WIDTH=\""26\"" VALIGN=\""center\"" STYLE=\""border:31.8750pt none #FFFFFF;\"">\R\N				<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:0pt;vertical-align:middle;\"">\R\N					<SPAN STYLE=\""font-family:寰蒋闆呴粦;color:#555555;font-size:10.5pt;\"">&NBSP "; SQL statement:
+\r\n</p>\r\n<table style=\"width:300pt;\">\r\n	<tbody>\r\n		<tr>\r\n			<td width=\"26\" valign=\"center\" style=\"border:31.8750pt none #FFFFFF;\">\r\n				<p class=\"MsoNormal\" style=\"text-indent:0pt;vertical-align:middle;\">\r\n					<span style=\"font-family:寰蒋闆呴粦;color:#555555;font-size:10.5pt;\">&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]/SPAN>\R\N				</P>\R\N			</TD>\R\N			<TD WIDTH=\""374\"" VALIGN=\""center\"" STYLE=\""border:31.8750pt none #FFFFFF;\"">\R\N				<P CLASS=\""MsoNormal\"" STYLE=\""text-indent:0pt;vertical-align:middle;\"">\R\N					<B><SPAN CLASS=\""15\"" STYLE=\""font-family:寰蒋闆呴粦;color:#BA0343;font-size:13.5pt;\"">楂樻。妞呭瓙-</SPAN></B><B><SPAN CLASS=\""15\"" STYLE=\""font-family:寰蒋闆呴粦;color:#FF0000;font-size:10pt;\"">缇庡紡椋庢牸</SPAN></B><SPAN STYLE=\""font-family:寰蒋闆呴粦;font-size:10.5pt;\""></SPAN>\R\N				</P>\R\N			</TD>\R\N		</TR>\R\N	</TBODY>\R\N</TABLE>\R\N<P CLASS=\""p\"" STYLE=\""margin-left:0.0000pt;text-indent:18.7500pt;vertical-align:baseline;\"">\R\N	&NBSP "; SQL statement:
+</span>\r\n				</p>\r\n			</td>\r\n			<td width=\"374\" valign=\"center\" style=\"border:31.8750pt none #FFFFFF;\">\r\n				<p class=\"MsoNormal\" style=\"text-indent:0pt;vertical-align:middle;\">\r\n					<b><span class=\"15\" style=\"font-family:寰蒋闆呴粦;color:#BA0343;font-size:13.5pt;\">楂樻。妞呭瓙-</span></b><b><span class=\"15\" style=\"font-family:寰蒋闆呴粦;color:#FF0000;font-size:10pt;\">缇庡紡椋庢牸</span></b><span style=\"font-family:寰蒋闆呴粦;font-size:10.5pt;\"></span>\r\n				</p>\r\n			</td>\r\n		</tr>\r\n	</tbody>\r\n</table>\r\n<p class=\"p\" style=\"margin-left:0.0000pt;text-indent:18.7500pt;vertical-align:baseline;\">\r\n	&nbsp [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "<[*]A HREF=\""http://www.meilele.com/keywords/danrenyi/\""><SPAN>鍗曚汉妞�/SPAN></A>鐢变簬鍏跺绌洪棿鍒╃敤鏇村姞鍚堢悊锛屼娇寰楀崟浜烘琚ぇ閲忎娇鐢紝鍥句笂杩欐楂樻。妞呭瓙娆惧紡璁捐鐙壒鏂伴锛岀嫭鐗圭殑閫犲瀷璁捐浣垮叾鑹烘湳鎰熸瀬浣筹紝鍦堣儗閫犲瀷浣撶幇鍑轰富浜烘椿娉兼椂灏氱殑涓�锛岄珮鑳屽紡楂樻。妞呭瓙锛屾洿閫傚悎<A HREF=\""http://www.meilele.com/category-shufang/\""><SPAN>涔︽埧</SPAN></A>浣跨敤锛岃兘浼犻�鍑轰紤闂层�杞绘澗銆佽垝閫傜殑瀹ゅ唴姘涘洿锛屾祦鐣呭渾寮Х殑寮Х嚎閫犲瀷鎼厤寮虹儓鐨勯鑹插姣旓紝浣垮叾瑁呴グ鎬У拰缇庢劅鍒叿涓�牸锛屼釜浜洪鏍煎己鐑堬紝鏀剧疆鍦ㄧ┖闂翠竴瑙掓垨鏄�A HREF=\""http://zx.meilele.com/albums/c-31/\""><SPAN>闃冲彴</SPAN></A>鍏惰楗版�鏋佷匠銆傜粏鑺傚绮炬箾鐨勫伐鑹哄鐞嗭紝灏嗗叾鍝佽川鎰熸紨缁庣殑娣嬫紦灏借嚧銆俓R\N</P>', '2');
+INSERT INTO `product` VALUES ('00006', '鍝堝皵婊ㄥ暏閰�, '楗搧', '/pic/1482321612488579.jpg,', '<p style=\""color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\"">\r\n	瑙勬牸锛�00ml*3*6\r\n</p>\r\n<p style=\""color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\"">\r\n	&nbsp;\r\n</p>\r\n<p style=\""color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\"">\r\n	椋熺敤鏂规硶锛氬紑缃愬嵆楗甛r\n</p>\r\n<p style=\""color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\"">\r\n	璐瓨鏂规硶锛氳缃簬闃村噳澶勩�閬垮厤闃冲厜鐩村皠\r\n</p>\r\n<p style=\""color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\"">\r\n	<span style=\""font-size:18px;\""><span style=\""font-weight:700;\""><span style=\""color:#FF0000;\"">娓╅Θ鎻愮ず锛�br />\r\n</span></span></span>\r\n</p>\r\n<p style=\""color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\"">\r\n	<span style=\""font-size:18px;\""><span style=\""font-weight:700;\""><span style=\""color:#FF0000;\"">鍟嗗搧鍖呰鍗囩骇锛屾柊鑰佸寘瑁呴殢鏈哄彂璐э紝浠嬫剰鎱庢媿锛�/span></span></span>\r\n</p>', '1') "; SQL statement:
+<a href=\"http://www.meilele.com/keywords/danrenyi/\"><span>鍗曚汉妞�/span></a>鐢变簬鍏跺绌洪棿鍒╃敤鏇村姞鍚堢悊锛屼娇寰楀崟浜烘琚ぇ閲忎娇鐢紝鍥句笂杩欐楂樻。妞呭瓙娆惧紡璁捐鐙壒鏂伴锛岀嫭鐗圭殑閫犲瀷璁捐浣垮叾鑹烘湳鎰熸瀬浣筹紝鍦堣儗閫犲瀷浣撶幇鍑轰富浜烘椿娉兼椂灏氱殑涓�锛岄珮鑳屽紡楂樻。妞呭瓙锛屾洿閫傚悎<a href=\"http://www.meilele.com/category-shufang/\"><span>涔︽埧</span></a>浣跨敤锛岃兘浼犻�鍑轰紤闂层�杞绘澗銆佽垝閫傜殑瀹ゅ唴姘涘洿锛屾祦鐣呭渾寮х殑寮х嚎閫犲瀷鎼厤寮虹儓鐨勯鑹插姣旓紝浣垮叾瑁呴グ鎬у拰缇庢劅鍒叿涓�牸锛屼釜浜洪鏍煎己鐑堬紝鏀剧疆鍦ㄧ┖闂翠竴瑙掓垨鏄�a href=\"http://zx.meilele.com/albums/c-31/\"><span>闃冲彴</span></a>鍏惰楗版�鏋佷匠銆傜粏鑺傚绮炬箾鐨勫伐鑹哄鐞嗭紝灏嗗叾鍝佽川鎰熸紨缁庣殑娣嬫紦灏借嚧銆俓r\n</p>', '2');
+INSERT INTO `product` VALUES ('00006', '鍝堝皵婊ㄥ暏閰�, '楗搧', '/pic/1482321612488579.jpg,', '<p style=\"color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\">\r\n	瑙勬牸锛�00ml*3*6\r\n</p>\r\n<p style=\"color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\">\r\n	&nbsp;\r\n</p>\r\n<p style=\"color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\">\r\n	椋熺敤鏂规硶锛氬紑缃愬嵆楗甛r\n</p>\r\n<p style=\"color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\">\r\n	璐瓨鏂规硶锛氳缃簬闃村噳澶勩�閬垮厤闃冲厜鐩村皠\r\n</p>\r\n<p style=\"color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\">\r\n	<span style=\"font-size:18px;\"><span style=\"font-weight:700;\"><span style=\"color:#FF0000;\">娓╅Θ鎻愮ず锛�br />\r\n</span></span></span>\r\n</p>\r\n<p style=\"color:#404040;font-family:tahoma, arial, 瀹嬩綋, sans-serif;font-size:14px;background-color:#FFFFFF;\">\r\n	<span style=\"font-size:18px;\"><span style=\"font-weight:700;\"><span style=\"color:#FF0000;\">鍟嗗搧鍖呰鍗囩骇锛屾柊鑰佸寘瑁呴殢鏈哄彂璐э紝浠嬫剰鎱庢媿锛�/span></span></span>\r\n</p>', '1') [42000-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "PRODUCT" not found; SQL statement:
+INSERT INTO `product` VALUES ('00007', '鐏吙鑲�, '椋熷搧', '/pic/1482286806231225.jpg,/pic/1482286806302546.jpg,/pic/1482286795616255.jpg,', '杩欐槸缃戞槗鐚倝鍋氭垚鐨勭伀鑵胯偁', '1');
+
+-- ----------------------------
+-- Table structure for `sys_permission`
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_permission`;
+CREATE TABLE `sys_permission` (
+  `id` bigint(20) NOT NULL COMMENT '涓婚敭',
+  `name` varchar(128) NOT NULL COMMENT '璧勬簮鍚嶇О',
+  `type` varchar(32) NOT NULL COMMENT '璧勬簮绫诲瀷锛歮enu,button,',
+  `url` varchar(128) DEFAULT NULL COMMENT '璁块棶url鍦板潃',
+  `percode` varchar(128) DEFAULT NULL COMMENT '鏉冮檺浠ｇ爜瀛楃涓�,
+  `parentid` bigint(20) DEFAULT NULL COMMENT '鐖剁粨鐐筰d',
+  `parentids` varchar(128) DEFAULT NULL COMMENT '鐖剁粨鐐筰d鍒楄〃涓�,
+  `sortstring` varchar(128) DEFAULT NULL COMMENT '鎺掑簭鍙�,
+  `available` char(1) DEFAULT NULL COMMENT '鏄惁鍙敤,1锛氬彲鐢紝0涓嶅彲鐢�,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sys_permission
+-- ----------------------------
+INSERT INTO `sys_permission` VALUES ('1', '鏉冮檺', 'permission', '', 'order:edit', '0', '0/', '0', '1');
+INSERT INTO `sys_permission` VALUES ('10', '璁㈠崟绠＄悊', 'menu', '', null, '1', '0/1/', '1.', '1');
+INSERT INTO `sys_permission` VALUES ('11', '璁㈠崟鏂板', 'permission', 'order/add_judge', 'order:add', '11', '0/1/11/', '', '1');
+INSERT INTO `sys_permission` VALUES ('12', '璁㈠崟淇敼', 'permission', 'order/edit_judge', 'order:edit', '11', '0/1/11/', '', '1');
+INSERT INTO `sys_permission` VALUES ('13', '璁㈠崟鍒犻櫎', 'permission', 'order/delete_judge', 'order:delete', '11', '0/1/11/', '', '1');
+INSERT INTO `sys_permission` VALUES ('20', '瀹㈡埛绠＄悊', 'menu', '', '', '1', '0/1/', '2.', '1');
+INSERT INTO `sys_permission` VALUES ('21', '瀹㈡埛鏂板', 'permission', '', 'custom:add', '21', '0/1/21/', '', '1');
+INSERT INTO `sys_permission` VALUES ('22', '瀹㈡埛淇敼', 'permission', '', 'custom:edit', '21', '0/1/21/', '', '1');
+INSERT INTO `sys_permission` VALUES ('23', '瀹㈡埛鍒犻櫎', 'permission', '', 'custom:delete', '21', '0/1/21/', '', '1');
+INSERT INTO `sys_permission` VALUES ('30', '浜у搧绠＄悊', 'menu', null, null, null, null, null, '1');
+INSERT INTO `sys_permission` VALUES ('31', '浜у搧鏂板', 'permission', null, 'product:add', null, null, null, '1');
+INSERT INTO `sys_permission` VALUES ('32', '浜у搧淇敼', 'permission', null, 'product:edit', null, null, null, '1');
+INSERT INTO `sys_permission` VALUES ('33', '浜у搧鍒犻櫎', 'permission', null, 'product:delete', null, null, null, '1');
+INSERT INTO `sys_permission` VALUES ('40', '閮ㄩ棬绠＄悊', 'menu', null, null, null, null, null, '1');
+INSERT INTO `sys_permission` VALUES ('41', '閮ㄩ棬鏂板', 'permission', null, 'department:add', null, null, null, '1');
+INSERT INTO `sys_permission` VALUES ('42', '閮ㄩ棬淇敼', 'permission', null, 'department:edit', null, null, null, '1');
+INSERT INTO `sys_permission` VALUES ('43', '閮ㄩ棬鍒犻櫎', 'permission', null, 'department:delete', null, null, null, '1');
+INSERT INTO `sys_permission` VALUES ('50', '鍛樺伐绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('51', '鍛樺伐鏂板', 'permission', null, 'employee:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('52', '鍛樺伐淇敼', 'permission', null, 'employee:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('53', '鍛樺伐鍒犻櫎', 'permission', null, 'employee:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('60', '浣滀笟绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('61', '浣滀笟鏂板', 'permission', null, 'work:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('62', '浣滀笟淇敼', 'permission', null, 'work:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('63', '浣滀笟鍒犻櫎', 'permission', null, 'work:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('70', '鐢熶骇璁″垝绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('71', '鐢熶骇璁″垝鏂板', 'permission', null, 'manufacture:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('72', '鐢熶骇璁″垝淇敼', 'permission', null, 'manufacture:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('73', '鐢熶骇璁″垝鍒犻櫎', 'permission', null, 'manufacture:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('80', '鐢熶骇娲惧伐绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('81', '鐢熶骇娲惧伐鏂板', 'permission', null, 'task:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('82', '鐢熶骇娲惧伐淇敼', 'permission', null, 'task:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('83', '鐢熶骇娲惧伐鍒犻櫎', 'permission', null, 'task:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('90', '宸ヨ壓绠＄悊', 'menu', null, '', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('91', '宸ヨ壓鏂板', 'permission', null, 'technology:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('92', '宸ヨ壓淇敼', 'permission', null, 'technology:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('93', '宸ヨ壓鍒犻櫎', 'permission', null, 'technology:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('100', '宸ュ簭绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('101', '宸ュ簭鏂板', 'permission', null, 'process:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('102', '宸ュ簭淇敼', 'permission', null, 'process:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('103', '宸ュ簭鍒犻櫎', 'permission', null, 'process:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('110', '宸ヨ壓璁″垝绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('111', '宸ヨ壓璁″垝鏂板', 'permission', null, 'technologyPlan:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('112', '宸ヨ壓璁″垝淇敼', 'permission', null, 'technologyPlan:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('113', '宸ヨ壓璁″垝鍒犻櫎', 'permission', null, 'technologyPlan:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('120', '宸ヨ壓瑕佹眰绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('121', '宸ヨ壓瑕佹眰鏂板', 'permission', null, 'technologyRequirement:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('122', '宸ヨ壓瑕佹眰淇敼', 'permission', null, 'technologyRequirement:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('123', '宸ヨ壓瑕佹眰鍒犻櫎', 'permission', null, 'technologyRequirement:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('130', '鎴愬搧璁℃暟璐ㄦ', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('131', '鎴愬搧璁℃暟璐ㄦ鏂板', 'permission', null, 'fCountCheck:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('132', '鎴愬搧璁℃暟璐ㄦ淇敼', 'permission', null, 'fCountCheck:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('133', '鎴愬搧璁℃暟璐ㄦ鍒犻櫎', 'permission', null, 'fCountCheck:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('140', '鎴愬搧璁￠噺璐ㄦ', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('141', '鎴愬搧璁￠噺璐ㄦ鏂板', 'permission', null, 'fMeasureCheck:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('142', '鎴愬搧璁￠噺璐ㄦ淇敼', 'permission', null, 'fMeasureCheck:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('143', '鎴愬搧璁￠噺璐ㄦ鍒犻櫎', 'permission', null, 'fMeasureCheck:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('150', '宸ュ簭璁℃暟璐ㄦ', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('151', '宸ュ簭璁℃暟璐ㄦ鏂板', 'permission', null, 'pCountCheck:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('152', '宸ュ簭璁℃暟璐ㄦ淇敼', 'permission', null, 'pCountCheck:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('153', '宸ュ簭璁℃暟璐ㄦ鍒犻櫎', 'permission', null, 'pCountCheck:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('160', '宸ュ簭璁￠噺璐ㄦ', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('161', '宸ュ簭璁￠噺璐ㄦ鏂板', 'permission', null, 'pMeasureCheck:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('162', '宸ュ簭璁￠噺璐ㄦ淇敼', 'permission', null, 'pMeasureCheck:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('163', '宸ュ簭璁￠噺璐ㄦ鍒犻櫎', 'permission', null, 'pMeasureCheck:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('170', '涓嶅悎鏍煎搧鐢宠', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('171', '涓嶅悎鏍煎搧鐢宠鏂板', 'permission', null, 'unqualify:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('172', '涓嶅悎鏍煎搧鐢宠淇敼', 'permission', null, 'unqualify:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('173', '涓嶅悎鏍煎搧鐢宠鍒犻櫎', 'permission', null, 'unqualify:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('180', '鐗╂枡绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('181', '鐗╂枡鏂板', 'permission', null, 'material:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('182', '鐗╂枡淇敼', 'permission', null, 'material:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('183', '鐗╂枡鍒犻櫎', 'permission', null, 'material:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('190', '鐗╂枡鏀跺叆', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('191', '鐗╂枡鏀跺叆鏂板', 'permission', null, 'materialReceive:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('192', '鐗╂枡鏀跺叆淇敼', 'permission', null, 'materialReceive:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('193', '鐗╂枡鏀跺叆鍒犻櫎', 'permission', null, 'materialReceive:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('200', '鐢ㄦ埛绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('201', '鐢ㄦ埛鏂板', 'permission', null, 'user:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('202', '鐢ㄦ埛淇敼', 'permission', null, 'user:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('203', '鐢ㄦ埛鍒犻櫎', 'permission', null, 'user:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('210', '瑙掕壊绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('211', '瑙掕壊鏂板', 'permission', null, 'role:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('212', '瑙掕壊淇敼', 'permission', null, 'role:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('213', '瑙掕壊鍒犻櫎', 'permission', null, 'role:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('220', '鐗╂枡娑堣�', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('221', '鐗╂枡娑堣�鏂板', 'permission', null, 'materialConsume:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('222', '鐗╂枡娑堣�淇敼', 'permission', null, 'materialConsume:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('223', '鐗╂枡娑堣�鍒犻櫎', 'permission', null, 'materialConsume:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('230', '璁惧绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('231', '璁惧鏂板', 'permission', null, 'device:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('232', '璁惧淇敼', 'permission', null, 'device:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('233', '璁惧鍒犻櫎', 'permission', null, 'device:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('240', '璁惧渚嬫绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('241', '璁惧渚嬫鏂板', 'permission', null, 'deviceCheck:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('242', '璁惧渚嬫淇敼', 'permission', null, 'deviceCheck:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('243', '璁惧渚嬫鍒犻櫎', 'permission', null, 'deviceCheck:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('250', '璁惧鏁呴殰绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('251', '璁惧鏁呴殰鏂板', 'permission', null, 'deviceFault:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('252', '璁惧鏁呴殰淇敼', 'permission', null, 'deviceFault:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('253', '璁惧鏁呴殰鍒犻櫎', 'permission', null, 'deviceFault:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('260', '璁惧缁翠慨绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('261', '璁惧缁翠慨鏂板', 'permission', null, 'deviceMaintain:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('262', '璁惧缁翠慨淇敼', 'permission', null, 'deviceMaintain:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('263', '璁惧缁翠慨鍒犻櫎', 'permission', null, 'deviceMaintain:delete', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('270', '璁惧绉嶇被绠＄悊', 'menu', null, null, null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('271', '璁惧绉嶇被鏂板', 'permission', null, 'deviceType:add', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('272', '璁惧绉嶇被淇敼', 'permission', null, 'deviceType:edit', null, null, null, null);
+INSERT INTO `sys_permission` VALUES ('273', '璁惧绉嶇被鍒犻櫎', 'permission', null, 'deviceType:delete', null, null, null, null);
+
+-- ----------------------------
+-- Table structure for `sys_role`
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_role`;
+CREATE TABLE `sys_role` (
+  `role_id` varchar(36) NOT NULL,
+  `role_name` varchar(128) NOT NULL,
+  `available` char(1) DEFAULT NULL COMMENT '鏄惁鍙敤,1锛氬彲鐢紝0涓嶅彲鐢�,
+  PRIMARY KEY (`role_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE" not found; SQL statement:
+-- ----------------------------
+-- Records of sys_role
+-- ----------------------------
+INSERT INTO `sys_role` VALUES ('001', '瓒呯骇绠＄悊鍛�, '1');
+INSERT INTO `sys_role` VALUES ('002', '璁㈠崟绠＄悊鍛�, '1') [42102-172]
+10-24 16:07:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE" not found; SQL statement:
+INSERT INTO `sys_role` VALUES ('004', '鐗╂枡绠＄悊鍛�, '1');
+INSERT INTO `sys_role` VALUES ('005', '鏅�鐢ㄦ埛', '1');
+INSERT INTO `sys_role` VALUES ('007', '璁惧绠＄悊鍛�, '1') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""SYS_ROLE_PERMISSION"" (
+  ""ID"" VARCHAR(50) NOT NULL,
+  ""SYS_ROLE_ID"" VARCHAR(50) NOT NULL COMMENT '瑙掕壊id',
+  ""SYS_PERMISSION_ID"" VARCHAR(300) DEFAULT NULL COMMENT '鏉冮檺id',
+  PRIMARY KEY (""ID"")
+) ENGINE=INNODB DEFAULT[*] CHARSET=UTF8 "; SQL statement:
+CREATE TABLE `sys_role_permission` (
+  `id` varchar(50) NOT NULL,
+  `sys_role_id` varchar(50) NOT NULL COMMENT '瑙掕壊id',
+  `sys_permission_id` varchar(300) DEFAULT NULL COMMENT '鏉冮檺id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [42000-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+-- ----------------------------
+-- Records of sys_role_permission
+-- ----------------------------
+INSERT INTO `sys_role_permission` VALUES ('1456115611515', '002', '11,12,13,201,202,203,') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('147729449886163', '15615615151', '11,12,13,231,232,233,271,273,') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('147737863632731', '005', '11,33,81,83,91,93,101,102,103,121,192,131,133,151,153,173,273,252,51,53,') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('148007157091762', '004', '181,182,183,191,192,193,221,222,223,') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('148255367614063', '007', null) [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('149122370655248', '31931', null) [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('149122382565714', '424', null) [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('149122469890916', '3213', null) [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('149122510431476', '3214321', null) [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('149122513769244', '213213213', '11,12,13,') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_ROLE_PERMISSION" not found; SQL statement:
+INSERT INTO `sys_role_permission` VALUES ('ebc8a441-c6f9-11e4-b137-0adc305c3f21', '001', '11,12,13,21,22,23,31,32,33,61,62,63,71,72,73,81,82,83,91,92,93,101,102,103,111,112,113,121,122,123,181,182,183,191,192,193,221,222,223,131,132,133,141,142,143,151,152,153,161,162,163,171,172,173,231,232,233,271,272,273,241,242,243,251,252,253,261,262,263,41,42,43,51,52,53,201,202,203,211,212,213,') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""SYS_USER"" (
+  ""ID"" VARCHAR(36) NOT NULL COMMENT '涓婚敭',
+  ""USERNAME"" VARCHAR(64) DEFAULT NULL COMMENT '濮撳悕',
+  ""PASSWORD"" VARCHAR(32) DEFAULT NULL COMMENT '瀵嗙爜',
+  ""LOCKED"" CHAR(1) DEFAULT NULL COMMENT '璐﹀彿鏄惁閿佸畾锛�锛氶攣瀹氾紝0鏈攣瀹�,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sys_user
+-- ----------------------------
+INSERT INTO `sys_user` VALUES ('001[*]', '鐜嬬粡鐞�, '11', '1') "; expected "[, ::, *, /, %, +, -, ||, ~, !~, NOT, LIKE, REGEXP, IS, IN, BETWEEN, AND, OR, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE `sys_user` (
+  `id` varchar(36) NOT NULL COMMENT '涓婚敭',
+  `username` varchar(64) DEFAULT NULL COMMENT '濮撳悕',
+  `password` varchar(32) DEFAULT NULL COMMENT '瀵嗙爜',
+  `locked` char(1) DEFAULT NULL COMMENT '璐﹀彿鏄惁閿佸畾锛�锛氶攣瀹氾紝0鏈攣瀹�,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sys_user
+-- ----------------------------
+INSERT INTO `sys_user` VALUES ('001', '鐜嬬粡鐞�, '11', '1') [42001-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_USER" not found; SQL statement:
+INSERT INTO `sys_user` VALUES ('002', '22', '22', '1') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_USER" not found; SQL statement:
+INSERT INTO `sys_user` VALUES ('003', '寮犱笁', 'aaa', '1') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_USER" not found; SQL statement:
+INSERT INTO `sys_user` VALUES ('004', 'aa', 'aa', '1') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_USER" not found; SQL statement:
+INSERT INTO `sys_user` VALUES ('005', '11', '11', '1') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_USER" not found; SQL statement:
+INSERT INTO `sys_user` VALUES ('006', '鐜嬩簩', '12345', '2') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SYS_USER" not found; SQL statement:
+INSERT INTO `sys_user` VALUES ('007', '鏉庡ぇ灞�, '11', '1');
+INSERT INTO `sys_user` VALUES ('3213', 'ga', '22', '1');
+INSERT INTO `sys_user` VALUES ('321321', '55', '55', '1');
+
+-- ----------------------------
+-- Table structure for `sys_user_role`
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user_role`;
+CREATE TABLE `sys_user_role` (
+  `id` varchar(36) NOT NULL,
+  `sys_user_id` varchar(32) NOT NULL,
+  `sys_role_id` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of sys_user_role
+-- ----------------------------
+INSERT INTO `sys_user_role` VALUES ('001', '001', '001');
+INSERT INTO `sys_user_role` VALUES ('147705484492576', '003', '002');
+INSERT INTO `sys_user_role` VALUES ('148228593447685', '004', '005');
+INSERT INTO `sys_user_role` VALUES ('148232608456017', '002', '001');
+INSERT INTO `sys_user_role` VALUES ('148232650257115', '005', '002');
+INSERT INTO `sys_user_role` VALUES ('148237251058254', '321321', '004');
+INSERT INTO `sys_user_role` VALUES ('148237503507696', '3213', '005');
+INSERT INTO `sys_user_role` VALUES ('148249856407793', '006', '002');
+INSERT INTO `sys_user_role` VALUES ('148255363744945', '007', '004');
+
+-- ----------------------------
+-- Table structure for `task`
+-- ----------------------------
+DROP TABLE IF EXISTS `task`;
+CREATE TABLE `task` (
+  `task_id` varchar(40) NOT NULL,
+  `manufacture_sn` varchar(40) DEFAULT NULL,
+  `work_id` varchar(40) DEFAULT NULL,
+  `task_quantity` int(11) DEFAULT NULL,
+  `working_hours` decimal(10,0) DEFAULT NULL,
+  PRIMARY KEY (`task_id`),
+  KEY `FK_Reference_34` (`manufacture_sn`),
+  KEY `FK_Reference_6` (`work_id`),
+  CONSTRAINT `FK_Reference_34` FOREIGN KEY (`manufacture_sn`) REFERENCES `manufacture` (`manufacture_sn`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_Reference_6` FOREIGN KEY (`work_id`) REFERENCES `work` (`work_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of task
+-- ----------------------------
+INSERT INTO `task` VALUES ('001', '0002', '001', '112', '700');
+INSERT INTO `task` VALUES ('002', '0001', '001', '213', '221');
+INSERT INTO `task` VALUES ('003', '0003', '003', '150', '15');
+INSERT INTO `task` VALUES ('004', '0004', '004', '154', '851');
+
+-- ----------------------------
+-- Table structure for `technology`
+-- ----------------------------
+DROP TABLE IF EXISTS `technology`;
+CREATE TABLE `technology` (
+  `technology_id` varchar(40) NOT NULL,
+  `technology_name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin DEFAULT NULL,
+  `price` decimal(10,2) DEFAULT NULL,
+  `vital_process_period` varchar(50) DEFAULT NULL,
+  `standard_capacity` int(11) DEFAULT NULL,
+  `overtime_standard_capacity` int(11) DEFAULT NULL,
+  `overtime_overfulfil_capacity` int(11) DEFAULT NULL,
+  `double_capacity` int(11) DEFAULT NULL,
+  `overfulfil_capacity` int(11) DEFAULT NULL,
+  PRIMARY KEY (`technology_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of technology
+-- ----------------------------
+INSERT INTO `technology` VALUES ('001', '鎵撶（绮惧姞宸�, '33.00', '12', '333', '333', '666', '1200', '1400') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TECHNOLOGY" not found; SQL statement:
+INSERT INTO `technology` VALUES ('002', '鎵撶（绮楀姞宸�, '8.00', '3', '20', '25', '30', '40', '50');
+INSERT INTO `technology` VALUES ('004', '鎶涘厜', '156.00', '1', '8', '2', '5', '5', '5');
+INSERT INTO `technology` VALUES ('005', '鎵撹湣', '7.00', '7', '7', '7', '7', '7', '7');
+INSERT INTO `technology` VALUES ('006', '涓�綋鎴愬瀷', '6.00', '6', '6', '6', '6', '66', '666');
+
+-- ----------------------------
+-- Table structure for `technology_plan`
+-- ----------------------------
+DROP TABLE IF EXISTS `technology_plan`;
+CREATE TABLE `technology_plan` (
+  `technology_plan_id` varchar(40) NOT NULL,
+  `technology_id` varchar(40) DEFAULT NULL,
+  `batch_amount` int(11) DEFAULT NULL,
+  `start_plan` datetime DEFAULT NULL,
+  `end_plan` datetime DEFAULT NULL,
+  `commit_plan` datetime DEFAULT NULL,
+  `technology_plan_start` datetime DEFAULT NULL,
+  `technology_plan_end` datetime DEFAULT NULL,
+  PRIMARY KEY (`technology_plan_id`),
+  KEY `FK_Reference_31` (`technology_id`),
+  CONSTRAINT `FK_Reference_31` FOREIGN KEY (`technology_id`) REFERENCES `technology` (`technology_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of technology_plan
+-- ----------------------------
+INSERT INTO `technology_plan` VALUES ('0008', '002', '30', '2016-12-29 00:00:00', '2016-12-24 00:00:00', '2017-01-10 00:00:00', null, null);
+INSERT INTO `technology_plan` VALUES ('001', '002', '202', '2016-11-16 11:29:11', '2016-11-16 11:29:14', '2016-11-16 11:29:16', null, null);
+INSERT INTO `technology_plan` VALUES ('002', '001', '56', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '1970-01-01 08:00:00', null, null);
+INSERT INTO `technology_plan` VALUES ('003', '002', '30', '2016-11-16 20:51:09', '2016-11-16 20:51:11', '2016-11-16 20:51:13', null, null);
+INSERT INTO `technology_plan` VALUES ('004', '004', '321', '2016-12-21 00:00:00', '2016-12-21 00:00:00', '2016-12-21 00:00:00', null, null);
+
+-- ----------------------------
+-- Table structure for `technology_requirement`
+-- ----------------------------
+DROP TABLE IF EXISTS `technology_requirement`;
+CREATE TABLE `technology_requirement` (
+  `technology_requirement_id` varchar(40) NOT NULL,
+  `technology_id` varchar(40) DEFAULT NULL,
+  `requirement` varchar(2000) DEFAULT NULL,
+  `add_time` datetime DEFAULT NULL,
+  `revise_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`technology_requirement_id`),
+  KEY `FK_Reference_10` (`technology_id`),
+  CONSTRAINT `FK_Reference_10` FOREIGN KEY (`technology_id`) REFERENCES `technology` (`technology_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of technology_requirement
+-- ----------------------------
+INSERT INTO `technology_requirement` VALUES ('01', '001', '<strong><em>dgfghfhgjf</em></strong>', '2016-11-30 16:07:08', '2016-11-30 16:07:10');
+INSERT INTO `technology_requirement` VALUES ('02', '002', 'hijklmn', '2016-11-16 16:07:30', '2016-11-16 16:07:34');
+INSERT INTO `technology_requirement` VALUES ('03', '005', '1321231', '2016-11-16 16:28:04', '2016-11-16 16:28:06');
+INSERT INTO `technology_requirement` VALUES ('04', '002', '<strong>fdsfdsfdsafdsfcvvvvvcvffffwudali</strong>', '1970-01-01 08:00:00', '1970-01-01 08:00:00');
+INSERT INTO `technology_requirement` VALUES ('05', '001', '<strong>dsafsffdsfafvvvv</strong>', '2016-11-16 19:51:50', '2016-11-16 19:51:51');
+INSERT INTO `technology_requirement` VALUES ('06', '004', '鎶涘厜闇�粩缁嗭紝鍙嶅皠闈㈣杈惧埌瑕佹眰', '2016-12-21 00:00:00', '2016-12-21 00:00:00');
+INSERT INTO `technology_requirement` VALUES ('07', '002', '321321321', '2016-12-07 11:10:12', '2016-12-22 11:10:15');
+
+-- ----------------------------
+-- Table structure for `unqualify_apply`
+-- ----------------------------
+DROP TABLE IF EXISTS `unqualify_apply`;
+CREATE TABLE `unqualify_apply` (
+  `unqualify_apply_id` varchar(40) NOT NULL,
+  `product_id` varchar(40) DEFAULT NULL,
+  `unqualify_item` varchar(200) DEFAULT NULL,
+  `unqualify_count` int(11) DEFAULT NULL,
+  `assembly_date` datetime DEFAULT NULL,
+  `emp_id` varchar(40) DEFAULT NULL,
+  `apply_date` datetime DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  PRIMARY KEY (`unqualify_apply_id`),
+  KEY `FK_Reference_29` (`product_id`),
+  CONSTRAINT `FK_Reference_29` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of unqualify_apply
+-- ----------------------------
+INSERT INTO `unqualify_apply` VALUES ('0001', '00001', '鎴愬儚璐ㄩ噺', '2', '2015-05-13 00:00:00', '001', '2015-05-13 00:00:00', '闇�杩斿巶');
+INSERT INTO `unqualify_apply` VALUES ('0002', '00005', '骞虫暣搴�, '5', '2015-05-13 00:00:00', '002', '2015-05-13 00:00:00', '闇�杩斿巶') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "UNQUALIFY_APPLY" not found; SQL statement:
+INSERT INTO `unqualify_apply` VALUES ('0003', '00002', '闊抽噺', '15', '2016-12-21 00:00:00', '002', '2016-12-21 00:00:00', '闇�杩斿巶') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "UNQUALIFY_APPLY" not found; SQL statement:
+INSERT INTO `unqualify_apply` VALUES ('01231', '00003', '鐢垫睜', '50', '2016-12-21 00:00:00', '003', '2016-12-24 12:15:16', '<span style=\"font-family:SimHei;font-size:16px;\">鐢垫睜鏁堢巼涓嶈揪鏍囷紝涓旂數姹犺�涔呭害涓嶅悎鏍硷紝<strong><span style=\"color:#E53333;\">瀛樺湪涓�畾鐨勫畨鍏ㄩ殣鎮�/span></strong>銆�/span>') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "FK_REFERENCE_12"; SQL statement:
+CREATE TABLE `work` (
+  `work_id` varchar(40) NOT NULL,
+  `process_number` varchar(40) DEFAULT NULL,
+  `product_id` varchar(40) DEFAULT NULL,
+  `process_id` varchar(40) DEFAULT NULL,
+  `device_id` varchar(40) DEFAULT NULL,
+  `rating` int(11) DEFAULT NULL,
+  PRIMARY KEY (`work_id`),
+  KEY `FK_Reference_12` (`process_id`),
+  KEY `FK_Reference_17` (`device_id`),
+  KEY `FK_Reference_7` (`product_id`),
+  CONSTRAINT `FK_Reference_12` FOREIGN KEY (`process_id`) REFERENCES `process` (`process_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_Reference_17` FOREIGN KEY (`device_id`) REFERENCES `device` (`device_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_Reference_7` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [50004-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3689)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3552)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5270)
+	at org.h2.command.Parser.parseCreate(Parser.java:3841)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:425)
+	at org.h2.engine.Session.prepareCommand(Session.java:374)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:167)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:155)
+	at sun.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.onseven.dbvis.g.B.B.ā(Z:104)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORK" not found; SQL statement:
+-- ----------------------------
+-- Records of work
+-- ----------------------------
+INSERT INTO `work` VALUES ('001', '1', '00004', '01', '001', '50') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORK" not found; SQL statement:
+INSERT INTO `work` VALUES ('002', '5', '00003', '02', '003', '32') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORK" not found; SQL statement:
+INSERT INTO `work` VALUES ('003', '1', '00002', '02', '002', '13') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORK" not found; SQL statement:
+INSERT INTO `work` VALUES ('004', '2', '00003', '03', '003', '15') [42102-172]
+10-24 16:07:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "WORK" not found; SQL statement:
+INSERT INTO `work` VALUES ('005', '3', '00002', '02', '005', '16') [42102-172]
+10-24 16:12:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: "FK_REFERENCE_28"; SQL statement:
+CREATE TABLE `c_order` (
+  `order_id` varchar(40) NOT NULL,
+  `custom_id` varchar(40) DEFAULT NULL,
+  `product_id` varchar(40) DEFAULT NULL,
+  `order_date` datetime DEFAULT NULL,
+  `request_date` datetime DEFAULT NULL,
+  `note` varchar(5000) DEFAULT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  `unit_price` decimal(10,2) DEFAULT NULL,
+  `unit` varchar(10) DEFAULT NULL,
+  `image` varchar(200) DEFAULT NULL,
+  `file` varchar(200) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  PRIMARY KEY (`order_id`),
+  KEY `FK_Reference_28` (`product_id`),
+  KEY `FK_Reference_5` (`custom_id`),
+  CONSTRAINT `FK_Reference_28` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `FK_Reference_5` FOREIGN KEY (`custom_id`) REFERENCES `custom` (`custom_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) [50004-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3689)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3552)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5270)
+	at org.h2.command.Parser.parseCreate(Parser.java:3841)
+	at org.h2.command.Parser.parsePrepared(Parser.java:324)
+	at org.h2.command.Parser.parse(Parser.java:279)
+	at org.h2.command.Parser.parse(Parser.java:251)
+	at org.h2.command.Parser.prepareCommand(Parser.java:218)
+	at org.h2.engine.Session.prepareLocal(Session.java:425)
+	at org.h2.engine.Session.prepareCommand(Session.java:374)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:167)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:155)
+	at sun.reflect.GeneratedMethodAccessor63.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.onseven.dbvis.g.B.B.ā(Z:104)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-28 09:53:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1410)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1388)
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:428)
+	at com.onseven.dbvis.g.B.C.ā(Z:344)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-28 09:53:23 jdbc[2]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1410)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1388)
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:428)
+	at com.onseven.dbvis.g.B.C.ā(Z:344)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-28 09:53:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1410)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1388)
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:428)
+	at com.onseven.dbvis.g.B.C.ā(Z:344)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+10-28 09:53:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329)
+	at org.h2.message.DbException.get(DbException.java:169)
+	at org.h2.message.DbException.get(DbException.java:146)
+	at org.h2.message.DbException.get(DbException.java:135)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1410)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1388)
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:428)
+	at com.onseven.dbvis.g.B.C.ā(Z:344)
+	at com.onseven.dbvis.g.B.F$A.call(Z:1474)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
