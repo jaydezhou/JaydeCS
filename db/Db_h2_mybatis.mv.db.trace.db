@@ -5214,3 +5214,7 @@ org.h2.jdbc.JdbcSQLException: Column "PREBUILCONTACT" not found [42122-196]
 	at net.jayde.app.pm.PmReadDb.readByDb(PmReadDb.java:108)
 	at net.jayde.app.pm.ui.PmUI.<init>(PmUI.java:26)
 	at net.jayde.app.pm.ui.PmUI.main(PmUI.java:63)
+2017-11-01 14:36:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-196]
+2017-11-01 14:36:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: The object is already closed [90007-196]
