@@ -12,37 +12,12 @@ import net.jayde.app.music.pojo.MusicGroup;
 import net.jayde.app.music.pojo.MusicLibrary;
 import net.jayde.app.music.pojo.MusicPerson;
 
-public class MusicReadDb {
+public class MusicReadDb extends MusicDb{
 
-  // String sourceURL =
-  // "jdbc:h2:c:\\Users\\Administrator\\IdeaProjects\\JaydeCS\\db\\Db_h2_mybatis.mv.db";
-  String sourceURL = "jdbc:h2:d:\\IdeaProjects\\JaydeCS\\db\\Db_h2_mybatis.mv.db";
-  Connection conn = null;
-  MusicLibrary library = new MusicLibrary();
-  private static Logger logger = LogManager.getLogger(MusicReadDb.class.getName());
-
-  public void connDb() {
-    try {
-      String user = "";
-      String key = "";
-      Class.forName("org.h2.Driver");// HSQLDB Driver
-
-      conn = DriverManager.getConnection(sourceURL, "", "");
-
-    } catch (Exception sqle) {
-      System.out.println(sqle.getMessage());
-    }
-  }
+    MusicLibrary library = new MusicLibrary();
+    private static Logger logger = LogManager.getLogger(MusicReadDb.class.getName());
 
 
-
-  public void disconnDb() {
-    try {
-      conn.close();
-    } catch (Exception sqle) {
-      System.out.println(sqle.getMessage());
-    }
-  }
 
 
 
@@ -53,9 +28,9 @@ public class MusicReadDb {
             while (rsGroup.next()) {
                 String gid = rsGroup.getString("id");
                 String gname = rsGroup.getString("name");
-                MusicGroup mg = new MusicGroup(gid,gname);
+                MusicGroup mg = new MusicGroup(gid, gname);
                 System.out.println(mg);
-                cyclePerson(mg,gid);
+                cyclePerson(mg, gid);
                 library.getGroups().add(mg);
             }
             rsGroup.close();
@@ -69,15 +44,22 @@ public class MusicReadDb {
     public void cyclePerson(MusicGroup group, String gid) {
         try {
             Statement stmt = conn.createStatement();
-            ResultSet rsPerson= stmt.executeQuery("select * from musicPerson where mgid='" + gid + "' order by id");
+            ResultSet rsPerson = stmt.executeQuery("select * from musicPerson where mgid='" + gid + "' order by id");
             while (rsPerson.next()) {
 
                 String pid = rsPerson.getString("id");
                 String pname = rsPerson.getString("name");
-                MusicPerson person= new MusicPerson(pid,pname,gid,group);
+                MusicPerson person = new MusicPerson(pid, pname, gid, group);
+                person.setM163Id(rsPerson.getString("m163id").trim());
 //                cycleQuestions(project,pid);
-                group.getPersonSet().add(person);
-                System.out.println(person);
+                Statement stmtf =  conn.createStatement();
+                ResultSet rsf = stmtf.executeQuery("select count(id) from musicFavourite where mpid='"+pid+"';");
+                if(rsf.next()){
+                    if(rsf.getInt(1)==0){
+                        group.getPersonSet().add(person);
+//                        System.out.println(person);
+                    }
+                }
             }
             rsPerson.close();
             stmt.close();

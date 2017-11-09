@@ -12,7 +12,7 @@ public class MusicFavourite {
     String mpid;
     private MusicGroup mg;
     private MusicPerson mp;
-
+    String m163Id;
     public String getId() {
         return id;
     }
@@ -59,5 +59,13 @@ public class MusicFavourite {
 
     public void setMp(MusicPerson mp) {
         this.mp = mp;
+    }
+
+    public String getM163Id() {
+        return m163Id;
+    }
+
+    public void setM163Id(String m163Id) {
+        this.m163Id = m163Id;
     }
 }

@@ -16,6 +16,7 @@ public class MusicPerson {
     private MusicGroup mg;
     Set<MusicAlbum> albumSet = null;
     Set<MusicFavourite> favouriteSet = null;
+    String m163Id;
 
     public MusicPerson() {
     }
@@ -65,7 +66,7 @@ public class MusicPerson {
     }
 
     public Set<MusicAlbum> getAlbumSet() {
-        if(albumSet==null)
+        if (albumSet == null)
             albumSet = new HashSet<>();
         return albumSet;
     }
@@ -75,13 +76,21 @@ public class MusicPerson {
     }
 
     public Set<MusicFavourite> getFavouriteSet() {
-        if(favouriteSet == null)
+        if (favouriteSet == null)
             favouriteSet = new HashSet<>();
         return favouriteSet;
     }
 
     public void setFavouriteSet(Set<MusicFavourite> favouriteSet) {
         this.favouriteSet = favouriteSet;
+    }
+
+    public String getM163Id() {
+        return m163Id;
+    }
+
+    public void setM163Id(String m163Id) {
+        this.m163Id = m163Id;
     }
 
     @Override

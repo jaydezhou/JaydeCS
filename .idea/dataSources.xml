@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Db_h2_mybatist" uuid="d516cd67-d27f-4d0a-a77f-6f95d6dc79a2">
+    <data-source source="LOCAL" name="Db_h2_mybatis.mv.db" uuid="ee8af392-2c55-4240-adb7-f03e85a7912c">
       <driver-ref>h2.unified</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
-      <jdbc-url>jdbc:h2:$PROJECT_DIR$/db/Db_h2_mybatist</jdbc-url>
+      <jdbc-url>jdbc:h2:c:\\Users\\Administrator\\IdeaProjects\\JaydeCS\\db\\Db_h2_mybatis.mv.db</jdbc-url>
     </data-source>
   </component>
 </project>
