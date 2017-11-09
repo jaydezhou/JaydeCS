@@ -293,4 +293,44 @@ public class ProjectObject {
         + newbuildcontact + '\'' + ", \nnewmaintaincontact='" + newmaintaincontact + '\'' + ", \nnewfunction='"
         + newfunction + '\'' + ", \nnewmachine='" + newmachine + '\'' + ", \nnewrelation='" + newrelation + '\'' + '}';
   }
+
+  public String formatProjectMd(){
+    String mdText = "";
+    System.out.println("### "+pname);
+    System.out.println("| 类型          | 内容                                       |");
+    System.out.println("| :---------- | :--------------------------------------- |");
+    System.out.println(formatOneFiled("项目名称",pname));
+    System.out.println(formatOneFiled("相关部门",built));
+    System.out.println(formatOneFiled("业务联系人/电话/邮件 ",bcontact));
+    System.out.println(formatOneFiled("科技联系人/电话/邮件 ",tcontact));
+    System.out.println(formatOneFiled("",""));
+    System.out.println(formatOneFiled("原厂商",precompany));
+    System.out.println(formatOneFiled("原建设时间",predate));
+    System.out.println(formatOneFiled("原合同金额",premoney));
+    System.out.println(formatOneFiled("原销售经理/电话/邮件",presellcontact));
+    System.out.println(formatOneFiled("原项目经理/电话/邮件",prebuildcontact));
+    System.out.println(formatOneFiled("原运维人员/电话/邮件",premaintaincontact));
+    System.out.println(formatOneFiled("原主要功能",prefunction));
+    System.out.println(formatOneFiled("原硬件架构",premaintaincontact));
+    System.out.println(formatOneFiled("原生产环境",preuseip));
+    System.out.println(formatOneFiled("原测试环境",pretestip));
+    System.out.println(formatOneFiled("原关联系统",prerelation));
+    System.out.println(formatOneFiled("",""));
+    System.out.println(formatOneFiled("新厂商",newcompany));
+    System.out.println(formatOneFiled("新建设时间",newdate));
+    System.out.println(formatOneFiled("新合同金额",newmoney));
+    System.out.println(formatOneFiled("新销售经理/电话/邮件",newsellcontact));
+    System.out.println(formatOneFiled("新项目经理/电话/邮件",newbuildcontact));
+    System.out.println(formatOneFiled("新运维人员/电话/邮件",newmaintaincontact));
+    System.out.println(formatOneFiled("新主要功能",newfunction));
+    System.out.println(formatOneFiled("新硬件架构",newmachine));
+    System.out.println(formatOneFiled("新关联系统",newrelation));
+    System.out.println(formatOneFiled("",""));
+
+    return mdText;
+  }
+
+  private String formatOneFiled(String filedTitle,String filedValue){
+    return  "| "+filedTitle+"        | "+filedValue+" |";
+  }
 }
