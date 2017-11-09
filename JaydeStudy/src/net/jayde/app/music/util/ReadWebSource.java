@@ -4,14 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class ReadWebSource {
 
@@ -37,9 +32,9 @@ public class ReadWebSource {
         }
     }
 
-    public List<music163Singer> splitPerson(String fullText) {
+    public List<Music163Singer> splitPerson(String fullText) {
 //        System.out.println(fullText);
-        List<music163Singer> persons = new LinkedList<music163Singer>();
+        List<Music163Singer> persons = new LinkedList<Music163Singer>();
         String startStr = "<a href=\"/artist?id=";
         String endStr = "</a>";
         String[] fullTexts = fullText.split("\n");
@@ -59,7 +54,7 @@ public class ReadWebSource {
                 int eName = line.indexOf(endName, sName + 1);
                 String name = line.substring(sName + 1, eName);
 //                System.out.println(name);
-                music163Singer singer = new music163Singer();
+                Music163Singer singer = new Music163Singer();
                 singer.setSid(id);
                 singer.setSname(name);
                 persons.add(singer);
@@ -68,8 +63,8 @@ public class ReadWebSource {
         return persons;
     }
 
-    public music163Group findGroup(String gid, String gname) {
-        music163Group groud = new music163Group();
+    public Music163Group findGroup(String gid, String gname) {
+        Music163Group groud = new Music163Group();
         String[] orders = {"0", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90"};
         String urlString = "";
         groud.setGid(gid);
@@ -87,7 +82,7 @@ public class ReadWebSource {
 
         String[] groupIds = {"1001", "1002", "1003", "2001", "2002", "2003", "6001", "6002", "6003", "7001", "7002", "7003", "4001", "4002", "4003"};
         String[] groupNames = {"华男", "华女", "华组", "欧男", "欧女", "欧组", "日男", "日女", "日组", "韩男", "韩女", "韩组", "他男", "她女", "它组"};
-        music163Group[] groups = new music163Group[groupIds.length];
+        Music163Group[] groups = new Music163Group[groupIds.length];
         for (int i = 0; i < groups.length; i++) {
             groups[i] = readWebSource.findGroup(groupIds[i], groupNames[i]);
             groups[i].showGroup();

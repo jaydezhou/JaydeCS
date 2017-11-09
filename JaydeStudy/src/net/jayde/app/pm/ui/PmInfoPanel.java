@@ -8,7 +8,7 @@ import javax.swing.JTextArea;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
-import net.jayde.app.pm.ProjectObject;
+import net.jayde.app.pm.pojo.ProjectObject;
 
 public class PmInfoPanel extends JPanel {
 

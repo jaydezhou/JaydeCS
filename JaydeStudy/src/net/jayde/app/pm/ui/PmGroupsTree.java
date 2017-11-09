@@ -1,8 +1,8 @@
 package net.jayde.app.pm.ui;
 
-import net.jayde.app.pm.ProjectGroup;
-import net.jayde.app.pm.ProjectLibrary;
-import net.jayde.app.pm.ProjectObject;
+import net.jayde.app.pm.pojo.ProjectGroup;
+import net.jayde.app.pm.pojo.ProjectLibrary;
+import net.jayde.app.pm.pojo.ProjectObject;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;

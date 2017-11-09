@@ -1,7 +1,6 @@
 package net.jayde.app.pm.ui;
 
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
@@ -9,15 +8,24 @@ import javax.swing.tree.DefaultMutableTreeNode;
 
 import net.jayde.app.baseui.baseLibraryFrame.BaseSwingLibraryPanel;
 import net.jayde.app.pm.PmReadDb;
-import net.jayde.app.pm.ProjectLibrary;
-import net.jayde.app.pm.ProjectObject;
+import net.jayde.app.pm.pojo.ProjectLibrary;
+import net.jayde.app.pm.pojo.ProjectObject;
 
 public class PmUI extends BaseSwingLibraryPanel {
 
-  PmGroupsTree groupsTree = new PmGroupsTree();
 
-  PmInfoPanel projectInfoPanel = new PmInfoPanel();
-  JPanel projectQuestionPanel = new JPanel();
+  PmGroupsTree groupsTree = new PmGroupsTree();
+  PmProjectInfoPanel projectInfoPanel = new PmProjectInfoPanel();
+  PmQuestionPanel projectQuestionPanel = new PmQuestionPanel();
+//  JFrame rootFrame = null;
+//
+//  public JFrame getRootFrame() {
+//    return rootFrame;
+//  }
+//
+//  public void setRootFrame(JFrame rootFrame) {
+//    this.rootFrame = rootFrame;
+//  }
 
   public PmUI() {
     super();
@@ -29,8 +37,9 @@ public class PmUI extends BaseSwingLibraryPanel {
     iniGroupsTree();
     iniInfoPanel();
 
+//    projectQuestionPanel.setRootFrame(rootFrame);
     tabsTree.addTab("ProjectTree", new JScrollPane(groupsTree));
-    tabsInfo.addTab("ProjectInfo", new JScrollPane(projectInfoPanel));
+    tabsInfo.addTab("ProjectInfo", projectInfoPanel);
     tabsInfo.addTab("ProjectQuestions", new JScrollPane(projectQuestionPanel));
   }
 
@@ -42,9 +51,10 @@ public class PmUI extends BaseSwingLibraryPanel {
         DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode) groupsTree.getLastSelectedPathComponent();// 返回最后选定的节点
         System.out.println(selectedNode.getUserObject().getClass());
         Object obj = selectedNode.getUserObject();
-        if(obj instanceof ProjectObject){
-          ProjectObject po = (ProjectObject)obj;
-          projectInfoPanel.setPmObject(po);
+        if (obj instanceof ProjectObject) {
+          ProjectObject po = (ProjectObject) obj;
+          projectInfoPanel.setProjectObject(po);
+          projectQuestionPanel.setTableData(po);
         }
       }
     });
@@ -59,8 +69,10 @@ public class PmUI extends BaseSwingLibraryPanel {
   public static void main(String[] args) {
     JFrame jFrame = new JFrame();
     jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-    jFrame.setBounds(100, 100, 800, 600);
-    jFrame.setContentPane(new PmUI());
+    jFrame.setBounds(50, 50, 1000, 600);
+    PmUI pmUI = new PmUI();
+//    pmUI.setRootFrame(jFrame);
+    jFrame.setContentPane(pmUI);
     jFrame.setVisible(true);
   }
 }
