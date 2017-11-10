@@ -6,6 +6,8 @@ import net.jayde.app.music.pojo.MusicPerson;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
+import static java.lang.Thread.sleep;
+
 public class MusicSaveDb extends MusicDb {
 
     public void insertMusicFavourite(MusicPerson person) {
@@ -30,8 +32,11 @@ public class MusicSaveDb extends MusicDb {
                 psmt.executeBatch();
                 psmt.close();
                 conn.commit();
+//                Thread.sleep(1000);
             }catch (SQLException e){
                 System.out.println(e.getMessage());
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
             }
 
             disconnDb();
