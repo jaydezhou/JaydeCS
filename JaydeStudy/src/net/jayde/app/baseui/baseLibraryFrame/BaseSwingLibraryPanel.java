@@ -14,7 +14,6 @@ public class BaseSwingLibraryPanel extends JPanel{
 
     public BaseSwingLibraryPanel() {
         initGlobalFont();
-//        initFont();
         initCenter();
         initBottom();
         setLayout(new BorderLayout());

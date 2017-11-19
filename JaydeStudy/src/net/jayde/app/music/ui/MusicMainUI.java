@@ -12,20 +12,17 @@ import org.apache.log4j.Logger;
 import net.jayde.app.baseui.baseLibraryFrame.BaseSwingLibraryPanel;
 import net.jayde.app.music.pojo.MusicLibrary;
 import net.jayde.app.music.util.MusicReadDb;
-import net.jayde.app.pm.PmReadDb;
-import net.jayde.app.pm.pojo.ProjectLibrary;
 import net.jayde.app.pm.pojo.ProjectObject;
-import net.jayde.app.pm.ui.PmGroupsTree;
 import net.jayde.app.pm.ui.PmProjectInfoPanel;
 import net.jayde.app.pm.ui.PmQuestionPanel;
 
-public class MusicUI extends BaseSwingLibraryPanel {
+public class MusicMainUI  extends BaseSwingLibraryPanel {
 
-    private static Logger logger = LogManager.getLogger(MusicUI.class.getName());
+    private static Logger logger = LogManager.getLogger(MusicMainUI.class.getName());
 
 
     MusicLibraryTree groupsTree = new MusicLibraryTree();
-    MusicGroupUI musicGroupUI= new MusicGroupUI();
+    PmProjectInfoPanel projectInfoPanel = new PmProjectInfoPanel();
     PmQuestionPanel projectQuestionPanel = new PmQuestionPanel();
 //  JFrame rootFrame = null;
 //
@@ -37,7 +34,7 @@ public class MusicUI extends BaseSwingLibraryPanel {
 //    this.rootFrame = rootFrame;
 //  }
 
-    public MusicUI() {
+    public MusicMainUI() {
         super();
 
         MusicReadDb musicReadDb = new MusicReadDb();
@@ -48,8 +45,8 @@ public class MusicUI extends BaseSwingLibraryPanel {
         iniInfoPanel();
 
 //    projectQuestionPanel.setRootFrame(rootFrame);
-        tabsTree.addTab("MusicTree", new JScrollPane(groupsTree));
-        tabsInfo.addTab("GroupInfo", musicGroupUI);
+        tabsTree.addTab("ProjectTree", new JScrollPane(groupsTree));
+        tabsInfo.addTab("ProjectInfo", projectInfoPanel);
         tabsInfo.addTab("ProjectQuestions", new JScrollPane(projectQuestionPanel));
     }
 
@@ -61,11 +58,11 @@ public class MusicUI extends BaseSwingLibraryPanel {
                 DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode) groupsTree.getLastSelectedPathComponent();// 返回最后选定的节点
                 System.out.println(selectedNode.getUserObject().getClass());
                 Object obj = selectedNode.getUserObject();
-//                if (obj instanceof ProjectObject) {
-//                    ProjectObject po = (ProjectObject) obj;
-//                    projectInfoPanel.setProjectObject(po);
-//                    projectQuestionPanel.setTableData(po);
-//                }
+                if (obj instanceof ProjectObject) {
+                    ProjectObject po = (ProjectObject) obj;
+                    projectInfoPanel.setProjectObject(po);
+                    projectQuestionPanel.setTableData(po);
+                }
             }
         });
     }
@@ -80,9 +77,11 @@ public class MusicUI extends BaseSwingLibraryPanel {
         JFrame jFrame = new JFrame();
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.setBounds(50, 50, 1000, 600);
-        MusicUI musicUI = new MusicUI();
+        MusicMainUI musicMainUI = new MusicMainUI();
 //    pmUI.setRootFrame(jFrame);
-        jFrame.setContentPane(musicUI);
+        jFrame.setContentPane(musicMainUI);
         jFrame.setVisible(true);
     }
+
+
 }

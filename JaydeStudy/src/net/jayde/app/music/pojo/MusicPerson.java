@@ -8,98 +8,100 @@ import org.apache.log4j.Logger;
 
 public class MusicPerson {
 
-    private static Logger logger = LogManager.getLogger(MusicPerson.class.getName());
+  private static Logger logger = LogManager.getLogger(MusicPerson.class.getName());
+  public static int PERSON_FAVOURITE = 1;
+  public static int PERSON_ALL = 0;
+  String id;
+  String name;
+  String mgId;
+  private MusicGroup mg;
+  Set<MusicAlbum> albumSet = null;
+  Set<MusicFavourite> favouriteSet = null;
+  String m163Id;
+  int favourite = 0;
 
-    String id;
-    String name;
-    String mgId;
-    private MusicGroup mg;
-    Set<MusicAlbum> albumSet = null;
-    Set<MusicFavourite> favouriteSet = null;
-    String m163Id;
+  public MusicPerson() {}
 
-    public MusicPerson() {
-    }
+  public MusicPerson(String id, String name) {
+    this.id = id;
+    this.name = name;
+  }
 
-    public MusicPerson(String id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+  public MusicPerson(String id, String name, String mgId, MusicGroup mg) {
+    this.id = id;
+    this.name = name;
+    this.mgId = mgId;
+    this.mg = mg;
+  }
 
-    public MusicPerson(String id, String name, String mgId, MusicGroup mg) {
-        this.id = id;
-        this.name = name;
-        this.mgId = mgId;
-        this.mg = mg;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public String getId() {
-        return id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getMgId() {
+    return mgId;
+  }
 
-    public String getMgId() {
-        return mgId;
-    }
+  public void setMgId(String mgId) {
+    this.mgId = mgId;
+  }
 
-    public void setMgId(String mgId) {
-        this.mgId = mgId;
-    }
+  public MusicGroup getMg() {
+    return mg;
+  }
 
-    public MusicGroup getMg() {
-        return mg;
-    }
+  public void setMg(MusicGroup mg) {
+    this.mg = mg;
+  }
 
-    public void setMg(MusicGroup mg) {
-        this.mg = mg;
-    }
+  public Set<MusicAlbum> getAlbumSet() {
+    if (albumSet == null) albumSet = new HashSet<>();
+    return albumSet;
+  }
 
-    public Set<MusicAlbum> getAlbumSet() {
-        if (albumSet == null)
-            albumSet = new HashSet<>();
-        return albumSet;
-    }
+  public void setAlbumSet(Set<MusicAlbum> albumSet) {
+    this.albumSet = albumSet;
+  }
 
-    public void setAlbumSet(Set<MusicAlbum> albumSet) {
-        this.albumSet = albumSet;
-    }
+  public Set<MusicFavourite> getFavouriteSet() {
+    if (favouriteSet == null) favouriteSet = new HashSet<>();
+    return favouriteSet;
+  }
 
-    public Set<MusicFavourite> getFavouriteSet() {
-        if (favouriteSet == null)
-            favouriteSet = new HashSet<>();
-        return favouriteSet;
-    }
+  public void setFavouriteSet(Set<MusicFavourite> favouriteSet) {
+    this.favouriteSet = favouriteSet;
+  }
 
-    public void setFavouriteSet(Set<MusicFavourite> favouriteSet) {
-        this.favouriteSet = favouriteSet;
-    }
+  public String getM163Id() {
+    return m163Id;
+  }
 
-    public String getM163Id() {
-        return m163Id;
-    }
+  public void setM163Id(String m163Id) {
+    this.m163Id = m163Id;
+  }
 
-    public void setM163Id(String m163Id) {
-        this.m163Id = m163Id;
-    }
+  public int getFavourite() {
+    return favourite;
+  }
 
-    @Override
-    public String toString() {
-        return "MusicPerson{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", mgId='" + mgId + '\'' +
-                ", mg=" + mg +
-                '}';
-    }
+  public void setFavourite(int favourite) {
+    this.favourite = favourite;
+  }
+
+  @Override
+  public String toString() {
+    return  name ;
+  }
 }

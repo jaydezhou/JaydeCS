@@ -5,29 +5,27 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class MusicDb {
-    String sourceURL =
-            "jdbc:h2:c:\\Users\\Administrator\\IdeaProjects\\JaydeCS\\db\\Db_h2_mybatis.mv.db";
-    //  String sourceURL = "jdbc:h2:d:\\IdeaProjects\\JaydeCS\\db\\Db_h2_mybatis.mv.db";
-    Connection conn = null;
 
-    public void connDb() {
-        try {
-            String user = "";
-            String key = "";
-            Class.forName("org.h2.Driver");// HSQLDB Driver
+  Connection conn = null;
 
-            conn = DriverManager.getConnection(sourceURL, "", "");
+  public void connDb() {
+    try {
+      MusicConfig mc = new MusicConfig();
+      String[] connInfo = mc.getConnInfo();
+      Class.forName(connInfo[1]);// Driver
 
-        } catch (Exception sqle) {
-            System.out.println(sqle.getMessage());
-        }
+      conn = DriverManager.getConnection(connInfo[2], connInfo[3], connInfo[4]);
+
+    } catch (Exception sqle) {
+      System.out.println(sqle.getMessage());
     }
+  }
 
-    public void disconnDb() {
-        try {
-            conn.close();
-        } catch (Exception sqle) {
-            System.out.println(sqle.getMessage());
-        }
+  public void disconnDb() {
+    try {
+      conn.close();
+    } catch (Exception sqle) {
+      System.out.println(sqle.getMessage());
     }
+  }
 }

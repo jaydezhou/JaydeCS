@@ -45,7 +45,7 @@ public class ReadMusic163Singer extends ReadWebSource {
             while (mt.find()) {
                 String song = mt.group();
 //                System.out.println(song);
-                String sid = "";
+String sid = "";
                 Matcher matcher1 = pattern1.matcher(song);
 
                 if (matcher1.find()) {
@@ -58,7 +58,7 @@ public class ReadMusic163Singer extends ReadWebSource {
                     sname = sname.substring(1, sname.length() - 1);
 //                    System.out.println(sname);
                     MusicFavourite musicFavourite = new MusicFavourite();
-                    musicFavourite.setId(person.getId() + df.format(i++));
+                    musicFavourite.setId(person.getId()+df.format(i++));
                     musicFavourite.setName(sname);
 //                    musicFavourite.setMgId();
                     musicFavourite.setM163Id(sid);
@@ -78,10 +78,10 @@ public class ReadMusic163Singer extends ReadWebSource {
         ReadMusic163Singer readMusic163Singer = new ReadMusic163Singer();
         MusicReadDb musicReadDb = new MusicReadDb();
         MusicLibrary library = musicReadDb.readByDb();
-        for (MusicGroup mg : library.getGroups()) {
-            for (MusicPerson mp : mg.getPersonSet()) {
+        for(MusicGroup mg :library.getGroups()){
+            for(MusicPerson mp:mg.getSonPersons()){
                 readMusic163Singer.getMusic163Singer(mp);
-                System.out.println(mp);
+//                System.out.println(mp);
             }
         }
 //

@@ -1,7 +1,7 @@
 package net.jayde.app.music.pojo;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.LinkedList;
+import java.util.List;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -12,7 +12,8 @@ public class MusicGroup {
 
   String id;
   String name;
-  Set<MusicPerson> personSet = null;
+  List<MusicPerson> sonPersons = null;
+  List<MusicGroup> sonGroups = null;
 
   public MusicGroup() {
 
@@ -39,20 +40,30 @@ public class MusicGroup {
     this.name = name;
   }
 
-  public Set<MusicPerson> getPersonSet() {
-    if (personSet == null) personSet = new HashSet<>();
-    return personSet;
+  public List<MusicPerson> getSonPersons() {
+    if (sonPersons == null) {
+      sonPersons = new LinkedList<>();
+    }
+    return sonPersons;
   }
 
-  public void setPersonSet(Set<MusicPerson> personSet) {
-    this.personSet = personSet;
+  public void setSonPersons(List<MusicPerson> sonPersons) {
+    this.sonPersons = sonPersons;
+  }
+
+  public List<MusicGroup> getSonGroups() {
+    if (sonGroups == null) {
+      sonGroups = new LinkedList<>();
+    }
+    return sonGroups;
+  }
+
+  public void setSonGroups(List<MusicGroup> sonGroups) {
+    this.sonGroups = sonGroups;
   }
 
   @Override
   public String toString() {
-    return "MusicGroup{" +
-            "id='" + id + '\'' +
-            ", name='" + name + '\'' +
-            '}';
+    return name;
   }
 }

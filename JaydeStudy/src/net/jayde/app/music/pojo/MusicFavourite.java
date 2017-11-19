@@ -68,4 +68,9 @@ public class MusicFavourite {
     public void setM163Id(String m163Id) {
         this.m163Id = m163Id;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
