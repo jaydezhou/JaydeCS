@@ -27,5 +27,9 @@
     <orderEntry type="library" name="commons-beanutils-1.9.3" level="project" />
     <orderEntry type="library" name="commons-configuration-1.10" level="project" />
     <orderEntry type="library" name="mysql-connector-java-6.0.6" level="project" />
+    <orderEntry type="library" name="webmagic" level="project" />
+    <orderEntry type="library" name="httpclient" level="project" />
+    <orderEntry type="library" name="hanlp-portable-1.5.2" level="project" />
+    <orderEntry type="library" name="jaudiotagger-2.2.6" level="project" />
   </component>
 </module>

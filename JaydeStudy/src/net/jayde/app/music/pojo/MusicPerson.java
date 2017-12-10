@@ -14,11 +14,12 @@ public class MusicPerson {
   String id;
   String name;
   String mgId;
+  String m163Id;
+  int favourite = 0;
+
   private MusicGroup mg;
   Set<MusicAlbum> albumSet = null;
   Set<MusicFavourite> favouriteSet = null;
-  String m163Id;
-  int favourite = 0;
 
   public MusicPerson() {}
 

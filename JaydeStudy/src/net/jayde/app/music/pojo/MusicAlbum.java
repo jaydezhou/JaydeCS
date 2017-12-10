@@ -14,6 +14,9 @@ public class MusicAlbum {
     String name;
     String mgId;
     String mpId;
+    String m163Id;
+    String imageUrl;
+    String ymd;
     private MusicGroup mg;
     private MusicPerson mp;
     Set<MusicCd> cdSet = new HashSet<>();
@@ -72,5 +75,50 @@ public class MusicAlbum {
 
     public void setCdSet(Set<MusicCd> cdSet) {
         this.cdSet = cdSet;
+    }
+
+    public static Logger getLogger() {
+        return logger;
+    }
+
+    public static void setLogger(Logger logger) {
+        MusicAlbum.logger = logger;
+    }
+
+    public String getM163Id() {
+        return m163Id;
+    }
+
+    public void setM163Id(String m163Id) {
+        this.m163Id = m163Id;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
+    public String getYmd() {
+        return ymd;
+    }
+
+    public void setYmd(String ymd) {
+        this.ymd = ymd;
+    }
+
+    @Override
+    public String toString() {
+        return "MusicAlbum{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", mgId='" + mgId + '\'' +
+                ", mpId='" + mpId + '\'' +
+                ", mg=" + mg +
+                ", mp=" + mp +
+                ", cdSet=" + cdSet +
+                '}';
     }
 }

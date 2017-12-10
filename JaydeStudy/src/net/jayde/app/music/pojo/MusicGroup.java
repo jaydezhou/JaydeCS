@@ -12,6 +12,7 @@ public class MusicGroup {
 
   String id;
   String name;
+  String m163Id;
   List<MusicPerson> sonPersons = null;
   List<MusicGroup> sonGroups = null;
 
@@ -60,6 +61,14 @@ public class MusicGroup {
 
   public void setSonGroups(List<MusicGroup> sonGroups) {
     this.sonGroups = sonGroups;
+  }
+
+  public String getM163Id() {
+    return m163Id;
+  }
+
+  public void setM163Id(String m163Id) {
+    this.m163Id = m163Id;
   }
 
   @Override

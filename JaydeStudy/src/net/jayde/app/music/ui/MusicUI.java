@@ -6,6 +6,8 @@ import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
 
+import net.jayde.app.music.dao.MusicDao;
+import net.jayde.app.music.dao.mybatisDao.MusicDaoMybatis;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -27,27 +29,19 @@ public class MusicUI extends BaseSwingLibraryPanel {
     MusicLibraryTree groupsTree = new MusicLibraryTree();
     MusicGroupUI musicGroupUI= new MusicGroupUI();
     PmQuestionPanel projectQuestionPanel = new PmQuestionPanel();
-//  JFrame rootFrame = null;
-//
-//  public JFrame getRootFrame() {
-//    return rootFrame;
-//  }
-//
-//  public void setRootFrame(JFrame rootFrame) {
-//    this.rootFrame = rootFrame;
-//  }
 
     public MusicUI() {
         super();
 
-        MusicReadDb musicReadDb = new MusicReadDb();
-        MusicLibrary library = musicReadDb.readByDb();
+//        MusicReadDb musicReadDb = new MusicReadDb();
+//        MusicLibrary library = musicReadDb.readByDb();
+        MusicDao dao = new MusicDaoMybatis();
+        MusicLibrary library = dao.iniMusicLibrary();
         groupsTree.setLibrary(library);
 
         iniGroupsTree();
         iniInfoPanel();
 
-//    projectQuestionPanel.setRootFrame(rootFrame);
         tabsTree.addTab("MusicTree", new JScrollPane(groupsTree));
         tabsInfo.addTab("GroupInfo", musicGroupUI);
         tabsInfo.addTab("ProjectQuestions", new JScrollPane(projectQuestionPanel));
@@ -81,7 +75,6 @@ public class MusicUI extends BaseSwingLibraryPanel {
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.setBounds(50, 50, 1000, 600);
         MusicUI musicUI = new MusicUI();
-//    pmUI.setRootFrame(jFrame);
         jFrame.setContentPane(musicUI);
         jFrame.setVisible(true);
     }

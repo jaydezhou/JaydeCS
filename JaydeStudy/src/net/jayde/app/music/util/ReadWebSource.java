@@ -68,19 +68,21 @@ public class ReadWebSource {
         persons.add(singer);
       }
     }
+    System.out.println("singers:"+persons.size());
     return persons;
   }
 
   public Music163Group findGroup(String gid, String gname) {
     Music163Group groud = new Music163Group();
-    String[] orders = {"0"};
-//    , "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79",
-//        "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90"};
+    String[] orders = {"0"
+    , "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79",
+        "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90"};
     String urlString = "";
     groud.setGid(gid);
     groud.setGname(gname);
     for (int i = 0; i < orders.length; i++) {
       urlString = "http://music.163.com/discover/artist/cat?id=" + gid + "&initial=" + orders[i];
+      System.out.println(urlString);
       groud.getSingers().addAll(splitPerson(getSource(urlString)));
     }
     return groud;
