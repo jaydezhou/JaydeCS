@@ -20,8 +20,6 @@
       <root url="jar://$PROJECT_DIR$/LibCommon/webmagic/jsoup-1.10.3.jar!/" />
       <root url="jar://$PROJECT_DIR$/LibCommon/webmagic/junit-4.11.jar!/" />
       <root url="jar://$PROJECT_DIR$/LibCommon/webmagic/log4j-1.2.17.jar!/" />
-      <root url="jar://$PROJECT_DIR$/LibCommon/webmagic/slf4j-api-1.7.6.jar!/" />
-      <root url="jar://$PROJECT_DIR$/LibCommon/webmagic/slf4j-log4j12-1.7.6.jar!/" />
       <root url="jar://$PROJECT_DIR$/LibCommon/webmagic/webmagic-core-0.7.3.jar!/" />
       <root url="jar://$PROJECT_DIR$/LibCommon/webmagic/webmagic-extension-0.7.3.jar!/" />
       <root url="jar://$PROJECT_DIR$/LibCommon/webmagic/xsoup-0.3.1.jar!/" />

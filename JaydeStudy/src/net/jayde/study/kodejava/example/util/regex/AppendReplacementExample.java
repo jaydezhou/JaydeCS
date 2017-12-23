@@ -1,4 +1,4 @@
-package org.kodejava.example.util.regex;
+package net.jayde.study.kodejava.example.util.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
